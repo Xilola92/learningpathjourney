@@ -274,10 +274,11 @@ body::before {
       font-size: 40px;
     }
   }
-
+Finalize v1 of Learning Path Journey website
   .nav a.active {
   border-bottom: 2px solid #fff;
   opacity: 1;
 }
+
 
 
