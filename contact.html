@@ -1,110 +1,62 @@
-/* ===== Contact page layout ===== */
-.page{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 20px 80px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Learning Path Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-.page-head h1{
-  font-size: 56px;
-  margin: 0 0 10px;
-}
+<body>
+  <header class="header">
+    <div class="logo">LearningPathJourney</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="journey.html">Journey</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-.muted{
-  opacity: 0.75;
-  line-height: 1.6;
-}
+  <main class="page">
+    <div class="page-head">
+      <h1>Contact</h1>
+      <p class="muted">Ways to reach me</p>
+    </div>
 
-.grid-2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-top: 24px;
-}
+    <div class="grid-2">
+      <div class="card">
+        <h2>Details</h2>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <span class="value">your@email.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">GitHub</span>
+            <span class="value">github.com/xilola92</span>
+          </div>
+        </div>
+      </div>
 
-.card{
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-}
+      <div class="card">
+        <h2>Message</h2>
+        <form class="form">
+          <label>
+            <span>Name</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea rows="4"></textarea>
+          </label>
+        </form>
+      </div>
+    </div>
+  </main>
 
-.card h2{
-  margin: 0 0 8px;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-}
-
-.contact-list{
-  display: grid;
-  gap: 10px;
-  margin-top: 14px;
-}
-
-.contact-item{
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(0,0,0,0.25);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.12s ease, border 0.12s ease;
-}
-
-.contact-item:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.18);
-}
-
-.contact-item .label{
-  opacity: 0.85;
-}
-
-.contact-item .value{
-  opacity: 0.65;
-}
-
-.form{
-  display: grid;
-  gap: 12px;
-  margin-top: 12px;
-}
-
-.form label span{
-  display: block;
-  font-size: 12px;
-  opacity: 0.8;
-  margin-bottom: 6px;
-}
-
-.form input, .form textarea{
-  width: 100%;
-  padding: 12px 12px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(0,0,0,0.35);
-  color: #fff;
-  outline: none;
-}
-
-.form input:focus, .form textarea:focus{
-  border-color: rgba(255,255,255,0.22);
-}
-
-.note{
-  margin-top: 18px;
-}
-
-@media (max-width: 900px){
-  .grid-2{
-    grid-template-columns: 1fr;
-  }
-  .page-head h1{
-    font-size: 40px;
-  }
-}
-
+  <footer class="footer">
+    <p>© 2025 LearningPathJourney</p>
+  </footer>
+</body>
+</html>
