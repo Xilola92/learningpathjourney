@@ -24,7 +24,8 @@ body::before {
     pointer-events: none;
     z-index: -1;
   }
-  
+  Finalize v1 of Learning Path Journey website
+
   
   /* HEADER */
   .header {
@@ -273,4 +274,5 @@ body::before {
       font-size: 40px;
     }
   }
+
   
