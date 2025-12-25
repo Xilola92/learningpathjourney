@@ -41,7 +41,28 @@
 
       <div class="card">
         <h2>Message</h2>
-        <form action="https://formspree.io/f/xxxxxx" method="POST">
+        <form
+  class="form"
+  action="https://formspree.io/f/XXXXXX"
+  method="POST"
+>
+  <label>
+    <span>Your name</span>
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    <span>Your email</span>
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    <span>Your message</span>
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button type="submit" class="btn">Send message</button>
+</form>
           <label>
             <span>Name</span>
             <input type="text" />
