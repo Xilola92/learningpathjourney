@@ -238,3 +238,71 @@ body {
   color: #777777;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+/* =========================
+   MOBILE ADAPTATION
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* Navigation */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  /* Language switch */
+  .lang-switch {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Main content */
+  main,
+  .page {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Buttons */
+  .btn,
+  button {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /* Forms (contact) */
+  input,
+  textarea {
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
+
+
