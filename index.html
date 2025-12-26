@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | LearningPathJourney</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearningPathJourney — Home</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo">
-            <a href="index.html">LearningPathJourney</a>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="logo">LearningPathJourney</div>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
-            <li><a href="journey.html" data-i18n="nav_journey">Journey</a></li>
-            <li><a href="about.html" data-i18n="nav_about">About</a></li>
-            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-        </ul>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="journey.html">Journey</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-        <div class="lang-switcher">
-            <button data-lang="en">EN</button>
-            <button data-lang="de">DE</button>
-            <button data-lang="ru">RU</button>
-            <button data-lang="uz">UZ</button>
-        </div>
-    </nav>
-</header>
+      <div class="lang">
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
+    </div>
+  </header>
 
-<main>
+  <!-- MAIN -->
+  <main>
+    <section>
+      <h1>My Learning Path</h1>
 
-    <section class="hero">
-        <h1 data-i18n="hero_title">My Learning Path</h1>
-        <p data-i18n="hero_subtitle">
-            A personal journey through education, discipline, and growth.
-        </p>
-
-        <div class="hero-actions">
-            <a href="journey.html" class="btn" data-i18n="hero_cta">
-                Start the Journey
-            </a>
-        </div>
+      <p>
+        A personal journey through education, discipline, and long-term growth.
+        This site documents real progress — not perfection.
+      </p>
     </section>
 
-    <section class="page-section">
-        <h2 data-i18n="home_section1_title">Focus</h2>
-        <p data-i18n="home_section1_text">
-            Building strong foundations through consistency and structured learning.
-        </p>
+    <section>
+      <h2>Focus</h2>
+      <p>
+        Building strong foundations through consistency, structure, and daily practice.
+      </p>
     </section>
 
-    <section class="page-section">
-        <h2 data-i18n="home_section2_title">Background</h2>
-        <p data-i18n="home_section2_text">
-            Experience across healthcare, dentistry, and technical systems.
-        </p>
+    <section>
+      <h2>Background</h2>
+      <p>
+        Experience across healthcare, dentistry, and technical systems,
+        shaping a disciplined and detail-oriented mindset.
+      </p>
     </section>
 
-    <section class="page-section">
-        <h2 data-i18n="home_section3_title">Direction</h2>
-        <p data-i18n="home_section3_text">
-            Transitioning into technology with discipline and long-term thinking.
-        </p>
+    <section>
+      <h2>Direction</h2>
+      <p>
+        Transitioning into technology with emphasis on logic, systems,
+        and sustainable long-term thinking.
+      </p>
     </section>
+  </main>
 
-</main>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 LearningPathJourney
+  </footer>
 
-<footer>
-    <p>© 2025 LearningPathJourney</p>
-</footer>
-
-<!-- External JS -->
-<script src="js/main.js"></script>
 </body>
 </html>
