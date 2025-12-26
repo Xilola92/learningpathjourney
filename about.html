@@ -2,81 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About | Learning Path Journey</title>
+  <title>About | LearningPathJourney</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS (подключишь позже) -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JS (подключишь позже) -->
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">LearningPathJourney</a>
+    </div>
 
-    <!-- Logo -->
-    <a href="index.html" class="logo">
-      LearningPathJourney
-    </a>
-
-    <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="nav">
       <a href="index.html" data-i18n="nav_home">Home</a>
       <a href="journey.html" data-i18n="nav_journey">Journey</a>
       <a href="about.html" data-i18n="nav_about">About</a>
       <a href="contact.html" data-i18n="nav_contact">Contact</a>
     </nav>
 
-    <!-- Language switch -->
     <div class="lang-switch">
       <button data-lang="en">EN</button>
       <button data-lang="de">DE</button>
       <button data-lang="ru">RU</button>
       <button data-lang="uz">UZ</button>
     </div>
+  </header>
 
-  </div>
-</header>
+  <!-- ===== MAIN ===== -->
+  <main class="page about">
 
-  
+    <section class="page-header">
+      <h1 data-i18n="about_title">About This Site</h1>
+      <p data-i18n="about_intro">
+        This website is a personal space for reflection, learning, and growth.
+      </p>
+    </section>
 
-<main class="page">
+    <section class="about-section">
+      <h2 data-i18n="about_purpose_title">Purpose</h2>
+      <p data-i18n="about_purpose_text">
+        The purpose of this site is not to impress, but to document a real
+        learning path built through discipline, consistency, and experience.
+      </p>
+    </section>
 
-  <section class="page-hero">
-    <h1 data-i18n="about_title">About This Path</h1>
-    <p data-i18n="about_intro">
-      This is not a portfolio. This is a record of growth.
-    </p>
-  </section>
+    <section class="about-section">
+      <h2 data-i18n="about_values_title">Values</h2>
+      <p data-i18n="about_values_text">
+        I value structured thinking, responsibility, and learning by doing.
+        Progress does not need to be fast — it needs to be honest.
+      </p>
+    </section>
 
-  <section class="content-block">
-    <h2 data-i18n="about_think_title">How I Think</h2>
-    <p data-i18n="about_think_text">
-      I believe in discipline, consistency, and learning by doing — not shortcuts.
-    </p>
-  </section>
+    <section class="about-section">
+      <h2 data-i18n="about_background_title">Background</h2>
+      <p data-i18n="about_background_text">
+        My background includes healthcare and dentistry, where precision,
+        ethics, and teamwork are essential. These principles now guide my
+        transition into technology.
+      </p>
+    </section>
 
-  <section class="content-block">
-    <h2 data-i18n="about_build_title">What I Am Building</h2>
-    <p data-i18n="about_build_text">
-      I am transitioning from healthcare into technology, focusing on structure,
-      logic, and systems thinking.
-    </p>
-  </section>
+    <section class="about-section">
+      <h2 data-i18n="about_future_title">Looking Ahead</h2>
+      <p data-i18n="about_future_text">
+        This site will evolve together with my skills and understanding.
+        It represents an ongoing journey rather than a finished result.
+      </p>
+    </section>
 
-  <section class="content-block">
-    <h2 data-i18n="about_why_title">Why This Site Exists</h2>
-    <p data-i18n="about_why_text">
-      To document my journey honestly — for clarity, accountability, and reflection.
-    </p>
-  </section>
+  </main>
 
-</main>
-
-<footer class="footer">
-  <p>© 2025 LearningPathJourney</p>
-</footer>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 LearningPathJourney</p>
+  </footer>
 
 </body>
 </html>
