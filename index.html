@@ -1,39 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Learning Path Journey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learning Path Journey — a personal journey through education, discipline, and growth." />
 
-  <title>Home | Learning Path Journey</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
+  <!-- JS -->
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-<header class="header">
-  <a href="index.html" class="logo">LearningPathJourney</a>
 
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="journey.html">Journey</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-
-    <div class="lang-switch">
-      <button data-lang="en">🇬🇧</button>
-      <button data-lang="de">🇩🇪</button>
-      <button data-lang="ru">🇷🇺</button>
-      <button data-lang="uz">🇺🇿</button>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">LearningPathJourney</a>
+  
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="journey.html">Journey</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
     </div>
-  </nav>
-</header>
+  </header>
+  
 
 <main class="hero">
   <h1 data-i18n="title">My Learning Path</h1>
@@ -42,11 +45,15 @@
     A personal journey through education, discipline, and growth.
   </p>
 
-  <a href="journey.html" class="btn" data-i18n="cta">Start the Journey</a>
+  <div class="hero-buttons">
+    <a href="journey.html" class="btn" data-i18n="btn_journey">Start the Journey</a>
+    <a href="about.html" class="btn ghost" data-i18n="btn_about">About This Site</a>
+  </div>
 </main>
 
 <footer class="footer">
   <p>© 2025 LearningPathJourney</p>
 </footer>
+
 </body>
 </html>
