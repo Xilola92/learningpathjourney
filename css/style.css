@@ -251,3 +251,57 @@ footer {
     padding: 18px;
   }
 }
+/* ===== FIX MOBILE + INSTAGRAM ===== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Отступ под меню */
+main {
+  padding-top: 90px;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  header {
+    position: static; /* 🔥 КЛЮЧ */
+  }
+
+  main {
+    padding-top: 20px; /* 🔥 КЛЮЧ */
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
