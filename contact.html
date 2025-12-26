@@ -1,185 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact — LearningPathJourney</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | LearningPathJourney</title>
 
-  <style>
-    /* ===== RESET ===== */
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0b0b;
-      color: #eaeaea;
-    }
-    a { color: inherit; text-decoration: none; }
-
-    /* ===== HEADER ===== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 14px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .brand {
-      font-weight: 700;
-      font-size: 18px;
-      white-space: nowrap;
-    }
-    nav {
-      display: flex;
-      gap: 18px;
-    }
-    nav a {
-      font-size: 14px;
-      opacity: 0.85;
-    }
-    nav a:hover {
-      opacity: 1;
-    }
-
-    /* ===== MAIN ===== */
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 48px 16px 80px;
-    }
-
-    h1 {
-      font-size: clamp(32px, 6vw, 48px);
-      margin-bottom: 8px;
-    }
-    .subtitle {
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 32px;
-      line-height: 1.6;
-    }
-
-    /* ===== CARD ===== */
-    .card {
-      background: #121212;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    }
-
-    /* ===== FORM ===== */
-    form {
-      display: grid;
-      gap: 16px;
-    }
-    label {
-      font-size: 13px;
-      color: rgba(255,255,255,0.7);
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: #0b0b0b;
-      color: #fff;
-      font-size: 14px;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: rgba(255,255,255,0.35);
-    }
-
-    button {
-      margin-top: 8px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.25);
-      background: #1a1a1a;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #222;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 32px 16px;
-      color: rgba(255,255,255,0.45);
-      font-size: 13px;
-    }
-
-    /* ===== MOBILE ===== */
-    @media (max-width: 600px) {
-      nav {
-        gap: 12px;
-      }
-    }
-  </style>
+    <!-- CSS подключается отдельно -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <header>
-    <div class="header-inner">
-      <div class="brand">LearningPathJourney</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="journey.html">Journey</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <h1>Contact</h1>
-    <p class="subtitle">
-      You can send me a message using the form below.
-    </p>
-
-    <div class="card">
-      <form action="https://formspree.io/f/maqwrjbp" method="POST">
-        <div>
-          <label>Your name</label>
-          <input type="text" name="name" required>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">LearningPathJourney</a>
         </div>
 
-        <div>
-          <label>Your email</label>
-          <input type="email" name="email" required>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="journey.html" data-i18n="nav.journey">Journey</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="lang-switcher">
+            <button data-lang="en">EN</button>
+            <button data-lang="de">DE</button>
+            <button data-lang="ru">RU</button>
+            <button data-lang="uz">UZ</button>
         </div>
+    </nav>
+</header>
 
-        <div>
-          <label>Your message</label>
-          <textarea name="message" required></textarea>
-        </div>
+<main>
+    <section class="contact-header">
+        <h1 data-i18n="contact.title">Contact</h1>
+        <p data-i18n="contact.subtitle">
+            You can send me a message using the form below.
+        </p>
+    </section>
 
-        <button type="submit">Send message</button>
-      </form>
-    </div>
-  </main>
+    <section class="contact-content">
 
-  <footer>
-    © 2025 LearningPathJourney
-  </footer>
+        <section class="contact-details">
+            <h2 data-i18n="contact.detailsTitle">Details</h2>
+            <p data-i18n="contact.detailsText">
+                For professional communication only.
+            </p>
 
+            <ul>
+                <li>Email: <a href="mailto:learningpathjourney@gmail.com">
+                    learningpathjourney@gmail.com</a>
+                </li>
+                <li>GitHub: <a href="https://github.com/xilola92" target="_blank">
+                    github.com/xilola92</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2 data-i18n="contact.formTitle">Send a message</h2>
+
+            <form 
+                action="https://formspree.io/f/maqwrjbp" 
+                method="POST"
+            >
+                <div>
+                    <label for="name" data-i18n="contact.name">Your name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email" data-i18n="contact.email">Your email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message" data-i18n="contact.message">Your message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" data-i18n="contact.send">
+                    Send message
+                </button>
+            </form>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 LearningPathJourney</p>
+</footer>
+
+<!-- JS подключается отдельно -->
+<script src="js/script.js"></script>
 </body>
 </html>
