@@ -304,5 +304,31 @@ body {
   }
 
 }
+@media (max-width: 768px) {
 
+  header {
+    padding: 10px 14px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+}
 
