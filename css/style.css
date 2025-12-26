@@ -1,249 +1,162 @@
-/* =========================
-   RESET + BASE
-========================= */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0b0b0b;
+  color: #f2f2f2;
 }
 
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: radial-gradient(circle at top, #1c1c1c 0%, #0b0b0b 60%, #000 100%);
-    color: #eaeaea;
-    line-height: 1.6;
-    min-height: 100vh;
-}
-
-/* =========================
-   LINKS
-========================= */
-a {
-    color: #eaeaea;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* =========================
-   HEADER / NAV
-========================= */
+/* ===== HEADER / NAV ===== */
 header {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
+  background: #0b0b0b;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px 20px;
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo a {
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
+.logo {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-/* NAV LINKS */
+/* MENU */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 28px;
+  display: flex;
+  gap: 28px;
 }
 
 .nav-links a {
-    font-size: 0.95rem;
-    opacity: 0.85;
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 14px;
 }
 
-.nav-links a.active,
 .nav-links a:hover {
-    opacity: 1;
+  color: #ffffff;
 }
 
-/* LANG SWITCHER */
-.lang-switcher {
-    display: flex;
-    gap: 8px;
+/* LANG SWITCH */
+.lang {
+  display: flex;
+  gap: 8px;
 }
 
-.lang-switcher button {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.25);
-    color: #fff;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    cursor: pointer;
+.lang button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
-.lang-switcher button:hover {
-    border-color: #fff;
+.lang button:hover {
+  background: rgba(255,255,255,0.08);
 }
 
-/* =========================
-   MAIN LAYOUT
-========================= */
+/* ===== MAIN CONTENT ===== */
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 80px 20px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px;
 }
 
-/* =========================
-   HEADERS / SECTIONS
-========================= */
 h1 {
-    font-size: 2.6rem;
-    margin-bottom: 16px;
-    font-weight: 600;
+  font-size: 42px;
+  margin-bottom: 16px;
 }
 
 h2 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-    font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 
 p {
-    max-width: 720px;
-    opacity: 0.9;
+  max-width: 720px;
+  line-height: 1.6;
+  color: #cfcfcf;
 }
 
-/* =========================
-   CONTACT PAGE
-========================= */
-.contact-header {
-    margin-bottom: 48px;
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 12px;
+  color: #777;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+/* ===== CONTACT FORM ===== */
+form {
+  max-width: 600px;
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* DETAILS */
-.contact-details {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    padding: 24px;
+input, textarea {
+  width: 100%;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
 }
 
-.contact-details ul {
-    list-style: none;
-    margin-top: 16px;
+textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
-.contact-details li {
-    margin-bottom: 10px;
-    font-size: 0.95rem;
+button.submit {
+  width: fit-content;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-/* FORM */
-.contact-form {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    padding: 24px;
+button.submit:hover {
+  background: rgba(255,255,255,0.1);
 }
 
-.contact-form form {
-    display: flex;
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .nav {
     flex-direction: column;
     gap: 16px;
-}
+  }
 
-.contact-form label {
-    font-size: 0.85rem;
-    opacity: 0.8;
-}
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    border: 1px solid rgba(255,255,255,0.15);
-    color: #fff;
-    padding: 10px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #fff;
-}
-
-.contact-form button {
-    margin-top: 8px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.4);
-    color: #fff;
-    padding: 10px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    border-color: #fff;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-    text-align: center;
+  main {
     padding: 40px 20px;
-    font-size: 0.8rem;
-    opacity: 0.6;
-}
+  }
 
-/* =========================
-   RESPONSIVE (MOBILE)
-========================= */
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
-    }
-
-    .nav-links {
-        gap: 16px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main {
-        padding: 48px 16px 80px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
+  h1 {
+    font-size: 32px;
+  }
 }
