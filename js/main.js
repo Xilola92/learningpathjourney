@@ -43,3 +43,5 @@ if (mainButton) {
     mainButton.style.transform = "scale(1)";
   });
 }
+
+// Add JS v2 – scroll animations and UI interactions
