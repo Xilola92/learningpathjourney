@@ -1,298 +1,236 @@
+/* =====================
+   Base
+===================== */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  * { box-sizing: border-box; }
-
-html, body { height: 100%; }
-
-body {
+  box-sizing: border-box;
   margin: 0;
-  background: #0b0b0d;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a 0%, #0b0b0b 60%);
   color: #f2f2f2;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  min-height: 100vh;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background:
-      radial-gradient(900px 480px at 50% 32%, rgba(255,255,255,0.08), transparent 60%),
-      radial-gradient(700px 380px at 85% 10%, rgba(255,255,255,0.05), transparent 65%);
-    pointer-events: none;
-    z-index: -1;
-  }
-  /* Finalize v1 of Learning Path Journey website */
-
-
-  
-  /* HEADER */
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 56px;
-    background: rgba(10,10,12,0.65);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  
-  
-  .logo {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  
-  .nav a {
-    color: #ccc;
-    margin-left: 32px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #fff;
-  }
-  
-  /* HERO */
-  .hero {
-    min-height: calc(100vh - 70px);
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 48px 20px;
-  }
-  
-  .hero h1 {
-    margin: 0 0 12px;
-    font-size: clamp(44px, 6vw, 72px);
-    letter-spacing: -0.02em;
-  }
-  
-  .hero p {
-    margin: 0 0 28px;
-    color: rgba(255,255,255,0.70);
-    line-height: 1.6;
-  }
-  
-  .btn {
-    padding: 14px 34px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.35);
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: 0.6px;
-    cursor: pointer;
-    border-radius: 999px;
-    transition: all 0.25s ease;
-  }
-  
-  .btn:hover {
-    background: rgba(255,255,255,0.12);
-    border-color: rgba(255,255,255,0.7);
-    transform: translateY(-1px);
-  }
-  
-  /* FOOTER */
-  .footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  
-  /* ===== JOURNEY PAGE ===== */
-
-.journey {
-    max-width: 900px;
-    margin: 120px auto;
-    padding: 0 20px;
-    color: #eaeaea;
-  }
-  
-  .journey h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .journey-subtitle {
-    color: #aaa;
-    margin-bottom: 60px;
-  }
-  
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .timeline-item {
-    border-left: 2px solid #333;
-    padding-left: 25px;
-    position: relative;
-  }
-  
-  .timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 6px;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-  }
-  
-  .timeline-item .year {
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  .timeline-item h3 {
-    margin: 10px 0;
-    font-size: 1.4rem;
-  }
-  
-  .timeline-item p {
-    color: #bbb;
-    line-height: 1.6;
-  }
-
-  /* ===== Contact page layout ===== */
-.page{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 20px 80px;
-  }
-  
-  .page-head h1{
-    font-size: 56px;
-    margin: 0 0 10px;
-  }
-  
-  .muted{
-    opacity: 0.75;
-    line-height: 1.6;
-  }
-  
-  .grid-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin-top: 24px;
-  }
-  
-  .card{
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 18px;
-    padding: 18px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-  }
-  
-  .card h2{
-    margin: 0 0 8px;
-    font-size: 18px;
-    letter-spacing: 0.2px;
-  }
-  
-  .contact-list{
-    display: grid;
-    gap: 10px;
-    margin-top: 14px;
-  }
-  
-  .contact-item{
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 12px 14px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(0,0,0,0.25);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.12s ease, border 0.12s ease;
-  }
-  
-  .contact-item:hover{
-    transform: translateY(-2px);
-    border-color: rgba(255,255,255,0.18);
-  }
-  
-  .contact-item .label{
-    opacity: 0.85;
-  }
-  
-  .contact-item .value{
-    opacity: 0.65;
-  }
-  
-  .form{
-    display: grid;
-    gap: 12px;
-    margin-top: 12px;
-  }
-  
-  .form label span{
-    display: block;
-    font-size: 12px;
-    opacity: 0.8;
-    margin-bottom: 6px;
-  }
-  
-  .form input, .form textarea{
-    width: 100%;
-    padding: 12px 12px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.35);
-    color: #fff;
-    outline: none;
-  }
-  
-  .form input:focus, .form textarea:focus{
-    border-color: rgba(255,255,255,0.22);
-  }
-  
-  .note{
-    margin-top: 18px;
-  }
-  
-  @media (max-width: 900px){
-    .grid-2{
-      grid-template-columns: 1fr;
-    }
-    .page-head h1{
-      font-size: 40px;
-    }
-  }
-Finalize v1 of Learning Path Journey website
-  .nav a.active {
-  border-bottom: 2px solid #fff;
-  opacity: 1;
-}
-/* JS fade-in animation */
-.fade {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.fade.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* =====================
+   Header
+===================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8, 8, 8, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 28px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
 
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
 
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
 
+.nav a {
+  font-size: 15px;
+  color: #cfcfcf;
+  position: relative;
+}
 
+.nav a:hover {
+  color: #ffffff;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* =====================
+   Language Switch
+===================== */
+.lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #cfcfcf;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* =====================
+   Hero (Index)
+===================== */
+.hero {
+  max-width: 900px;
+  margin: 120px auto 0;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #b5b5b5;
+  margin-bottom: 42px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* =====================
+   Pages (Journey, About, Contact)
+===================== */
+.page {
+  max-width: 780px;
+  margin: 100px auto;
+  padding: 0 24px;
+}
+
+.page h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.page p {
+  font-size: 15px;
+  color: #b5b5b5;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* =====================
+   Cards / Sections
+===================== */
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+/* =====================
+   Contact Form
+===================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 14px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+.contact-form button {
+  margin-top: 8px;
+  padding: 14px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e5e5e5;
+}
+
+.contact-alt {
+  margin-top: 32px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  text-align: center;
+  padding: 48px 0 32px;
+  font-size: 13px;
+  color: #777;
+}
