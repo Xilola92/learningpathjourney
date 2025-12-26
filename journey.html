@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey | LearningPathJourney</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey — LearningPathJourney</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- External JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo">
-            <a href="index.html">LearningPathJourney</a>
-        </div>
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="container nav-container">
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="journey.html" class="active" data-i18n="nav_journey">Journey</a></li>
-            <li><a href="about.html" data-i18n="nav_about">About</a></li>
-            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-        </ul>
+      <div class="logo">
+        LearningPathJourney
+      </div>
 
-        <div class="lang-switcher">
-            <button data-lang="en">EN</button>
-            <button data-lang="de">DE</button>
-            <button data-lang="ru">RU</button>
-            <button data-lang="uz">UZ</button>
-        </div>
-    </nav>
-</header>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="journey.html" class="active">Journey</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<main>
+      <div class="language-switcher">
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
 
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
     <section class="page-header">
-        <h1 data-i18n="journey_title">The Journey</h1>
-        <p data-i18n="journey_intro">
-            A structured path of learning, experience, and deliberate growth.
+      <div class="container">
+        <h1>My Journey</h1>
+        <p>
+          This page documents my personal and professional development over time.
         </p>
+      </div>
     </section>
 
-    <section class="page-section">
-        <h2 data-i18n="journey_stage1_title">Foundation</h2>
-        <p data-i18n="journey_stage1_text">
-            Developing discipline, responsibility, and professional structure
-            through healthcare and dentistry.
+    <section class="content">
+      <div class="container">
+
+        <h2>Phase 1 — Healthcare Foundation</h2>
+        <p>
+          I began my professional path in healthcare, where I learned discipline,
+          responsibility, and structured work in real clinical environments.
         </p>
-    </section>
 
-    <section class="page-section">
-        <h2 data-i18n="journey_stage2_title">Transition</h2>
-        <p data-i18n="journey_stage2_text">
-            Moving from practical clinical work toward analytical and technical
-            thinking.
+        <h2>Phase 2 — Dentistry</h2>
+        <p>
+          Working in dentistry strengthened my attention to detail, precision,
+          and communication with patients and medical teams.
         </p>
-    </section>
 
-    <section class="page-section">
-        <h2 data-i18n="journey_stage3_title">Technology</h2>
-        <p data-i18n="journey_stage3_text">
-            Building skills in software development, automation, and systems
-            design with long-term focus.
+        <h2>Phase 3 — Technology</h2>
+        <p>
+          I am now transitioning into technology, focusing on logic, systems,
+          and continuous learning through practice.
         </p>
-    </section>
 
-    <section class="page-section">
-        <h2 data-i18n="journey_stage4_title">Direction Ahead</h2>
-        <p data-i18n="journey_stage4_text">
-            Continuing growth through structured learning, real projects, and
-            disciplined execution.
+        <h2>Looking Forward</h2>
+        <p>
+          This journey is ongoing. The goal is not speed, but consistency,
+          growth, and long-term mastery.
         </p>
+
+      </div>
     </section>
+  </main>
 
-</main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © 2025 LearningPathJourney
+    </div>
+  </footer>
 
-<footer>
-    <p>© 2025 LearningPathJourney</p>
-</footer>
-
-<!-- External JS -->
-<script src="js/main.js"></script>
 </body>
 </html>
