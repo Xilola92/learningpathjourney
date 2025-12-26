@@ -24,7 +24,8 @@ body::before {
     pointer-events: none;
     z-index: -1;
   }
-  Finalize v1 of Learning Path Journey website
+  /* Finalize v1 of Learning Path Journey website */
+
 
   
   /* HEADER */
@@ -279,6 +280,7 @@ Finalize v1 of Learning Path Journey website
   border-bottom: 2px solid #fff;
   opacity: 1;
 }
+
 
 
 
