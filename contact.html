@@ -1,33 +1,178 @@
-<form
-  action="https://formspree.io/f/maqwrjbp"
-  method="POST"
-  class="contact-form"
->
-  <input
-    type="text"
-    name="name"
-    required
-    placeholder="Your name"
-    data-i18n-placeholder="form_name"
-  />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact — LearningPathJourney" />
 
-  <input
-    type="email"
-    name="email"
-    required
-    placeholder="Your email"
-    data-i18n-placeholder="form_email"
-  />
+    <title>Contact | LearningPathJourney</title>
 
-  <textarea
-    name="message"
-    rows="5"
-    required
-    placeholder="Your message"
-    data-i18n-placeholder="form_message"
-  ></textarea>
+    <!-- IMPORTANT: keep it same as other pages -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
 
-  <button type="submit" class="btn" data-i18n="form_send">
-    Send message
-  </button>
-</form>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html" aria-label="LearningPathJourney Home">
+          LearningPathJourney
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="journey.html" data-i18n="nav_journey">Journey</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+          <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <div class="lang-switch" aria-label="Language switcher">
+          <button type="button" data-lang="en" class="lang-btn">EN</button>
+          <button type="button" data-lang="de" class="lang-btn">DE</button>
+          <button type="button" data-lang="ru" class="lang-btn">RU</button>
+          <button type="button" data-lang="uz" class="lang-btn">UZ</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="page">
+      <section class="page-hero">
+        <h1 data-i18n="contact_title">Contact</h1>
+        <p class="muted" data-i18n="contact_subtitle">
+          You can send me a message using the form below.
+        </p>
+      </section>
+
+      <section class="card card-wide">
+        <div class="card-grid">
+          <!-- Left: Details -->
+          <div class="card-block">
+            <h2 data-i18n="contact_details_title">Details</h2>
+
+            <p class="small muted" data-i18n="contact_details_note">
+              For professional communication only.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="label" data-i18n="contact_email_label">Email</span>
+                <a href="mailto:learningpathjourney@gmail.com">learningpathjourney@gmail.com</a>
+              </li>
+              <li>
+                <span class="label" data-i18n="contact_github_label">GitHub</span>
+                <a href="https://github.com/Xilola92" target="_blank" rel="noreferrer">
+                  github.com/Xilola92
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="card-block">
+            <h2 data-i18n="contact_form_title">Message</h2>
+
+            <!-- Formspree -->
+            <form
+              class="form"
+              action="https://formspree.io/f/maqwrjbp"
+              method="POST"
+              id="contactForm"
+            >
+              <label class="field">
+                <span data-i18n="contact_name_label">Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  placeholder="Your name"
+                  data-i18n-placeholder="contact_name_ph"
+                />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact_email_field_label">Your email</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  placeholder="Your email"
+                  data-i18n-placeholder="contact_email_ph"
+                />
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact_message_label">Your message</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Your message"
+                  data-i18n-placeholder="contact_message_ph"
+                ></textarea>
+              </label>
+
+              <!-- Optional subject -->
+              <input type="hidden" name="_subject" value="New message from LearningPathJourney" />
+
+              <button class="btn btn-solid" type="submit" data-i18n="contact_send_btn">
+                Send message
+              </button>
+
+              <p class="form-hint muted" data-i18n="contact_privacy_note">
+                By sending this message, you agree to share the provided information for contact purposes.
+              </p>
+
+              <!-- Status text -->
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 LearningPathJourney</p>
+    </footer>
+
+    <!-- Page-only JS (safe, no conflicts) -->
+    <script>
+      // Optional: show a nice status message (works on GitHub Pages too)
+      const form = document.getElementById("contactForm");
+      const statusEl = document.getElementById("formStatus");
+
+      if (form && statusEl) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          statusEl.textContent = "";
+          statusEl.className = "form-status";
+
+          const formData = new FormData(form);
+
+          try {
+            const res = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: { Accept: "application/json" },
+            });
+
+            if (res.ok) {
+              statusEl.textContent = "Message sent successfully.";
+              statusEl.classList.add("ok");
+              form.reset();
+            } else {
+              statusEl.textContent = "Something went wrong. Please try again.";
+              statusEl.classList.add("err");
+            }
+          } catch (err) {
+            statusEl.textContent = "Network error. Please try again later.";
+            statusEl.classList.add("err");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
