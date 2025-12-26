@@ -29,5 +29,6 @@ if (form) {
     }
   });
 }
+// Add basic JavaScript interactions (v2)
 
-Add basic JavaScript interactions (v2)
+
