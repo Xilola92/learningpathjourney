@@ -1,140 +1,94 @@
 /* =========================
-   LANGUAGE SWITCHER
+   ACTIVE NAV LINK
 ========================= */
+const navLinks = document.querySelectorAll(".nav-links a");
+const currentPage =
+  window.location.pathname.split("/").pop() || "index.html";
 
-/*
-HTML requirement (ВАЖНО, но ты уже это используешь):
-- Все переводимые элементы имеют атрибут: data-i18n="key"
-- Кнопки языков имеют: data-lang="en|de|ru|uz"
-*/
+navLinks.forEach(link => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
+});
 
+/* =========================
+   TRANSLATIONS
+========================= */
 const translations = {
-    en: {
-        nav_home: "Home",
-        nav_journey: "Journey",
-        nav_about: "About",
-        nav_contact: "Contact",
+  en: {
+    home_title: "My Learning Path",
+    home_subtitle:
+      "A personal journey through education, discipline, and growth.",
+    home_button: "Start the Journey",
 
-        hero_title: "My Learning Path",
-        hero_subtitle: "A personal journey through education, discipline, and growth.",
+    about_title: "About This Site",
+    journey_title: "My Journey",
+    contact_title: "Contact"
+  },
 
-        contact_title: "Contact",
-        contact_subtitle: "You can send me a message using the form below.",
-        form_name: "Your name",
-        form_email: "Your email",
-        form_message: "Your message",
-        form_send: "Send message"
-    },
+  de: {
+    home_title: "Mein Lernweg",
+    home_subtitle:
+      "Eine persönliche Reise durch Bildung, Disziplin und Wachstum.",
+    home_button: "Reise beginnen",
 
-    de: {
-        nav_home: "Start",
-        nav_journey: "Weg",
-        nav_about: "Über mich",
-        nav_contact: "Kontakt",
+    about_title: "Über diese Seite",
+    journey_title: "Mein Weg",
+    contact_title: "Kontakt"
+  },
 
-        hero_title: "Mein Lernweg",
-        hero_subtitle: "Ein persönlicher Weg durch Bildung, Disziplin und Wachstum.",
+  ru: {
+    home_title: "Мой путь обучения",
+    home_subtitle:
+      "Личный путь через образование, дисциплину и рост.",
+    home_button: "Начать путь",
 
-        contact_title: "Kontakt",
-        contact_subtitle: "Sie können mir über das Formular unten schreiben.",
-        form_name: "Ihr Name",
-        form_email: "Ihre E-Mail",
-        form_message: "Ihre Nachricht",
-        form_send: "Nachricht senden"
-    },
+    about_title: "О сайте",
+    journey_title: "Мой путь",
+    contact_title: "Контакты"
+  },
 
-    ru: {
-        nav_home: "Главная",
-        nav_journey: "Путь",
-        nav_about: "О сайте",
-        nav_contact: "Контакты",
+  uz: {
+    home_title: "Mening o‘rganish yo‘lim",
+    home_subtitle:
+      "Ta’lim, intizom va rivojlanish orqali shaxsiy yo‘l.",
+    home_button: "Yo‘lni boshlash",
 
-        hero_title: "Мой путь обучения",
-        hero_subtitle: "Личный путь через образование, дисциплину и рост.",
-
-        contact_title: "Контакт",
-        contact_subtitle: "Вы можете отправить мне сообщение через форму ниже.",
-        form_name: "Ваше имя",
-        form_email: "Ваш email",
-        form_message: "Ваше сообщение",
-        form_send: "Отправить"
-    },
-
-    uz: {
-        nav_home: "Bosh sahifa",
-        nav_journey: "Yo‘l",
-        nav_about: "Sayt haqida",
-        nav_contact: "Aloqa",
-
-        hero_title: "Mening o‘rganish yo‘lim",
-        hero_subtitle: "Ta’lim, intizom va o‘sish orqali shaxsiy yo‘l.",
-
-        contact_title: "Aloqa",
-        contact_subtitle: "Quyidagi forma orqali menga xabar yuborishingiz mumkin.",
-        form_name: "Ismingiz",
-        form_email: "Emailingiz",
-        form_message: "Xabaringiz",
-        form_send: "Yuborish"
-    }
+    about_title: "Sayt haqida",
+    journey_title: "Mening yo‘lim",
+    contact_title: "Aloqa"
+  }
 };
 
 /* =========================
-   APPLY TRANSLATION
+   LANGUAGE SWITCH
 ========================= */
+const langButtons = document.querySelectorAll(
+  ".language-switcher button"
+);
 
-function setLanguage(lang) {
-    if (!translations[lang]) return;
+langButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const lang = button.dataset.lang;
+    changeLanguage(lang);
+  });
+});
 
-    localStorage.setItem("lang", lang);
+function changeLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
 
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-
-    // input placeholders
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-        const key = el.getAttribute("data-i18n-placeholder");
-        if (translations[lang][key]) {
-            el.placeholder = translations[lang][key];
-        }
-    });
+  localStorage.setItem("siteLanguage", lang);
 }
 
 /* =========================
-   INIT
+   LOAD SAVED LANGUAGE
 ========================= */
-
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("lang") || "en";
-    setLanguage(savedLang);
-
-    document.querySelectorAll("[data-lang]").forEach(btn => {
-        btn.addEventListener("click", () => {
-            setLanguage(btn.dataset.lang);
-        });
-    });
-});
-
-/* =========================
-   MOBILE MENU (SAFE)
-========================= */
-
-/*
-HTML requirement:
-- Кнопка меню: id="menu-toggle"
-- Навигация: id="nav-links"
-*/
-
-document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav-links");
-
-    if (!toggle || !nav) return;
-
-    toggle.addEventListener("click", () => {
-        nav.classList.toggle("open");
-    });
-});
+const savedLang = localStorage.getItem("siteLanguage");
+if (savedLang) {
+  changeLanguage(savedLang);
+}
