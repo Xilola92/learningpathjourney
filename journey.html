@@ -2,75 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Journey | Learning Path Journey</title>
+  <title>Journey | Learning Path Journey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
-   <script src="js/main.js" defer></script>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
-<header class="header">
-  <div class="logo">LearningPathJourney</div>
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="journey.html">Journey</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
 
-  </nav>
-</header>
-
-<main class="journey">
-  <h1>My Journey</h1>
-  <p class="journey-subtitle">
-    Growth is not linear. This is my path.
-  </p>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-        <span class="year">Early Stage</span>
-        <h3>Foundations in Healthcare</h3>
-        <p>
-          The beginning of my professional awareness.  
-          Learning responsibility, discipline, and how real systems work under pressure.
-        </p>
-        
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">LearningPathJourney</a>
+  
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="journey.html">Journey</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
     </div>
+  </header>
+  
 
-    <div class="timeline-item">
-        <span class="year">Transition</span>
-        <h3>Migration & Adaptation</h3>
-        <p>
-          A radical change of environment, language, and rules.  
-          A phase that reshaped my resilience and identity.
-        </p>
-        
-    </div>
+<main class="page">
 
-    <div class="timeline-item">
-      <span class="year">2024</span>
-      <h3>Dentistry & Ausbildung</h3>
-      <p>
-        Entering dentistry and professional training.  
-        Precision, patience, and continuous learning became daily practice.
-      </p>
-    </div>
+  <section class="page-hero">
+    <h1 data-i18n="journey_title">My Journey</h1>
+    <p data-i18n="journey_intro">
+      Growth is not linear. This is my personal path.
+    </p>
+  </section>
 
-    <div class="timeline-item">
-      <span class="year">Now</span>
-      <h3>Technology & Self-Building</h3>
-      <p>
-        Learning web development and digital thinking.  
-        Building systems — not just following them.
-      </p>
-    </div>
+  <section class="journey-section">
+    <h2 data-i18n="stage1_title">Early Stage — Healthcare</h2>
+    <p data-i18n="stage1_text">
+      Learning responsibility, discipline, and how real systems work under pressure.
+    </p>
+  </section>
 
-  </div>
+  <section class="journey-section">
+    <h2 data-i18n="stage2_title">Migration & Adaptation</h2>
+    <p data-i18n="stage2_text">
+      A radical change of language, culture, and structure that reshaped my resilience.
+    </p>
+  </section>
+
+  <section class="journey-section">
+    <h2 data-i18n="stage3_title">Technology & Systems Thinking</h2>
+    <p data-i18n="stage3_text">
+      Building logic, automation mindset, and structured thinking through technology.
+    </p>
+  </section>
+
 </main>
 
 <footer class="footer">
-  <p>© 2025 LearningPathJourney.com</p>
+  <p>© 2025 LearningPathJourney</p>
 </footer>
 
 </body>
