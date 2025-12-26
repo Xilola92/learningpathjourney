@@ -1,83 +1,56 @@
-/* =====================
-   Base
-===================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-
-html, body {
-  font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at top, #1a1a1a 0%, #0b0b0b 60%);
-  color: #f2f2f2;
-  min-height: 100vh;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* =====================
-   Header
-===================== */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 28px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  padding: 16px 24px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.4px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav {
+.main-nav {
   display: flex;
-  justify-content: center;
-  gap: 36px;
+  gap: 28px;
 }
 
-.nav a {
-  font-size: 15px;
+.main-nav a {
   color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
   position: relative;
 }
 
-.nav a:hover {
-  color: #ffffff;
+.main-nav a:hover {
+  color: #fff;
 }
 
-.nav a::after {
+.main-nav a.active::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: width 0.3s ease;
-}
-
-.nav a:hover::after {
   width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
 }
 
-/* =====================
-   Language Switch
-===================== */
 .lang-switch {
   display: flex;
   gap: 8px;
@@ -85,207 +58,14 @@ a {
 
 .lang-switch button {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #cfcfcf;
-  padding: 4px 10px;
-  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
   font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .lang-switch button:hover {
-  border-color: #ffffff;
-  color: #ffffff;
+  background: rgba(255,255,255,0.15);
 }
-
-/* =====================
-   Hero (Index)
-===================== */
-.hero {
-  max-width: 900px;
-  margin: 120px auto 0;
-  padding: 0 24px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-
-.hero p {
-  font-size: 16px;
-  color: #b5b5b5;
-  margin-bottom: 42px;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.btn {
-  padding: 14px 26px;
-  border-radius: 28px;
-  border: 1px solid rgba(255,255,255,0.3);
-  background: transparent;
-  color: #ffffff;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: rgba(255,255,255,0.1);
-}
-
-/* =====================
-   Pages (Journey, About, Contact)
-===================== */
-.page {
-  max-width: 780px;
-  margin: 100px auto;
-  padding: 0 24px;
-}
-
-.page h1 {
-  font-size: 36px;
-  margin-bottom: 16px;
-}
-
-.page p {
-  font-size: 15px;
-  color: #b5b5b5;
-  line-height: 1.7;
-  margin-bottom: 24px;
-}
-
-/* =====================
-   Cards / Sections
-===================== */
-.card {
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0.02)
-  );
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 32px;
-  margin-bottom: 24px;
-}
-
-/* =====================
-   Contact Form
-===================== */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 32px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 14px;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #ffffff;
-}
-
-.contact-form button {
-  margin-top: 8px;
-  padding: 14px;
-  background: #ffffff;
-  color: #000000;
-  border: none;
-  border-radius: 14px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #e5e5e5;
-}
-
-.contact-alt {
-  margin-top: 32px;
-  font-size: 14px;
-  color: #aaaaaa;
-}
-
-/* =====================
-   Footer
-===================== */
-footer {
-  text-align: center;
-  padding: 48px 0 32px;
-  font-size: 13px;
-  color: #777;
-}
-/* ===== Contact page ===== */
-
-.contact-form {
-  max-width: 520px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
-  font-size: 15px;
-  outline: none;
-  transition: border 0.3s ease, background 0.3s ease;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.contact-form .btn {
-  margin-top: 8px;
-  align-self: center;
-  padding: 14px 40px;
-  border-radius: 999px;
-  background: #fff;
-  color: #000;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.contact-form .btn:hover {
-  transform: translateY(-1px);
-  opacity: 0.9;
-}
-
-
