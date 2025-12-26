@@ -144,3 +144,25 @@ translations.ru.contact_email_label = "Email";
 translations.uz.contact_title = "Aloqa";
 translations.uz.contact_intro = "Faqat professional aloqa uchun.";
 translations.uz.contact_email_label = "Email";
+function applyTranslations(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (translations[lang][key]) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+}
+
+document.querySelectorAll(".lang-switch button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    applyTranslations(btn.dataset.lang);
+  });
+});
+
