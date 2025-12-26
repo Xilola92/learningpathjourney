@@ -1,73 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | Learning Path Journey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" 
-     <script src="js/main.js" defer></script>
+  <title>Contact | Learning Path Journey</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
+
   <header class="header">
-    <div class="logo">LearningPathJourney</div>
-    <nav class="nav">
+    <div class="header-inner">
+      <a href="index.html" class="logo">LearningPathJourney</a>
+  
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="journey.html">Journey</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </header>
+  
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
+    </div>
+  </header>
+  
 
   <main class="page">
-    <div class="page-head">
-      <h1>Contact</h1>
-      <p class="muted">Ways to reach me</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <h2>Details</h2>
-        <div class="contact-list">
-          <div class="contact-item">
-            <span class="label">Email</span>
-            <span class="value">learningpathjourney@proton.me</span>
-          </div>
-          <div class="contact-item">
-            <span class="label">GitHub</span>
-            <span class="value">github.com/xilola92</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>Message</h2>
-        <form
-  class="form"
-  action="https://formspree.io/f/maqwrjbp"
-  method="POST"
->
-  <label>
-    <span>Your name</span>
-    <input type="text" name="name" required>
-  </label>
-
-  <label>
-    <span>Your email</span>
-    <input type="email" name="email" required>
-  </label>
-
-  <label>
-    <span>Your message</span>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-
-  <button type="submit" class="btn">Send message</button>
-</form>
-      </div>
-    </div>
+    <h1 data-i18n="contact_title">Contact</h1>
+    <p data-i18n="contact_subtitle">For professional communication only.</p>
+  
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/maqwrjbp"
+      method="POST"
+    >
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your name"
+        data-i18n-placeholder="name"
+      />
+  
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Your email"
+        data-i18n-placeholder="email"
+      />
+  
+      <textarea
+        name="message"
+        rows="5"
+        required
+        placeholder="Your message"
+        data-i18n-placeholder="message"
+      ></textarea>
+  
+      <!-- защита от ботов -->
+      <input type="hidden" name="_subject" value="New message from LearningPathJourney" />
+  
+      <button type="submit" data-i18n="send">Send message</button>
+    </form>
+  
+    <p class="contact-alt">
+      <span data-i18n="or_email">Or email directly:</span>
+      <a href="mailto:learningpathjourney@gmail.com">
+        learningpathjourney@gmail.com
+      </a>
+    </p>
   </main>
-  <footer class="footer">
-    <p>© 2025 LearningPathJourney</p>
-  </footer>
+  
+  
+
+<footer class="footer">
+  © 2025 LearningPathJourney
+</footer>
+
 </body>
 </html>
