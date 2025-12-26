@@ -1,34 +1,45 @@
+// --------------------
 // Active navigation link
-const links = document.querySelectorAll(".nav a");
-const currentPage = location.pathname.split("/").pop();
+// --------------------
+const navLinks = document.querySelectorAll(".nav a");
+const currentPage = location.pathname.split("/").pop() || "index.html";
 
-links.forEach(link => {
+navLinks.forEach(link => {
   if (link.getAttribute("href") === currentPage) {
     link.classList.add("active");
   }
 });
 
-// Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))?.scrollIntoView({
-      behavior: "smooth"
+// --------------------
+// Fade-in sections on scroll
+// --------------------
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
     });
-  });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll("section, .hero").forEach(el => {
+  el.classList.add("fade");
+  observer.observe(el);
 });
 
-// Basic form validation (UI only)
-const form = document.querySelector("form");
-if (form) {
-  form.addEventListener("submit", (e) => {
-    const email = form.querySelector('input[type="email"]');
-    if (email && !email.value.includes("@")) {
-      e.preventDefault();
-      alert("Please enter a valid email address.");
-    }
+// --------------------
+// Button hover effect (JS-controlled)
+// --------------------
+const mainButton = document.querySelector(".btn");
+
+if (mainButton) {
+  mainButton.addEventListener("mouseenter", () => {
+    mainButton.style.transform = "scale(1.05)";
+  });
+
+  mainButton.addEventListener("mouseleave", () => {
+    mainButton.style.transform = "scale(1)";
   });
 }
-// Add basic JavaScript interactions (v2)
-
-
