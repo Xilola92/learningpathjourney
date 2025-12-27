@@ -1,100 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | LearningPathJourney</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- JS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="container">
-    <nav class="nav">
-
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-        LearningPathJourney
-      </a>
-
-      <!-- NAV LINKS -->
-      <div class="nav-links">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="journey.html" data-i18n="nav_journey">Journey</a>
-        <a href="about.html" class="active" data-i18n="nav_about">About</a>
-        <a href="contact.html" data-i18n="nav_contact">Contact</a>
-      </div>
-
-      <!-- LANGUAGE SWITCH -->
-      <div class="language-switcher">
-        <button data-lang="en">EN</button>
-        <button data-lang="de">DE</button>
-        <button data-lang="ru">RU</button>
-        <button data-lang="uz">UZ</button>
-      </div>
-
+<header> <!-- ОДИНАКОВЫЙ ХЕДЕР -->
+  <div class="nav-container">
+    <div class="logo">LearningPathJourney</div>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="journey.html" data-i18n="nav_journey">Journey</a>
+      <a href="about.html" class="active" data-i18n="nav_about">About</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
     </nav>
+    <div class="language-switcher">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="uz">UZ</button>
+    </div>
   </div>
 </header>
 
-<!-- MAIN -->
-<main>
-
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1 data-i18n="about_title">About This Site</h1>
-      <p data-i18n="about_intro">
-        This website is a personal space for reflection, learning, and growth.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="content">
-    <div class="container">
-
-      <h2 data-i18n="about_purpose_title">Purpose</h2>
-      <p data-i18n="about_purpose_text">
-        The purpose of this site is not to impress, but to document a real learning
-        path built through discipline, consistency, and experience.
-      </p>
-
-      <h2 data-i18n="about_values_title">Values</h2>
-      <p data-i18n="about_values_text">
-        I value structured thinking, responsibility, and learning by doing.
-        Progress does not need to be fast — it needs to be honest.
-      </p>
-
-      <h2 data-i18n="about_background_title">Background</h2>
-      <p data-i18n="about_background_text">
-        My background includes healthcare and dentistry, where precision, ethics,
-        and teamwork are essential.
-      </p>
-
-      <h2 data-i18n="about_future_title">Looking Forward</h2>
-      <p data-i18n="about_future_text">
-        This site will evolve over time as my skills and understanding grow.
-        It reflects a long-term mindset rather than short-term results.
-      </p>
-
-    </div>
-  </section>
-
+<main class="container">
+  <h1 data-i18n="about_title">About This Site</h1>
+  <p data-i18n="about_text">
+    This website is a personal space for reflection, learning, and growth.
+  </p>
 </main>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    © 2025 LearningPathJourney
-  </div>
-</footer>
+<footer>© 2025 LearningPathJourney</footer>
 
 </body>
 </html>
