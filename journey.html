@@ -1,100 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey | LearningPathJourney</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- JS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey</title>
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="container">
-    <nav class="nav">
-
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-        LearningPathJourney
-      </a>
-
-      <!-- NAV LINKS -->
-      <div class="nav-links">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="journey.html" class="active" data-i18n="nav_journey">Journey</a>
-        <a href="about.html" data-i18n="nav_about">About</a>
-        <a href="contact.html" data-i18n="nav_contact">Contact</a>
-      </div>
-
-      <!-- LANGUAGE SWITCH -->
-      <div class="language-switcher">
-        <button data-lang="en">EN</button>
-        <button data-lang="de">DE</button>
-        <button data-lang="ru">RU</button>
-        <button data-lang="uz">UZ</button>
-      </div>
-
+  <div class="nav-container">
+    <div class="logo">LearningPathJourney</div>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="journey.html" class="active" data-i18n="nav_journey">Journey</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
     </nav>
+    <div class="language-switcher">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="uz">UZ</button>
+    </div>
   </div>
 </header>
 
-<!-- MAIN -->
-<main>
-
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1 data-i18n="journey_title">My Journey</h1>
-      <p data-i18n="journey_intro">
-        This page documents my personal and professional development over time.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="content">
-    <div class="container">
-
-      <h2 data-i18n="journey_phase1_title">Phase 1 — Healthcare Foundation</h2>
-      <p data-i18n="journey_phase1_text">
-        I began my professional path in healthcare, where I learned discipline,
-        responsibility, and structured work in real clinical environments.
-      </p>
-
-      <h2 data-i18n="journey_phase2_title">Phase 2 — Dentistry</h2>
-      <p data-i18n="journey_phase2_text">
-        Working in dentistry strengthened my attention to detail, precision,
-        and communication with patients and medical teams.
-      </p>
-
-      <h2 data-i18n="journey_phase3_title">Phase 3 — Technology</h2>
-      <p data-i18n="journey_phase3_text">
-        I am now transitioning into technology, focusing on logic, systems,
-        and continuous learning through practice.
-      </p>
-
-      <h2 data-i18n="journey_future_title">Looking Forward</h2>
-      <p data-i18n="journey_future_text">
-        This journey is ongoing. The goal is not speed, but consistency,
-        growth, and long-term mastery.
-      </p>
-
-    </div>
-  </section>
-
+<main class="container">
+  <h1 data-i18n="journey_title">My Journey</h1>
+  <p data-i18n="journey_text">
+    This page documents my personal and professional development.
+  </p>
 </main>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    © 2025 LearningPathJourney
-  </div>
-</footer>
+<footer>© 2025 LearningPathJourney</footer>
 
 </body>
 </html>
