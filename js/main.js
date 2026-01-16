@@ -4,7 +4,8 @@ const translations = {
   ru:{ nav_home:"Главная", nav_journey:"Путь", nav_about:"О сайте", nav_contact:"Контакты",
     home_title:"Мой путь обучения", home_subtitle:"Личный путь через образование и рост."}
 };
-
+<link rel="stylesheet" text="style/css"
+href="style.css">
 function setLang(lang){
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     el.textContent = translations[lang][el.dataset.i18n];
@@ -16,3 +17,4 @@ document.querySelectorAll(".language-switcher button")
   .forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
 
 setLang(localStorage.getItem("lang") || "en");
+
