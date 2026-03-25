@@ -2,460 +2,428 @@ document.addEventListener("DOMContentLoaded", () => {
   const translations = {
     en: {
       "nav.home": "Home",
-      "nav.journey": "Journey",
-      "nav.articles": "Articles",
-      "nav.news": "News",
-      "nav.courses": "Courses",
-      "nav.ai": "AI Chat",
       "nav.about": "About",
       "nav.connect": "Connect",
 
-      "hero.eyebrow": "Dentistry • Education • Articles • AI Support",
-      "hero.title":
-        "A modern dental learning platform for knowledge, growth, and premium education",
-      "hero.description":
-        "This platform brings together a personal dental journey, educational articles, current news, AI-guided support, and future private paid courses in one modern and elegant digital space.",
-      "hero.primaryButton": "Explore Journey",
-      "hero.secondaryButton": "View Private Courses",
-      "hero.badge1": "4 Languages",
-      "hero.badge2": "AI Chat",
-      "hero.badge3": "Private Courses",
+      "home.eyebrow": "Dentistry • Education • Articles • Premium Learning",
+      "home.title": "A modern platform for dental education, articles, news, and private courses",
+      "home.description":
+        "Learning Path Journey is a modern multilingual platform dedicated to dentistry, dental assisting, educational articles, useful updates, and future premium learning.",
+      "home.primaryBtn": "Discover the Platform",
+      "home.secondaryBtn": "Get in Touch",
+      "home.badge1": "4 Languages",
+      "home.badge2": "Modern Design",
+      "home.badge3": "Private Courses",
+      "home.cardLabel": "Platform Focus",
+      "home.cardTitle": "Built for growth, clarity, and meaningful learning",
+      "home.cardText":
+        "A refined digital space for personal journey, educational content, professional topics, and a future private premium area in dentistry.",
+      "home.tag1": "Journey",
+      "home.tag2": "Articles",
+      "home.tag3": "News",
+      "home.tag4": "Courses",
+      "home.sectionEyebrow": "What the platform includes",
+      "home.sectionTitle": "A clean structure for learning and development",
+      "home.feature1Title": "Personal Journey",
+      "home.feature1Text":
+        "The story behind the platform, shaped by learning, experience, and growth.",
+      "home.feature2Title": "Articles & News",
+      "home.feature2Text":
+        "Educational content, professional insights, and useful updates from the dental field.",
+      "home.feature3Title": "Private Premium Courses",
+      "home.feature3Text":
+        "A future closed learning area for deeper and more focused study.",
+      "home.languagesEyebrow": "Multilingual Access",
+      "home.languagesTitle": "Available in four languages",
 
-      "heroCard.label": "Platform Vision",
-      "heroCard.title":
-        "From personal journey to trusted dental education platform",
-      "heroCard.description":
-        "A modern place for learning, articles, professional insight, current updates, and deeper premium study in dentistry and assisting.",
+      "about.eyebrow": "About the Platform",
+      "about.title": "A modern dental education platform built with clarity, purpose, and growth",
+      "about.description":
+        "Learning Path Journey is a multilingual digital space dedicated to dentistry, dental assisting, educational articles, useful updates, and future private premium learning.",
+      "about.missionLabel": "Mission",
+      "about.missionTitle": "Why this platform exists",
+      "about.missionText1":
+        "This platform is created to combine education, professional development, and meaningful content in one elegant and structured space.",
+      "about.missionText2":
+        "It is not only a website, but the beginning of a stronger educational direction in dentistry and dental assisting.",
+      "about.focusLabel": "Core Focus",
+      "about.focus1": "Dentistry",
+      "about.focus2": "Dental assisting",
+      "about.focus3": "Educational articles",
+      "about.focus4": "Useful news and updates",
+      "about.focus5": "Private premium courses",
+      "about.focus6": "Multilingual learning",
+      "about.valuesEyebrow": "Values",
+      "about.valuesTitle": "What defines the platform",
+      "about.card1Title": "Clarity",
+      "about.card1Text":
+        "Knowledge should be understandable, structured, and accessible.",
+      "about.card2Title": "Growth",
+      "about.card2Text":
+        "Learning is a process of continuous personal and professional development.",
+      "about.card3Title": "Depth",
+      "about.card3Text":
+        "The goal is not only to inform, but to create real educational value.",
+      "about.visionEyebrow": "Vision",
+      "about.visionTitle": "From a personal path to a trusted educational brand",
+      "about.visionText":
+        "The long-term vision is to build a refined and reliable dental education platform with articles, guided learning, premium courses, and meaningful multilingual access.",
 
-      "overview.eyebrow": "Core Platform",
-      "overview.title": "Everything in one elegant learning space",
-      "overview.card1Title": "My Dental Journey",
-      "overview.card1Text":
-        "A personal and professional story of growth, study, experience, and development in dentistry.",
-      "overview.card2Title": "Educational Articles",
-      "overview.card2Text":
-        "Structured articles about dental assisting, learning, clinical topics, and professional growth.",
-      "overview.card3Title": "Dental News",
-      "overview.card3Text":
-        "Useful updates, modern developments, and relevant topics from the world of dentistry.",
-      "overview.card4Title": "Private Paid Courses",
-      "overview.card4Text":
-        "Exclusive premium content with restricted access for focused and deeper learning.",
-
-      "journey.eyebrow": "Journey",
-      "journey.title":
-        "A path shaped by discipline, experience, and purpose",
-      "journey.description":
-        "This section is dedicated to the story behind the platform: the learning path, the real challenges, the professional development, and the deeper meaning behind growth in dentistry.",
-      "journey.link": "Read full journey →",
-      "journey.sideLabel": "What will be here",
-      "journey.point1": "Personal timeline",
-      "journey.point2": "Professional milestones",
-      "journey.point3": "Lessons and reflections",
-      "journey.point4": "Growth in dental field",
-
-      "articles.eyebrow": "Articles",
-      "articles.title":
-        "Clear, structured, and useful educational content",
-      "articles.description":
-        "The article section is built for learners, assistants, and anyone interested in dentistry. It will provide useful knowledge in a clear and elegant form.",
-      "articles.sideLabel": "Article Directions",
-      "articles.point1": "Dental assisting knowledge",
-      "articles.point2": "Study support",
-      "articles.point3": "Practical insights",
-      "articles.point4": "Professional topics",
-
-      "news.eyebrow": "News",
-      "news.title": "Modern updates from the dental world",
-      "news.tag1": "Trends",
-      "news.card1Title": "Latest developments in modern dentistry",
-      "news.card1Text":
-        "A future space for important updates, innovations, and useful changes in the dental field.",
-      "news.tag2": "Education",
-      "news.card2Title": "Learning and professional updates",
-      "news.card2Text":
-        "New opportunities, study-related information, and relevant educational topics can be presented here.",
-      "news.tag3": "Community",
-      "news.card3Title": "Useful information with real value",
-      "news.card3Text":
-        "Not just news, but meaningful information that connects learning and professional identity.",
-
-      "courses.eyebrow": "Private Premium Area",
-      "courses.title": "Exclusive paid courses with restricted access",
-      "courses.description":
-        "This platform will include private premium learning for users who want deeper, more focused, and more serious study in dentistry and dental assisting.",
-      "courses.badge1": "Private Access",
-      "courses.badge2": "Premium Lessons",
-      "courses.badge3": "Structured Learning",
-      "courses.sideLabel": "Premium Preview",
-      "courses.sideTitle": "Closed educational space",
-      "courses.sideText":
-        "Only registered users with paid access will later be able to enter this premium area and study exclusive materials.",
-      "courses.locked": "Members Only",
-
-      "ai.eyebrow": "AI Assistant",
-      "ai.title": "Ask the dental learning assistant",
-      "ai.description":
-        "Ask about articles, dentistry topics, educational directions, and the future premium course area.",
-      "ai.chatTitle": "AI Dental Assistant",
-      "ai.chatSubtitle": "Online learning support",
-      "ai.status": "Active",
-      "ai.welcome":
-        "Hello! I can help you navigate articles, learning topics, and future dental education content.",
-      "ai.placeholder":
-        "Ask something about dentistry, articles, or courses...",
-      "ai.send": "Send",
-
-      "languages.eyebrow": "Multilingual Platform",
-      "languages.title": "Accessible in four languages",
+      "contact.eyebrow": "Connect",
+      "contact.title": "Let’s connect for learning, ideas, and meaningful collaboration",
+      "contact.description":
+        "This space is created for communication, educational collaboration, article ideas, professional networking, and future private course inquiries in dentistry and dental assisting.",
+      "contact.infoLabel": "Contact Information",
+      "contact.infoTitle": "Open for communication",
+      "contact.infoText":
+        "You can get in touch regarding educational content, dentistry, dental assisting, future private learning, article ideas, and professional collaboration.",
+      "contact.focusLabel": "Focus",
+      "contact.focusText":
+        "Dentistry, dental assisting, articles, news, premium learning",
+      "contact.languagesLabel": "Languages",
+      "contact.languagesText": "German, Russian, English, Uzbek",
+      "contact.emailLabel": "Email",
+      "contact.note":
+        "For direct contact, you can also send an email manually. Form integration can be connected later for automatic delivery.",
+      "contact.formLabel": "Send a Message",
+      "contact.formTitle": "Write to us",
+      "contact.nameLabel": "Name",
+      "contact.namePlaceholder": "Your name",
+      "contact.emailFieldLabel": "Email",
+      "contact.emailPlaceholder": "your@email.com",
+      "contact.topicLabel": "Topic",
+      "contact.topicPlaceholder": "Articles, courses, collaboration...",
+      "contact.messageLabel": "Message",
+      "contact.messagePlaceholder": "Write your message...",
+      "contact.sendButton": "Send Message",
+      "contact.footerText": "Prefer direct contact? Send a message manually by email.",
+      "contact.directEmail": "Open email →",
+      "contact.bottomEyebrow": "Multilingual Platform",
+      "contact.bottomTitle": "Available in four languages",
 
       "footer.description":
-        "A modern dental education platform with articles, news, AI support, personal journey, and premium private courses.",
+        "A modern dental education platform with articles, news, personal journey, and premium private courses.",
       "footer.navigation": "Navigation",
       "footer.languages": "Languages"
     },
 
     de: {
       "nav.home": "Startseite",
-      "nav.journey": "Weg",
-      "nav.articles": "Artikel",
-      "nav.news": "Neuigkeiten",
-      "nav.courses": "Kurse",
-      "nav.ai": "KI-Chat",
       "nav.about": "Über uns",
       "nav.connect": "Kontakt",
 
-      "hero.eyebrow": "Zahnmedizin • Bildung • Artikel • KI-Unterstützung",
-      "hero.title":
-        "Eine moderne Lernplattform für Zahnmedizin mit Wissen, Wachstum und Premium-Bildung",
-      "hero.description":
-        "Diese Plattform vereint einen persönlichen Weg in der Zahnmedizin, Bildungsartikel, aktuelle Neuigkeiten, KI-gestützte Unterstützung und zukünftige private kostenpflichtige Kurse in einem modernen und eleganten digitalen Raum.",
-      "hero.primaryButton": "Weg entdecken",
-      "hero.secondaryButton": "Private Kurse ansehen",
-      "hero.badge1": "4 Sprachen",
-      "hero.badge2": "KI-Chat",
-      "hero.badge3": "Private Kurse",
+      "home.eyebrow": "Zahnmedizin • Bildung • Artikel • Premium-Lernen",
+      "home.title": "Eine moderne Plattform für zahnmedizinische Bildung, Artikel, Neuigkeiten und private Kurse",
+      "home.description":
+        "Learning Path Journey ist eine moderne mehrsprachige Plattform für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges Premium-Lernen.",
+      "home.primaryBtn": "Plattform entdecken",
+      "home.secondaryBtn": "Kontakt aufnehmen",
+      "home.badge1": "4 Sprachen",
+      "home.badge2": "Modernes Design",
+      "home.badge3": "Private Kurse",
+      "home.cardLabel": "Plattform-Fokus",
+      "home.cardTitle": "Entwickelt für Wachstum, Klarheit und sinnvolles Lernen",
+      "home.cardText":
+        "Ein moderner digitaler Raum für den persönlichen Weg, Bildungsinhalte, berufliche Themen und einen zukünftigen privaten Premium-Bereich in der Zahnmedizin.",
+      "home.tag1": "Weg",
+      "home.tag2": "Artikel",
+      "home.tag3": "Neuigkeiten",
+      "home.tag4": "Kurse",
+      "home.sectionEyebrow": "Was die Plattform umfasst",
+      "home.sectionTitle": "Eine klare Struktur für Lernen und Entwicklung",
+      "home.feature1Title": "Persönlicher Weg",
+      "home.feature1Text":
+        "Die Geschichte hinter der Plattform, geprägt von Lernen, Erfahrung und Wachstum.",
+      "home.feature2Title": "Artikel & Neuigkeiten",
+      "home.feature2Text":
+        "Bildungsinhalte, professionelle Einblicke und nützliche Updates aus dem dentalen Bereich.",
+      "home.feature3Title": "Private Premium-Kurse",
+      "home.feature3Text":
+        "Ein zukünftiger geschlossener Lernbereich für tieferes und fokussierteres Studium.",
+      "home.languagesEyebrow": "Mehrsprachiger Zugang",
+      "home.languagesTitle": "In vier Sprachen verfügbar",
 
-      "heroCard.label": "Plattform-Vision",
-      "heroCard.title":
-        "Vom persönlichen Weg zu einer vertrauenswürdigen Bildungsplattform für Zahnmedizin",
-      "heroCard.description":
-        "Ein moderner Ort für Lernen, Artikel, professionelle Einblicke, aktuelle Entwicklungen und vertieftes Premium-Studium in Zahnmedizin und Assistenz.",
+      "about.eyebrow": "Über die Plattform",
+      "about.title": "Eine moderne Bildungsplattform für Zahnmedizin, aufgebaut mit Klarheit, Sinn und Wachstum",
+      "about.description":
+        "Learning Path Journey ist ein mehrsprachiger digitaler Raum für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges privates Premium-Lernen.",
+      "about.missionLabel": "Mission",
+      "about.missionTitle": "Warum diese Plattform existiert",
+      "about.missionText1":
+        "Diese Plattform wurde geschaffen, um Bildung, berufliche Entwicklung und bedeutungsvolle Inhalte in einem eleganten und strukturierten Raum zu vereinen.",
+      "about.missionText2":
+        "Sie ist nicht nur eine Website, sondern der Beginn einer stärkeren Bildungsrichtung in der Zahnmedizin und zahnmedizinischen Assistenz.",
+      "about.focusLabel": "Kernfokus",
+      "about.focus1": "Zahnmedizin",
+      "about.focus2": "Zahnmedizinische Assistenz",
+      "about.focus3": "Bildungsartikel",
+      "about.focus4": "Nützliche Neuigkeiten und Updates",
+      "about.focus5": "Private Premium-Kurse",
+      "about.focus6": "Mehrsprachiges Lernen",
+      "about.valuesEyebrow": "Werte",
+      "about.valuesTitle": "Was die Plattform definiert",
+      "about.card1Title": "Klarheit",
+      "about.card1Text":
+        "Wissen sollte verständlich, strukturiert und zugänglich sein.",
+      "about.card2Title": "Wachstum",
+      "about.card2Text":
+        "Lernen ist ein Prozess der kontinuierlichen persönlichen und beruflichen Entwicklung.",
+      "about.card3Title": "Tiefe",
+      "about.card3Text":
+        "Das Ziel ist nicht nur zu informieren, sondern echten Bildungswert zu schaffen.",
+      "about.visionEyebrow": "Vision",
+      "about.visionTitle": "Von einem persönlichen Weg zu einer vertrauenswürdigen Bildungsmarke",
+      "about.visionText":
+        "Die langfristige Vision ist der Aufbau einer hochwertigen und verlässlichen Bildungsplattform für Zahnmedizin mit Artikeln, geführtem Lernen, Premium-Kursen und sinnvoller mehrsprachiger Zugänglichkeit.",
 
-      "overview.eyebrow": "Plattform-Kern",
-      "overview.title": "Alles in einem eleganten Lernraum",
-      "overview.card1Title": "Mein zahnmedizinischer Weg",
-      "overview.card1Text":
-        "Eine persönliche und berufliche Geschichte von Wachstum, Lernen, Erfahrung und Entwicklung in der Zahnmedizin.",
-      "overview.card2Title": "Bildungsartikel",
-      "overview.card2Text":
-        "Strukturierte Artikel über zahnmedizinische Assistenz, Lernen, klinische Themen und berufliche Entwicklung.",
-      "overview.card3Title": "Neuigkeiten aus der Zahnmedizin",
-      "overview.card3Text":
-        "Nützliche Updates, moderne Entwicklungen und relevante Themen aus der Welt der Zahnmedizin.",
-      "overview.card4Title": "Private bezahlte Kurse",
-      "overview.card4Text":
-        "Exklusive Premium-Inhalte mit eingeschränktem Zugang für fokussiertes und tieferes Lernen.",
-
-      "journey.eyebrow": "Weg",
-      "journey.title":
-        "Ein Weg, geprägt von Disziplin, Erfahrung und Sinn",
-      "journey.description":
-        "Dieser Bereich ist der Geschichte hinter der Plattform gewidmet: dem Lernweg, den echten Herausforderungen, der beruflichen Entwicklung und der tieferen Bedeutung des Wachstums in der Zahnmedizin.",
-      "journey.link": "Gesamten Weg lesen →",
-      "journey.sideLabel": "Was hier sein wird",
-      "journey.point1": "Persönliche Zeitleiste",
-      "journey.point2": "Berufliche Meilensteine",
-      "journey.point3": "Lektionen und Reflexionen",
-      "journey.point4": "Wachstum im dentalen Bereich",
-
-      "articles.eyebrow": "Artikel",
-      "articles.title":
-        "Klare, strukturierte und nützliche Bildungsinhalte",
-      "articles.description":
-        "Der Artikelbereich ist für Lernende, Assistentinnen und Assistenten sowie alle gedacht, die sich für Zahnmedizin interessieren. Er bietet wertvolles Wissen in klarer und eleganter Form.",
-      "articles.sideLabel": "Artikelrichtungen",
-      "articles.point1": "Wissen zur Assistenz",
-      "articles.point2": "Lernunterstützung",
-      "articles.point3": "Praktische Einblicke",
-      "articles.point4": "Berufliche Themen",
-
-      "news.eyebrow": "Neuigkeiten",
-      "news.title": "Moderne Updates aus der Dentalwelt",
-      "news.tag1": "Trends",
-      "news.card1Title": "Neueste Entwicklungen in der modernen Zahnmedizin",
-      "news.card1Text":
-        "Ein zukünftiger Bereich für wichtige Updates, Innovationen und nützliche Veränderungen im dentalen Feld.",
-      "news.tag2": "Bildung",
-      "news.card2Title": "Lernen und berufliche Updates",
-      "news.card2Text":
-        "Neue Möglichkeiten, lernbezogene Informationen und relevante Bildungsthemen können hier präsentiert werden.",
-      "news.tag3": "Community",
-      "news.card3Title": "Nützliche Informationen mit echtem Wert",
-      "news.card3Text":
-        "Nicht nur Nachrichten, sondern bedeutungsvolle Informationen, die Lernen und berufliche Identität verbinden.",
-
-      "courses.eyebrow": "Privater Premium-Bereich",
-      "courses.title": "Exklusive bezahlte Kurse mit eingeschränktem Zugang",
-      "courses.description":
-        "Diese Plattform wird privates Premium-Lernen für Nutzerinnen und Nutzer enthalten, die ein tieferes, fokussierteres und ernsteres Studium in Zahnmedizin und Assistenz wünschen.",
-      "courses.badge1": "Privater Zugang",
-      "courses.badge2": "Premium-Lektionen",
-      "courses.badge3": "Strukturiertes Lernen",
-      "courses.sideLabel": "Premium-Vorschau",
-      "courses.sideTitle": "Geschlossener Bildungsraum",
-      "courses.sideText":
-        "Nur registrierte Nutzer mit bezahltem Zugang können später diesen Premium-Bereich betreten und exklusive Materialien lernen.",
-      "courses.locked": "Nur für Mitglieder",
-
-      "ai.eyebrow": "KI-Assistent",
-      "ai.title": "Frage den dentalen Lernassistenten",
-      "ai.description":
-        "Frage nach Artikeln, zahnmedizinischen Themen, Bildungsrichtungen und dem zukünftigen Premium-Kursbereich.",
-      "ai.chatTitle": "KI-Zahnmedizinischer Assistent",
-      "ai.chatSubtitle": "Online-Lernunterstützung",
-      "ai.status": "Aktiv",
-      "ai.welcome":
-        "Hallo! Ich kann dir helfen, Artikel, Lernthemen und zukünftige Inhalte zur zahnmedizinischen Bildung zu finden.",
-      "ai.placeholder":
-        "Frage etwas über Zahnmedizin, Artikel oder Kurse...",
-      "ai.send": "Senden",
-
-      "languages.eyebrow": "Mehrsprachige Plattform",
-      "languages.title": "In vier Sprachen zugänglich",
+      "contact.eyebrow": "Kontakt",
+      "contact.title": "Lassen Sie uns für Lernen, Ideen und sinnvolle Zusammenarbeit in Kontakt treten",
+      "contact.description":
+        "Dieser Bereich ist für Kommunikation, Bildungszusammenarbeit, Artikelideen, berufliches Networking und zukünftige Anfragen zu privaten Kursen in Zahnmedizin und Assistenz gedacht.",
+      "contact.infoLabel": "Kontaktinformationen",
+      "contact.infoTitle": "Offen für Kommunikation",
+      "contact.infoText":
+        "Sie können uns zu Bildungsinhalten, Zahnmedizin, zahnmedizinischer Assistenz, zukünftigem privatem Lernen, Artikelideen und beruflicher Zusammenarbeit kontaktieren.",
+      "contact.focusLabel": "Fokus",
+      "contact.focusText":
+        "Zahnmedizin, zahnmedizinische Assistenz, Artikel, Neuigkeiten, Premium-Lernen",
+      "contact.languagesLabel": "Sprachen",
+      "contact.languagesText": "Deutsch, Russisch, Englisch, Usbekisch",
+      "contact.emailLabel": "E-Mail",
+      "contact.note":
+        "Für direkten Kontakt können Sie auch manuell eine E-Mail senden. Eine Formularintegration kann später für die automatische Zustellung verbunden werden.",
+      "contact.formLabel": "Nachricht senden",
+      "contact.formTitle": "Schreiben Sie uns",
+      "contact.nameLabel": "Name",
+      "contact.namePlaceholder": "Ihr Name",
+      "contact.emailFieldLabel": "E-Mail",
+      "contact.emailPlaceholder": "ihre@email.com",
+      "contact.topicLabel": "Thema",
+      "contact.topicPlaceholder": "Artikel, Kurse, Zusammenarbeit...",
+      "contact.messageLabel": "Nachricht",
+      "contact.messagePlaceholder": "Schreiben Sie Ihre Nachricht...",
+      "contact.sendButton": "Nachricht senden",
+      "contact.footerText": "Bevorzugen Sie direkten Kontakt? Senden Sie eine Nachricht manuell per E-Mail.",
+      "contact.directEmail": "E-Mail öffnen →",
+      "contact.bottomEyebrow": "Mehrsprachige Plattform",
+      "contact.bottomTitle": "In vier Sprachen verfügbar",
 
       "footer.description":
-        "Eine moderne Bildungsplattform für Zahnmedizin mit Artikeln, Neuigkeiten, KI-Unterstützung, persönlichem Weg und privaten Premium-Kursen.",
+        "Eine moderne Bildungsplattform für Zahnmedizin mit Artikeln, Neuigkeiten, persönlichem Weg und privaten Premium-Kursen.",
       "footer.navigation": "Navigation",
       "footer.languages": "Sprachen"
     },
 
     ru: {
       "nav.home": "Главная",
-      "nav.journey": "Путь",
-      "nav.articles": "Статьи",
-      "nav.news": "Новости",
-      "nav.courses": "Курсы",
-      "nav.ai": "ИИ-чат",
       "nav.about": "О платформе",
       "nav.connect": "Связь",
 
-      "hero.eyebrow": "Стоматология • Образование • Статьи • ИИ-помощь",
-      "hero.title":
-        "Современная образовательная платформа по стоматологии для знаний, роста и премиум-обучения",
-      "hero.description":
-        "Эта платформа объединяет личный путь в стоматологии, обучающие статьи, актуальные новости, поддержку на базе ИИ и будущие приватные платные курсы в одном современном и элегантном цифровом пространстве.",
-      "hero.primaryButton": "Посмотреть путь",
-      "hero.secondaryButton": "Открыть приватные курсы",
-      "hero.badge1": "4 языка",
-      "hero.badge2": "ИИ-чат",
-      "hero.badge3": "Приватные курсы",
+      "home.eyebrow": "Стоматология • Образование • Статьи • Премиум-обучение",
+      "home.title": "Современная платформа для стоматологического образования, статей, новостей и приватных курсов",
+      "home.description":
+        "Learning Path Journey — это современная многоязычная платформа, посвящённая стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему премиум-обучению.",
+      "home.primaryBtn": "Открыть платформу",
+      "home.secondaryBtn": "Связаться",
+      "home.badge1": "4 языка",
+      "home.badge2": "Современный дизайн",
+      "home.badge3": "Приватные курсы",
+      "home.cardLabel": "Фокус платформы",
+      "home.cardTitle": "Создано для роста, ясности и осмысленного обучения",
+      "home.cardText":
+        "Современное цифровое пространство для личного пути, образовательного контента, профессиональных тем и будущей приватной премиум-зоны в стоматологии.",
+      "home.tag1": "Путь",
+      "home.tag2": "Статьи",
+      "home.tag3": "Новости",
+      "home.tag4": "Курсы",
+      "home.sectionEyebrow": "Что включает платформа",
+      "home.sectionTitle": "Чистая структура для обучения и развития",
+      "home.feature1Title": "Личный путь",
+      "home.feature1Text":
+        "История платформы, сформированная обучением, опытом и ростом.",
+      "home.feature2Title": "Статьи и новости",
+      "home.feature2Text":
+        "Образовательный контент, профессиональные наблюдения и полезные обновления из мира стоматологии.",
+      "home.feature3Title": "Приватные премиум-курсы",
+      "home.feature3Text":
+        "Будущая закрытая зона обучения для более глубокого и сфокусированного изучения.",
+      "home.languagesEyebrow": "Многоязычный доступ",
+      "home.languagesTitle": "Доступно на четырёх языках",
 
-      "heroCard.label": "Видение платформы",
-      "heroCard.title":
-        "От личного пути к надёжной образовательной платформе по стоматологии",
-      "heroCard.description":
-        "Современное пространство для обучения, статей, профессиональных наблюдений, актуальных обновлений и углублённого премиум-обучения в стоматологии и ассистировании.",
+      "about.eyebrow": "О платформе",
+      "about.title": "Современная образовательная платформа по стоматологии, созданная с ясностью, смыслом и ростом",
+      "about.description":
+        "Learning Path Journey — это многоязычное цифровое пространство, посвящённое стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему приватному премиум-обучению.",
+      "about.missionLabel": "Миссия",
+      "about.missionTitle": "Почему эта платформа существует",
+      "about.missionText1":
+        "Эта платформа создана, чтобы объединить образование, профессиональное развитие и содержательный контент в одном элегантном и структурированном пространстве.",
+      "about.missionText2":
+        "Это не просто сайт, а начало более сильного образовательного направления в стоматологии и стоматологическом ассистировании.",
+      "about.focusLabel": "Основной фокус",
+      "about.focus1": "Стоматология",
+      "about.focus2": "Стоматологическое ассистирование",
+      "about.focus3": "Обучающие статьи",
+      "about.focus4": "Полезные новости и обновления",
+      "about.focus5": "Приватные премиум-курсы",
+      "about.focus6": "Многоязычное обучение",
+      "about.valuesEyebrow": "Ценности",
+      "about.valuesTitle": "Что определяет платформу",
+      "about.card1Title": "Ясность",
+      "about.card1Text":
+        "Знания должны быть понятными, структурированными и доступными.",
+      "about.card2Title": "Рост",
+      "about.card2Text":
+        "Обучение — это процесс постоянного личного и профессионального развития.",
+      "about.card3Title": "Глубина",
+      "about.card3Text":
+        "Цель не только информировать, но и создавать реальную образовательную ценность.",
+      "about.visionEyebrow": "Видение",
+      "about.visionTitle": "От личного пути к надёжному образовательному бренду",
+      "about.visionText":
+        "Долгосрочное видение — создать качественную и надёжную образовательную платформу по стоматологии со статьями, направляемым обучением, премиум-курсами и meaningful многоязычным доступом.",
 
-      "overview.eyebrow": "Основа платформы",
-      "overview.title": "Всё в одном элегантном пространстве обучения",
-      "overview.card1Title": "Мой путь в стоматологии",
-      "overview.card1Text":
-        "Личная и профессиональная история роста, учёбы, опыта и развития в стоматологии.",
-      "overview.card2Title": "Обучающие статьи",
-      "overview.card2Text":
-        "Структурированные статьи о стоматологическом ассистировании, обучении, клинических темах и профессиональном развитии.",
-      "overview.card3Title": "Новости стоматологии",
-      "overview.card3Text":
-        "Полезные обновления, современные изменения и важные темы из мира стоматологии.",
-      "overview.card4Title": "Приватные платные курсы",
-      "overview.card4Text":
-        "Эксклюзивный премиум-контент с ограниченным доступом для более глубокого и сфокусированного обучения.",
-
-      "journey.eyebrow": "Путь",
-      "journey.title":
-        "Путь, сформированный дисциплиной, опытом и смыслом",
-      "journey.description":
-        "Этот раздел посвящён истории платформы: пути обучения, реальным трудностям, профессиональному развитию и более глубокому смыслу роста в стоматологии.",
-      "journey.link": "Читать весь путь →",
-      "journey.sideLabel": "Что здесь будет",
-      "journey.point1": "Личная хронология",
-      "journey.point2": "Профессиональные этапы",
-      "journey.point3": "Уроки и размышления",
-      "journey.point4": "Рост в стоматологической сфере",
-
-      "articles.eyebrow": "Статьи",
-      "articles.title":
-        "Понятный, структурированный и полезный образовательный контент",
-      "articles.description":
-        "Раздел статей создан для учащихся, ассистентов и всех, кто интересуется стоматологией. Он будет давать ценные знания в ясной и красивой форме.",
-      "articles.sideLabel": "Направления статей",
-      "articles.point1": "Знания по ассистированию",
-      "articles.point2": "Поддержка в обучении",
-      "articles.point3": "Практические наблюдения",
-      "articles.point4": "Профессиональные темы",
-
-      "news.eyebrow": "Новости",
-      "news.title": "Современные обновления из мира стоматологии",
-      "news.tag1": "Тренды",
-      "news.card1Title": "Последние изменения в современной стоматологии",
-      "news.card1Text":
-        "Будущее пространство для важных обновлений, инноваций и полезных изменений в стоматологической сфере.",
-      "news.tag2": "Образование",
-      "news.card2Title": "Обучение и профессиональные обновления",
-      "news.card2Text":
-        "Здесь могут появляться новые возможности, учебная информация и важные образовательные темы.",
-      "news.tag3": "Сообщество",
-      "news.card3Title": "Полезная информация с реальной ценностью",
-      "news.card3Text":
-        "Не просто новости, а содержательная информация, которая соединяет обучение и профессиональную идентичность.",
-
-      "courses.eyebrow": "Приватная премиум-зона",
-      "courses.title": "Эксклюзивные платные курсы с закрытым доступом",
-      "courses.description":
-        "Эта платформа будет включать приватное премиум-обучение для пользователей, которым нужно более глубокое, серьёзное и сфокусированное изучение стоматологии и ассистирования.",
-      "courses.badge1": "Приватный доступ",
-      "courses.badge2": "Премиум-уроки",
-      "courses.badge3": "Структурированное обучение",
-      "courses.sideLabel": "Превью премиум-зоны",
-      "courses.sideTitle": "Закрытое образовательное пространство",
-      "courses.sideText":
-        "Только зарегистрированные пользователи с платным доступом позже смогут войти в эту премиум-зону и изучать эксклюзивные материалы.",
-      "courses.locked": "Только для участников",
-
-      "ai.eyebrow": "ИИ-помощник",
-      "ai.title": "Спроси обучающего стоматологического ассистента",
-      "ai.description":
-        "Спрашивай о статьях, стоматологических темах, образовательных направлениях и будущем премиум-разделе курсов.",
-      "ai.chatTitle": "ИИ стоматологический ассистент",
-      "ai.chatSubtitle": "Онлайн-поддержка в обучении",
-      "ai.status": "Активен",
-      "ai.welcome":
-        "Здравствуйте! Я могу помочь вам найти статьи, учебные темы и будущий образовательный контент по стоматологии.",
-      "ai.placeholder":
-        "Спросите что-нибудь о стоматологии, статьях или курсах...",
-      "ai.send": "Отправить",
-
-      "languages.eyebrow": "Многоязычная платформа",
-      "languages.title": "Доступно на четырёх языках",
+      "contact.eyebrow": "Связь",
+      "contact.title": "Давайте свяжемся для обучения, идей и осмысленного сотрудничества",
+      "contact.description":
+        "Это пространство создано для общения, образовательного сотрудничества, идей для статей, профессионального нетворкинга и будущих запросов по приватным курсам в стоматологии и ассистировании.",
+      "contact.infoLabel": "Контактная информация",
+      "contact.infoTitle": "Открыто для общения",
+      "contact.infoText":
+        "Вы можете связаться по вопросам образовательного контента, стоматологии, стоматологического ассистирования, будущего приватного обучения, идей для статей и профессионального сотрудничества.",
+      "contact.focusLabel": "Фокус",
+      "contact.focusText":
+        "Стоматология, стоматологическое ассистирование, статьи, новости, премиум-обучение",
+      "contact.languagesLabel": "Языки",
+      "contact.languagesText": "Немецкий, русский, английский, узбекский",
+      "contact.emailLabel": "Почта",
+      "contact.note":
+        "Для прямой связи вы также можете отправить письмо вручную. Интеграцию формы можно подключить позже для автоматической доставки.",
+      "contact.formLabel": "Отправить сообщение",
+      "contact.formTitle": "Напишите нам",
+      "contact.nameLabel": "Имя",
+      "contact.namePlaceholder": "Ваше имя",
+      "contact.emailFieldLabel": "Почта",
+      "contact.emailPlaceholder": "your@email.com",
+      "contact.topicLabel": "Тема",
+      "contact.topicPlaceholder": "Статьи, курсы, сотрудничество...",
+      "contact.messageLabel": "Сообщение",
+      "contact.messagePlaceholder": "Напишите ваше сообщение...",
+      "contact.sendButton": "Отправить сообщение",
+      "contact.footerText": "Предпочитаете прямой контакт? Отправьте письмо вручную по электронной почте.",
+      "contact.directEmail": "Открыть почту →",
+      "contact.bottomEyebrow": "Многоязычная платформа",
+      "contact.bottomTitle": "Доступно на четырёх языках",
 
       "footer.description":
-        "Современная образовательная стоматологическая платформа со статьями, новостями, ИИ-поддержкой, личным путём и приватными премиум-курсами.",
+        "Современная образовательная стоматологическая платформа со статьями, новостями, личным путём и приватными премиум-курсами.",
       "footer.navigation": "Навигация",
       "footer.languages": "Языки"
     },
 
     uz: {
       "nav.home": "Bosh sahifa",
-      "nav.journey": "Yo‘l",
-      "nav.articles": "Maqolalar",
-      "nav.news": "Yangiliklar",
-      "nav.courses": "Kurslar",
-      "nav.ai": "AI chat",
-      "nav.about": "Haqida",
+      "nav.about": "Platforma haqida",
       "nav.connect": "Bog‘lanish",
 
-      "hero.eyebrow": "Stomatologiya • Ta’lim • Maqolalar • AI yordam",
-      "hero.title":
-        "Stomatologiya uchun zamonaviy ta’lim platformasi: bilim, rivojlanish va premium ta’lim",
-      "hero.description":
-        "Ushbu platforma stomatologiyadagi shaxsiy yo‘l, ta’limiy maqolalar, dolzarb yangiliklar, AI yordam va kelajakdagi pullik yopiq kurslarni bitta zamonaviy va nafis raqamli makonda birlashtiradi.",
-      "hero.primaryButton": "Yo‘lni ko‘rish",
-      "hero.secondaryButton": "Yopiq kurslarni ko‘rish",
-      "hero.badge1": "4 til",
-      "hero.badge2": "AI chat",
-      "hero.badge3": "Yopiq kurslar",
+      "home.eyebrow": "Stomatologiya • Ta’lim • Maqolalar • Premium o‘qish",
+      "home.title": "Stomatologik ta’lim, maqolalar, yangiliklar va yopiq kurslar uchun zamonaviy platforma",
+      "home.description":
+        "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta’limiy maqolalar, foydali yangilanishlar va kelajakdagi premium o‘qishga bag‘ishlangan zamonaviy ko‘p tilli platforma.",
+      "home.primaryBtn": "Platformani ko‘rish",
+      "home.secondaryBtn": "Bog‘lanish",
+      "home.badge1": "4 til",
+      "home.badge2": "Zamonaviy dizayn",
+      "home.badge3": "Yopiq kurslar",
+      "home.cardLabel": "Platforma yo‘nalishi",
+      "home.cardTitle": "Rivojlanish, aniqlik va mazmunli o‘rganish uchun yaratilgan",
+      "home.cardText":
+        "Shaxsiy yo‘l, ta’limiy kontent, professional mavzular va stomatologiyadagi kelajakdagi yopiq premium hudud uchun zamonaviy raqamli makon.",
+      "home.tag1": "Yo‘l",
+      "home.tag2": "Maqolalar",
+      "home.tag3": "Yangiliklar",
+      "home.tag4": "Kurslar",
+      "home.sectionEyebrow": "Platforma nimalarni o‘z ichiga oladi",
+      "home.sectionTitle": "O‘rganish va rivojlanish uchun toza tuzilma",
+      "home.feature1Title": "Shaxsiy yo‘l",
+      "home.feature1Text":
+        "Platforma ortidagi hikoya, o‘qish, tajriba va rivojlanish bilan shakllangan.",
+      "home.feature2Title": "Maqolalar va yangiliklar",
+      "home.feature2Text":
+        "Stomatologiya sohasidan ta’limiy kontent, professional qarashlar va foydali yangilanishlar.",
+      "home.feature3Title": "Yopiq premium kurslar",
+      "home.feature3Text":
+        "Chuqurroq va aniqroq o‘qish uchun kelajakdagi yopiq ta’lim hududi.",
+      "home.languagesEyebrow": "Ko‘p tilli kirish",
+      "home.languagesTitle": "To‘rtta tilda mavjud",
 
-      "heroCard.label": "Platforma qarashi",
-      "heroCard.title":
-        "Shaxsiy yo‘ldan ishonchli stomatologik ta’lim platformasiga",
-      "heroCard.description":
-        "Stomatologiya va assistentlikda ta’lim, maqolalar, professional qarashlar, dolzarb yangiliklar va chuqur premium o‘rganish uchun zamonaviy makon.",
+      "about.eyebrow": "Platforma haqida",
+      "about.title": "Aniqlik, maqsad va rivojlanish bilan yaratilgan zamonaviy stomatologik ta’lim platformasi",
+      "about.description":
+        "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta’limiy maqolalar, foydali yangilanishlar va kelajakdagi yopiq premium o‘qishga bag‘ishlangan ko‘p tilli raqamli makon.",
+      "about.missionLabel": "Missiya",
+      "about.missionTitle": "Nega bu platforma mavjud",
+      "about.missionText1":
+        "Ushbu platforma ta’lim, professional rivojlanish va mazmunli kontentni bitta nafis va tuzilgan makonda birlashtirish uchun yaratilgan.",
+      "about.missionText2":
+        "Bu faqat veb-sayt emas, balki stomatologiya va stomatologik assistentlikdagi kuchliroq ta’lim yo‘nalishining boshlanishidir.",
+      "about.focusLabel": "Asosiy yo‘nalish",
+      "about.focus1": "Stomatologiya",
+      "about.focus2": "Stomatologik assistentlik",
+      "about.focus3": "Ta’limiy maqolalar",
+      "about.focus4": "Foydali yangiliklar va yangilanishlar",
+      "about.focus5": "Yopiq premium kurslar",
+      "about.focus6": "Ko‘p tilli o‘rganish",
+      "about.valuesEyebrow": "Qadriyatlar",
+      "about.valuesTitle": "Platformani nima belgilaydi",
+      "about.card1Title": "Aniqlik",
+      "about.card1Text":
+        "Bilim tushunarli, tuzilgan va qulay bo‘lishi kerak.",
+      "about.card2Title": "Rivojlanish",
+      "about.card2Text":
+        "O‘rganish — bu doimiy shaxsiy va professional rivojlanish jarayoni.",
+      "about.card3Title": "Chuqurlik",
+      "about.card3Text":
+        "Maqsad faqat ma’lumot berish emas, balki haqiqiy ta’limiy qiymat yaratishdir.",
+      "about.visionEyebrow": "Qarash",
+      "about.visionTitle": "Shaxsiy yo‘ldan ishonchli ta’lim brendigacha",
+      "about.visionText":
+        "Uzoq muddatli qarash — maqolalar, yo‘naltirilgan o‘qish, premium kurslar va mazmunli ko‘p tilli kirishga ega sifatli hamda ishonchli stomatologik ta’lim platformasini yaratishdir.",
 
-      "overview.eyebrow": "Platforma asosi",
-      "overview.title": "Hammasi bitta nafis ta’lim makonida",
-      "overview.card1Title": "Mening stomatologik yo‘lim",
-      "overview.card1Text":
-        "Stomatologiyadagi o‘sish, ta’lim, tajriba va rivojlanishning shaxsiy hamda professional hikoyasi.",
-      "overview.card2Title": "Ta’limiy maqolalar",
-      "overview.card2Text":
-        "Stomatologik assistentlik, o‘qish, klinik mavzular va professional rivojlanish haqidagi tuzilgan maqolalar.",
-      "overview.card3Title": "Stomatologiya yangiliklari",
-      "overview.card3Text":
-        "Stomatologiya olamidan foydali yangilanishlar, zamonaviy o‘zgarishlar va muhim mavzular.",
-      "overview.card4Title": "Pullik yopiq kurslar",
-      "overview.card4Text":
-        "Chuqurroq va aniqroq o‘rganish uchun cheklangan kirishga ega eksklyuziv premium kontent.",
-
-      "journey.eyebrow": "Yo‘l",
-      "journey.title":
-        "Intizom, tajriba va maqsad bilan shakllangan yo‘l",
-      "journey.description":
-        "Bu bo‘lim platforma ortidagi hikoyaga bag‘ishlangan: o‘quv yo‘li, haqiqiy qiyinchiliklar, professional rivojlanish va stomatologiyadagi o‘sishning chuqur ma’nosi.",
-      "journey.link": "To‘liq yo‘lni o‘qish →",
-      "journey.sideLabel": "Bu yerda nima bo‘ladi",
-      "journey.point1": "Shaxsiy vaqt chizig‘i",
-      "journey.point2": "Professional bosqichlar",
-      "journey.point3": "Darslar va mulohazalar",
-      "journey.point4": "Dental sohada rivojlanish",
-
-      "articles.eyebrow": "Maqolalar",
-      "articles.title":
-        "Aniq, tuzilgan va foydali ta’limiy kontent",
-      "articles.description":
-        "Maqolalar bo‘limi o‘quvchilar, assistentlar va stomatologiyaga qiziqqan barcha uchun yaratilgan. U foydali bilimlarni tushunarli va nafis shaklda taqdim etadi.",
-      "articles.sideLabel": "Maqola yo‘nalishlari",
-      "articles.point1": "Assistentlik bo‘yicha bilimlar",
-      "articles.point2": "O‘qish yordami",
-      "articles.point3": "Amaliy qarashlar",
-      "articles.point4": "Professional mavzular",
-
-      "news.eyebrow": "Yangiliklar",
-      "news.title": "Stomatologiya olamidan zamonaviy yangilanishlar",
-      "news.tag1": "Trendlar",
-      "news.card1Title": "Zamonaviy stomatologiyadagi so‘nggi rivojlanishlar",
-      "news.card1Text":
-        "Dental sohadagi muhim yangilanishlar, innovatsiyalar va foydali o‘zgarishlar uchun kelajak bo‘limi.",
-      "news.tag2": "Ta’lim",
-      "news.card2Title": "O‘qish va professional yangilanishlar",
-      "news.card2Text":
-        "Bu yerda yangi imkoniyatlar, o‘qishga oid ma’lumotlar va muhim ta’limiy mavzular berilishi mumkin.",
-      "news.tag3": "Hamjamiyat",
-      "news.card3Title": "Haqiqiy qiymatga ega foydali ma’lumot",
-      "news.card3Text":
-        "Shunchaki yangilik emas, balki o‘qish va professional o‘zlikni bog‘laydigan mazmunli ma’lumot.",
-
-      "courses.eyebrow": "Yopiq premium hudud",
-      "courses.title": "Cheklangan kirishga ega eksklyuziv pullik kurslar",
-      "courses.description":
-        "Bu platforma stomatologiya va assistentlikni chuqurroq, aniqroq va jiddiyroq o‘rganmoqchi bo‘lgan foydalanuvchilar uchun yopiq premium ta’limni o‘z ichiga oladi.",
-      "courses.badge1": "Yopiq kirish",
-      "courses.badge2": "Premium darslar",
-      "courses.badge3": "Tuzilgan o‘qish",
-      "courses.sideLabel": "Premium ko‘rinish",
-      "courses.sideTitle": "Yopiq ta’lim makoni",
-      "courses.sideText":
-        "Faqat pullik kirishga ega ro‘yxatdan o‘tgan foydalanuvchilar keyinchalik bu premium hududga kirib, eksklyuziv materiallarni o‘rganishlari mumkin bo‘ladi.",
-      "courses.locked": "Faqat a’zolar uchun",
-
-      "ai.eyebrow": "AI yordamchi",
-      "ai.title": "Stomatologik o‘quv yordamchisidan so‘rang",
-      "ai.description":
-        "Maqolalar, stomatologik mavzular, ta’lim yo‘nalishlari va kelajakdagi premium kurs hududi haqida so‘rang.",
-      "ai.chatTitle": "AI stomatologik assistent",
-      "ai.chatSubtitle": "Onlayn ta’lim yordami",
-      "ai.status": "Faol",
-      "ai.welcome":
-        "Salom! Men sizga maqolalar, o‘quv mavzulari va kelajakdagi stomatologik ta’lim kontentini topishda yordam bera olaman.",
-      "ai.placeholder":
-        "Stomatologiya, maqolalar yoki kurslar haqida yozing...",
-      "ai.send": "Yuborish",
-
-      "languages.eyebrow": "Ko‘p tilli platforma",
-      "languages.title": "To‘rtta tilda mavjud",
+      "contact.eyebrow": "Bog‘lanish",
+      "contact.title": "O‘rganish, g‘oyalar va mazmunli hamkorlik uchun bog‘lanamiz",
+      "contact.description":
+        "Bu makon aloqa, ta’limiy hamkorlik, maqola g‘oyalari, professional networking va stomatologiya hamda assistentlik bo‘yicha kelajakdagi yopiq kurslar so‘rovlari uchun yaratilgan.",
+      "contact.infoLabel": "Aloqa ma’lumotlari",
+      "contact.infoTitle": "Muloqot uchun ochiq",
+      "contact.infoText":
+        "Siz ta’limiy kontent, stomatologiya, stomatologik assistentlik, kelajakdagi yopiq o‘qish, maqola g‘oyalari va professional hamkorlik bo‘yicha bog‘lanishingiz mumkin.",
+      "contact.focusLabel": "Yo‘nalish",
+      "contact.focusText":
+        "Stomatologiya, stomatologik assistentlik, maqolalar, yangiliklar, premium o‘qish",
+      "contact.languagesLabel": "Tillar",
+      "contact.languagesText": "Nemis, rus, ingliz, o‘zbek",
+      "contact.emailLabel": "Email",
+      "contact.note":
+        "To‘g‘ridan-to‘g‘ri bog‘lanish uchun emailni qo‘lda ham yuborishingiz mumkin. Formani avtomatik yetkazish uchun keyinroq ulash mumkin.",
+      "contact.formLabel": "Xabar yuborish",
+      "contact.formTitle": "Bizga yozing",
+      "contact.nameLabel": "Ism",
+      "contact.namePlaceholder": "Ismingiz",
+      "contact.emailFieldLabel": "Email",
+      "contact.emailPlaceholder": "your@email.com",
+      "contact.topicLabel": "Mavzu",
+      "contact.topicPlaceholder": "Maqolalar, kurslar, hamkorlik...",
+      "contact.messageLabel": "Xabar",
+      "contact.messagePlaceholder": "Xabaringizni yozing...",
+      "contact.sendButton": "Xabar yuborish",
+      "contact.footerText": "To‘g‘ridan-to‘g‘ri aloqa afzalmi? Email orqali qo‘lda xabar yuboring.",
+      "contact.directEmail": "Emailni ochish →",
+      "contact.bottomEyebrow": "Ko‘p tilli platforma",
+      "contact.bottomTitle": "To‘rtta tilda mavjud",
 
       "footer.description":
-        "Maqolalar, yangiliklar, AI yordam, shaxsiy yo‘l va premium yopiq kurslarga ega zamonaviy stomatologik ta’lim platformasi.",
+        "Maqolalar, yangiliklar, shaxsiy yo‘l va yopiq premium kurslarga ega zamonaviy stomatologik ta’lim platformasi.",
       "footer.navigation": "Navigatsiya",
       "footer.languages": "Tillar"
     }
@@ -488,188 +456,27 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.lang = lang;
   }
 
-  function updateActiveLanguageButton(lang) {
+  function updateActiveLanguageButtons(lang) {
     document.querySelectorAll(".lang-btn").forEach((button) => {
       button.classList.toggle("active", button.dataset.lang === lang);
     });
   }
 
   function setLanguage(lang) {
-    const normalizedLanguage = supportedLanguages.includes(lang) ? lang : "en";
-    localStorage.setItem("siteLanguage", normalizedLanguage);
-    applyTranslations(normalizedLanguage);
-    updateActiveLanguageButton(normalizedLanguage);
-  }
-
-  function getBotReply(message, lang) {
-    const text = message.toLowerCase();
-
-    const responses = {
-      en: {
-        articles:
-          "You will be able to explore article sections about dentistry, assisting, and educational topics here.",
-        courses:
-          "The private course section is planned as a premium area with paid access and structured learning content.",
-        journey:
-          "The journey section shares a personal and professional story about dentistry, learning, and development.",
-        news:
-          "The news section is designed for modern updates, trends, and useful information from the dental field.",
-        languages:
-          "This platform is designed for four languages: German, Russian, English, and Uzbek.",
-        default:
-          "Thank you for your message. Later this AI assistant can help visitors navigate articles, learning topics, news, and private courses."
-      },
-      de: {
-        articles:
-          "Hier können Sie später Artikelbereiche über Zahnmedizin, Assistenz und Bildungsthemen erkunden.",
-        courses:
-          "Der Bereich für private Kurse ist als Premium-Zone mit bezahltem Zugang und strukturierten Lerninhalten geplant.",
-        journey:
-          "Der Weg-Bereich erzählt eine persönliche und berufliche Geschichte über Zahnmedizin, Lernen und Entwicklung.",
-        news:
-          "Der Neuigkeiten-Bereich ist für moderne Updates, Trends und nützliche Informationen aus dem dentalen Bereich gedacht.",
-        languages:
-          "Diese Plattform ist für vier Sprachen vorgesehen: Deutsch, Russisch, Englisch und Usbekisch.",
-        default:
-          "Danke für Ihre Nachricht. Später kann dieser KI-Assistent Besucher durch Artikel, Lernthemen, Neuigkeiten und private Kurse führen."
-      },
-      ru: {
-        articles:
-          "Здесь позже можно будет смотреть разделы со статьями о стоматологии, ассистировании и образовательных темах.",
-        courses:
-          "Раздел приватных курсов задуман как премиум-зона с платным доступом и структурированным обучением.",
-        journey:
-          "Раздел пути рассказывает личную и профессиональную историю о стоматологии, обучении и развитии.",
-        news:
-          "Раздел новостей создан для современных обновлений, трендов и полезной информации из стоматологической сферы.",
-        languages:
-          "Эта платформа рассчитана на четыре языка: немецкий, русский, английский и узбекский.",
-        default:
-          "Спасибо за ваше сообщение. Позже этот ИИ-ассистент сможет помогать посетителям ориентироваться в статьях, темах обучения, новостях и приватных курсах."
-      },
-      uz: {
-        articles:
-          "Bu yerda keyinchalik stomatologiya, assistentlik va ta’lim mavzulariga oid maqolalar bo‘limlarini ko‘rish mumkin bo‘ladi.",
-        courses:
-          "Yopiq kurslar bo‘limi pullik kirishga ega premium hudud va tuzilgan o‘quv kontenti sifatida rejalashtirilgan.",
-        journey:
-          "Yo‘l bo‘limi stomatologiya, o‘qish va rivojlanish haqidagi shaxsiy hamda professional hikoyani ulashadi.",
-        news:
-          "Yangiliklar bo‘limi dental sohadagi zamonaviy yangilanishlar, trendlar va foydali ma’lumotlar uchun yaratilgan.",
-        languages:
-          "Ushbu platforma to‘rtta til uchun mo‘ljallangan: nemis, rus, ingliz va o‘zbek tillari.",
-        default:
-          "Xabaringiz uchun rahmat. Keyinchalik bu AI yordamchi tashrif buyuruvchilarga maqolalar, o‘quv mavzulari, yangiliklar va yopiq kurslar bo‘ylab yo‘l ko‘rsatishi mumkin."
-      }
-    };
-
-    const dict = responses[lang] || responses.en;
-
-    if (
-      text.includes("article") ||
-      text.includes("articles") ||
-      text.includes("artikel") ||
-      text.includes("maqola") ||
-      text.includes("maqolalar") ||
-      text.includes("статья") ||
-      text.includes("статьи")
-    ) {
-      return dict.articles;
-    }
-
-    if (
-      text.includes("course") ||
-      text.includes("courses") ||
-      text.includes("kurs") ||
-      text.includes("kurslar") ||
-      text.includes("kurse") ||
-      text.includes("курс") ||
-      text.includes("курсы")
-    ) {
-      return dict.courses;
-    }
-
-    if (
-      text.includes("journey") ||
-      text.includes("path") ||
-      text.includes("weg") ||
-      text.includes("yo‘l") ||
-      text.includes("yol") ||
-      text.includes("путь")
-    ) {
-      return dict.journey;
-    }
-
-    if (
-      text.includes("news") ||
-      text.includes("neuigkeiten") ||
-      text.includes("yangilik") ||
-      text.includes("новост")
-    ) {
-      return dict.news;
-    }
-
-    if (
-      text.includes("language") ||
-      text.includes("languages") ||
-      text.includes("sprache") ||
-      text.includes("sprachen") ||
-      text.includes("til") ||
-      text.includes("tillar") ||
-      text.includes("язык") ||
-      text.includes("языки")
-    ) {
-      return dict.languages;
-    }
-
-    return dict.default;
-  }
-
-  function createChatMessage(text, type) {
-    const message = document.createElement("div");
-    message.className = `chat-message ${type}`;
-    message.textContent = text;
-    return message;
-  }
-
-  function initializeChat() {
-    const chatForm = document.getElementById("chatForm");
-    const chatInput = document.getElementById("chatInput");
-    const chatMessages = document.getElementById("chatMessages");
-
-    if (!chatForm || !chatInput || !chatMessages) return;
-
-    chatForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const userText = chatInput.value.trim();
-      if (!userText) return;
-
-      const currentLanguage = getStoredLanguage();
-
-      chatMessages.appendChild(createChatMessage(userText, "user"));
-      chatInput.value = "";
-
-      window.setTimeout(() => {
-        const botReply = getBotReply(userText, currentLanguage);
-        chatMessages.appendChild(createChatMessage(botReply, "bot"));
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }, 450);
-
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-    });
+    const normalized = supportedLanguages.includes(lang) ? lang : "en";
+    localStorage.setItem("siteLanguage", normalized);
+    applyTranslations(normalized);
+    updateActiveLanguageButtons(normalized);
   }
 
   function initializeLanguageButtons() {
     document.querySelectorAll(".lang-btn").forEach((button) => {
       button.addEventListener("click", () => {
-        const selectedLanguage = button.dataset.lang;
-        setLanguage(selectedLanguage);
+        setLanguage(button.dataset.lang);
       });
     });
   }
 
   initializeLanguageButtons();
-  initializeChat();
   setLanguage(getStoredLanguage());
 });
