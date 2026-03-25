@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learning Path Journey</title>
+  <title>Learning Path Journey | Dentistry Education Platform</title>
   <meta
     name="description"
-    content="A modern educational platform about dentistry, assisting, articles, and future private courses."
+    content="Modern dentistry education platform with articles, news, personal journey, AI chat, and private premium courses."
   />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,107 +16,361 @@
       <a href="index.html" class="logo">LearningPathJourney</a>
 
       <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="journey.html">Journey</a>
+        <a href="#home">Home</a>
+        <a href="#journey">Journey</a>
+        <a href="#articles">Articles</a>
+        <a href="#news">News</a>
+        <a href="#courses">Courses</a>
+        <a href="#ai-chat">AI Chat</a>
         <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="nav-actions">
+        <select class="language-switcher" aria-label="Select language">
+          <option value="de">DE</option>
+          <option value="ru">RU</option>
+          <option value="en" selected>EN</option>
+          <option value="uz">UZ</option>
+        </select>
+        <a href="#courses" class="btn btn-small btn-outline">Private Access</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Dentistry • Assisting • Articles • Education</p>
+        <div class="hero-content">
+          <p class="eyebrow">Dentistry • Education • Articles • AI Support</p>
 
           <h1>
-            A modern learning space for
-            <span>dental knowledge</span>
-            and professional growth
+            A modern dental learning platform for
+            <span>knowledge, growth, and premium education</span>
           </h1>
 
-          <p class="hero-description">
-            This platform is dedicated to dentistry, dental assisting, educational
-            articles, and future private courses. It is designed as a place for
-            structured learning, practical insight, and continuous development.
+          <p class="hero-text">
+            This website is dedicated to dentistry and dental assisting. It brings
+            together a personal professional journey, educational articles, industry
+            news, AI-powered support, and future private paid courses in one modern
+            digital space.
           </p>
 
           <div class="hero-buttons">
-            <a href="journey.html" class="btn btn-primary">Explore Journey</a>
-            <a href="about.html" class="btn btn-secondary">Learn More</a>
+            <a href="#journey" class="btn btn-primary">Explore Journey</a>
+            <a href="#courses" class="btn btn-secondary">View Private Courses</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>4</strong>
+              <span>Languages</span>
+            </div>
+            <div class="stat-card">
+              <strong>AI</strong>
+              <span>Chat Support</span>
+            </div>
+            <div class="stat-card">
+              <strong>Premium</strong>
+              <span>Private Courses</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="card-glow"></div>
-          <div class="hero-panel">
-            <p class="mini-label">Current Vision</p>
-            <h2>From learning path to educational platform</h2>
+        <div class="hero-panel">
+          <div class="glass-card">
+            <p class="mini-label">Platform Vision</p>
+            <h2>From personal journey to trusted dental education brand</h2>
             <p>
-              Articles, professional reflections, assisting topics, and in the
-              future — private premium courses for deeper study.
+              A structured website for learning, inspiration, professional articles,
+              current news, and premium educational content for deeper study.
             </p>
+
+            <div class="panel-tags">
+              <span>Dental Assisting</span>
+              <span>Articles</span>
+              <span>News</span>
+              <span>AI Chat</span>
+              <span>Paid Courses</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="features">
+    <!-- QUICK OVERVIEW -->
+    <section class="overview">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Core Sections</p>
-          <h2>What this website is about</h2>
+          <p class="eyebrow">Core Platform</p>
+          <h2>Everything in one modern learning space</h2>
         </div>
 
-        <div class="cards">
-          <article class="feature-card">
-            <h3>Dental Articles</h3>
+        <div class="cards-grid">
+          <article class="info-card">
+            <div class="card-icon">01</div>
+            <h3>My Dental Journey</h3>
             <p>
-              Educational articles about dentistry, assisting, learning, and
-              professional topics.
+              A personal and professional story of growth in dentistry, study,
+              development, and experience.
             </p>
           </article>
 
-          <article class="feature-card">
-            <h3>Learning Journey</h3>
+          <article class="info-card">
+            <div class="card-icon">02</div>
+            <h3>Educational Articles</h3>
             <p>
-              A structured path of development, study progress, and practical
-              experience.
+              Articles about dentistry, dental assisting, practical learning, and
+              important professional topics.
             </p>
           </article>
 
-          <article class="feature-card">
-            <h3>Private Courses</h3>
+          <article class="info-card">
+            <div class="card-icon">03</div>
+            <h3>Dental News</h3>
             <p>
-              Future premium learning content with deeper guidance and focused
-              study materials.
+              Updates, trends, and useful news related to dentistry, education,
+              modern practice, and the profession.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">04</div>
+            <h3>Private Paid Courses</h3>
+            <p>
+              Exclusive premium content with restricted access for learners who want
+              deeper and more structured study.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="vision">
-      <div class="container vision-box">
-        <div>
-          <p class="eyebrow">Long-Term Idea</p>
-          <h2>Built with purpose, not only aesthetics</h2>
+    <!-- JOURNEY -->
+    <section class="content-section" id="journey">
+      <div class="container content-grid">
+        <div class="section-text">
+          <p class="eyebrow">My Story</p>
+          <h2>A journey shaped by discipline, experience, and purpose</h2>
+          <p>
+            This section will share the story behind the platform: the path into
+            dentistry, the challenges, the progress, the learning process, and the
+            deeper meaning behind professional growth.
+          </p>
+          <a href="journey.html" class="text-link">Read the journey →</a>
         </div>
 
-        <p class="vision-text">
-          This website is not only a personal page. It is the beginning of an
-          educational brand focused on dentistry, practical learning, and valuable
-          content for students and professionals.
-        </p>
+        <div class="feature-box">
+          <p class="mini-label">Coming Content</p>
+          <ul>
+            <li>Personal timeline</li>
+            <li>Professional milestones</li>
+            <li>Lessons learned</li>
+            <li>Development in dental field</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="content-section alt-section" id="articles">
+      <div class="container content-grid reverse-grid">
+        <div class="feature-box">
+          <p class="mini-label">Article Topics</p>
+          <ul>
+            <li>Dental assisting knowledge</li>
+            <li>Practice insights</li>
+            <li>Study and education tips</li>
+            <li>Professional reflections</li>
+          </ul>
+        </div>
+
+        <div class="section-text">
+          <p class="eyebrow">Articles</p>
+          <h2>Clear, useful, and structured educational content</h2>
+          <p>
+            The article section is designed to provide valuable knowledge in a simple
+            but elegant way. It will include practical content for learners,
+            assistants, and everyone interested in dentistry.
+          </p>
+          <a href="#" class="text-link">Explore articles →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="content-section" id="news">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">News</p>
+          <h2>Modern updates from the world of dentistry</h2>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="news-badge">Dental Trends</span>
+            <h3>Latest developments in modern dental practice</h3>
+            <p>
+              This section can highlight important changes, innovations, and current
+              discussions in the dental field.
+            </p>
+          </article>
+
+          <article class="news-card">
+            <span class="news-badge">Education</span>
+            <h3>Learning opportunities and professional updates</h3>
+            <p>
+              Future space for educational news, relevant programs, professional
+              development, and study-related updates.
+            </p>
+          </article>
+
+          <article class="news-card">
+            <span class="news-badge">Community</span>
+            <h3>A space for useful and meaningful information</h3>
+            <p>
+              News will not just inform, but support a stronger connection between
+              learning, practice, and professional identity.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVATE COURSES -->
+    <section class="premium-section" id="courses">
+      <div class="container premium-grid">
+        <div class="section-text">
+          <p class="eyebrow">Private Premium Area</p>
+          <h2>Exclusive paid courses with restricted access</h2>
+          <p>
+            This platform will later include private paid courses for learners who
+            want deeper, more focused, and more serious educational guidance in
+            dentistry and assisting.
+          </p>
+
+          <div class="premium-points">
+            <span>Private Access</span>
+            <span>Premium Lessons</span>
+            <span>Structured Learning</span>
+            <span>Exclusive Materials</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Get Access</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="premium-card">
+          <p class="mini-label">Premium Preview</p>
+          <h3>Closed educational space</h3>
+          <p>
+            Only registered users with paid access will be able to view exclusive
+            lessons, learning modules, and additional educational materials.
+          </p>
+          <div class="locked-box">🔒 Members Only</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI CHAT -->
+    <section class="ai-section" id="ai-chat">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">AI Assistant</p>
+          <h2>Ask the dental learning assistant</h2>
+          <p class="section-description">
+            An AI-powered helper for questions about learning, dental topics,
+            assisting, articles, and educational navigation on the website.
+          </p>
+        </div>
+
+        <div class="ai-chat-box">
+          <div class="ai-chat-header">
+            <div>
+              <strong>AI Dental Assistant</strong>
+              <p>Online learning support</p>
+            </div>
+            <span class="status-dot">● Active</span>
+          </div>
+
+          <div class="ai-messages">
+            <div class="message bot">
+              Hello! I can help you navigate articles, learning topics, and future
+              dental education content.
+            </div>
+            <div class="message user">
+              Show me articles about dental assisting.
+            </div>
+            <div class="message bot">
+              Sure — this section will later connect users to articles, study
+              materials, and premium course recommendations.
+            </div>
+          </div>
+
+          <form class="ai-input-area">
+            <input
+              type="text"
+              placeholder="Ask something about dentistry, articles, or courses..."
+            />
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTILANGUAGE -->
+    <section class="languages-section">
+      <div class="container languages-box">
+        <div>
+          <p class="eyebrow">Multilingual Platform</p>
+          <h2>Accessible in four languages</h2>
+        </div>
+
+        <div class="language-tags">
+          <span>Deutsch</span>
+          <span>Русский</span>
+          <span>English</span>
+          <span>O‘zbek</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
+    <div class="container footer-grid">
+      <div>
+        <h3>LearningPathJourney</h3>
+        <p>
+          A modern educational dental platform with articles, news, AI support,
+          personal journey, and premium private courses.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#courses">Courses</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Languages</h4>
+        <ul class="footer-links">
+          <li><a href="#">DE</a></li>
+          <li><a href="#">RU</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#">UZ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
       <p>© 2026 Learning Path Journey. All rights reserved.</p>
-      <p>Designed with clarity, ambition, and growth in mind.</p>
     </div>
   </footer>
 
