@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learning Path Journey | Dental Education Platform</title>
+  <title>Learning Path Journey</title>
   <meta
     name="description"
-    content="Modern multilingual dental education platform with articles, news, AI chat, personal journey, and private courses."
+    content="Modern multilingual dental education platform with articles, news, personal journey, and private courses."
   />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,293 +16,109 @@
       <a href="index.html" class="logo">LearningPathJourney</a>
 
       <nav class="main-nav">
-        <a href="#home" data-i18n="nav.home">Home</a>
-        <a href="#journey" data-i18n="nav.journey">Journey</a>
-        <a href="#articles" data-i18n="nav.articles">Articles</a>
-        <a href="#news" data-i18n="nav.news">News</a>
-        <a href="#courses" data-i18n="nav.courses">Courses</a>
-        <a href="#ai-chat" data-i18n="nav.ai">AI Chat</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="about.html" data-i18n="nav.about">About</a>
         <a href="contact.html" data-i18n="nav.connect">Connect</a>
       </nav>
 
       <div class="header-actions">
-  <div class="lang-switch" id="languageSwitcher">
-    <button type="button" class="lang-btn active" data-lang="en">EN</button>
-    <button type="button" class="lang-btn" data-lang="de">DE</button>
-    <button type="button" class="lang-btn" data-lang="ru">RU</button>
-    <button type="button" class="lang-btn" data-lang="uz">UZ</button>
-  </div>
-</div>
+        <div class="lang-switch">
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="de">DE</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero-section" id="home">
+    <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero.eyebrow">
-            Dentistry • Education • Articles • AI Support
+          <p class="eyebrow" data-i18n="home.eyebrow">
+            Dentistry • Education • Articles • Premium Learning
           </p>
 
-          <h1 data-i18n="hero.title">
-            A modern dental learning platform for knowledge, growth, and premium education
+          <h1 data-i18n="home.title">
+            A modern platform for dental education, articles, news, and private courses
           </h1>
 
-          <p class="hero-description" data-i18n="hero.description">
-            This platform brings together a personal dental journey, educational
-            articles, current news, AI-guided support, and future private paid
-            courses in one modern and elegant digital space.
+          <p class="hero-description" data-i18n="home.description">
+            Learning Path Journey is a modern multilingual platform dedicated to dentistry,
+            dental assisting, educational articles, useful updates, and future premium learning.
           </p>
 
           <div class="hero-buttons">
-            <a href="#journey" class="btn btn-primary" data-i18n="hero.primaryButton">Explore Journey</a>
-            <a href="#courses" class="btn btn-secondary" data-i18n="hero.secondaryButton">View Private Courses</a>
+            <a href="about.html" class="btn btn-primary" data-i18n="home.primaryBtn">Discover the Platform</a>
+            <a href="contact.html" class="btn btn-secondary" data-i18n="home.secondaryBtn">Get in Touch</a>
           </div>
 
           <div class="hero-badges">
-            <span data-i18n="hero.badge1">4 Languages</span>
-            <span data-i18n="hero.badge2">AI Chat</span>
-            <span data-i18n="hero.badge3">Private Courses</span>
+            <span data-i18n="home.badge1">4 Languages</span>
+            <span data-i18n="home.badge2">Modern Design</span>
+            <span data-i18n="home.badge3">Private Courses</span>
           </div>
         </div>
 
         <div class="hero-card">
-          <p class="card-label" data-i18n="heroCard.label">Platform Vision</p>
-          <h2 data-i18n="heroCard.title">
-            From personal journey to trusted dental education platform
-          </h2>
-          <p data-i18n="heroCard.description">
-            A modern place for learning, articles, professional insight, current
-            updates, and deeper premium study in dentistry and assisting.
+          <p class="card-label" data-i18n="home.cardLabel">Platform Focus</p>
+          <h2 data-i18n="home.cardTitle">Built for growth, clarity, and meaningful learning</h2>
+          <p data-i18n="home.cardText">
+            A refined digital space for personal journey, educational content, professional topics,
+            and a future private premium area in dentistry.
           </p>
 
           <div class="tag-list">
-            <span>Dental</span>
-            <span>Articles</span>
-            <span>News</span>
-            <span>AI</span>
-            <span>Premium</span>
+            <span data-i18n="home.tag1">Journey</span>
+            <span data-i18n="home.tag2">Articles</span>
+            <span data-i18n="home.tag3">News</span>
+            <span data-i18n="home.tag4">Courses</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- OVERVIEW -->
-    <section class="section-block" id="overview">
+    <section class="section-block">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="overview.eyebrow">Core Platform</p>
-          <h2 data-i18n="overview.title">Everything in one elegant learning space</h2>
+          <p class="eyebrow" data-i18n="home.sectionEyebrow">What the platform includes</p>
+          <h2 data-i18n="home.sectionTitle">A clean structure for learning and development</h2>
         </div>
 
-        <div class="card-grid four-cols">
+        <div class="card-grid three-cols">
           <article class="info-card">
             <div class="card-number">01</div>
-            <h3 data-i18n="overview.card1Title">My Dental Journey</h3>
-            <p data-i18n="overview.card1Text">
-              A personal and professional story of growth, study, experience, and
-              development in dentistry.
+            <h3 data-i18n="home.feature1Title">Personal Journey</h3>
+            <p data-i18n="home.feature1Text">
+              The story behind the platform, shaped by learning, experience, and growth.
             </p>
           </article>
 
           <article class="info-card">
             <div class="card-number">02</div>
-            <h3 data-i18n="overview.card2Title">Educational Articles</h3>
-            <p data-i18n="overview.card2Text">
-              Structured articles about dental assisting, learning, clinical topics,
-              and professional growth.
+            <h3 data-i18n="home.feature2Title">Articles & News</h3>
+            <p data-i18n="home.feature2Text">
+              Educational content, professional insights, and useful updates from the dental field.
             </p>
           </article>
 
           <article class="info-card">
             <div class="card-number">03</div>
-            <h3 data-i18n="overview.card3Title">Dental News</h3>
-            <p data-i18n="overview.card3Text">
-              Useful updates, modern developments, and relevant topics from the world
-              of dentistry.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <div class="card-number">04</div>
-            <h3 data-i18n="overview.card4Title">Private Paid Courses</h3>
-            <p data-i18n="overview.card4Text">
-              Exclusive premium content with restricted access for focused and deeper
-              learning.
+            <h3 data-i18n="home.feature3Title">Private Premium Courses</h3>
+            <p data-i18n="home.feature3Text">
+              A future closed learning area for deeper and more focused study.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- JOURNEY -->
-    <section class="section-block" id="journey">
-      <div class="container two-column">
-        <div class="text-block">
-          <p class="eyebrow" data-i18n="journey.eyebrow">Journey</p>
-          <h2 data-i18n="journey.title">A path shaped by discipline, experience, and purpose</h2>
-          <p data-i18n="journey.description">
-            This section is dedicated to the story behind the platform: the learning
-            path, the real challenges, the professional development, and the deeper
-            meaning behind growth in dentistry.
-          </p>
-          <a href="journey.html" class="text-link" data-i18n="journey.link">Read full journey →</a>
-        </div>
-
-        <div class="feature-card">
-          <p class="card-label" data-i18n="journey.sideLabel">What will be here</p>
-          <ul class="feature-list">
-            <li data-i18n="journey.point1">Personal timeline</li>
-            <li data-i18n="journey.point2">Professional milestones</li>
-            <li data-i18n="journey.point3">Lessons and reflections</li>
-            <li data-i18n="journey.point4">Growth in dental field</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ARTICLES -->
-    <section class="section-block alt-bg" id="articles">
-      <div class="container two-column reverse">
-        <div class="feature-card">
-          <p class="card-label" data-i18n="articles.sideLabel">Article Directions</p>
-          <ul class="feature-list">
-            <li data-i18n="articles.point1">Dental assisting knowledge</li>
-            <li data-i18n="articles.point2">Study support</li>
-            <li data-i18n="articles.point3">Practical insights</li>
-            <li data-i18n="articles.point4">Professional topics</li>
-          </ul>
-        </div>
-
-        <div class="text-block">
-          <p class="eyebrow" data-i18n="articles.eyebrow">Articles</p>
-          <h2 data-i18n="articles.title">Clear, structured, and useful educational content</h2>
-          <p data-i18n="articles.description">
-            The article section is built for learners, assistants, and anyone
-            interested in dentistry. It will provide useful knowledge in a clear
-            and elegant form.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWS -->
-    <section class="section-block" id="news">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="news.eyebrow">News</p>
-          <h2 data-i18n="news.title">Modern updates from the dental world</h2>
-        </div>
-
-        <div class="card-grid three-cols">
-          <article class="news-card">
-            <span class="news-tag" data-i18n="news.tag1">Trends</span>
-            <h3 data-i18n="news.card1Title">Latest developments in modern dentistry</h3>
-            <p data-i18n="news.card1Text">
-              A future space for important updates, innovations, and useful changes
-              in the dental field.
-            </p>
-          </article>
-
-          <article class="news-card">
-            <span class="news-tag" data-i18n="news.tag2">Education</span>
-            <h3 data-i18n="news.card2Title">Learning and professional updates</h3>
-            <p data-i18n="news.card2Text">
-              New opportunities, study-related information, and relevant educational
-              topics can be presented here.
-            </p>
-          </article>
-
-          <article class="news-card">
-            <span class="news-tag" data-i18n="news.tag3">Community</span>
-            <h3 data-i18n="news.card3Title">Useful information with real value</h3>
-            <p data-i18n="news.card3Text">
-              Not just news, but meaningful information that connects learning and
-              professional identity.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- COURSES -->
-    <section class="section-block premium-section" id="courses">
-      <div class="container two-column">
-        <div class="text-block">
-          <p class="eyebrow" data-i18n="courses.eyebrow">Private Premium Area</p>
-          <h2 data-i18n="courses.title">Exclusive paid courses with restricted access</h2>
-          <p data-i18n="courses.description">
-            This platform will include private premium learning for users who want
-            deeper, more focused, and more serious study in dentistry and dental assisting.
-          </p>
-
-          <div class="hero-badges">
-            <span data-i18n="courses.badge1">Private Access</span>
-            <span data-i18n="courses.badge2">Premium Lessons</span>
-            <span data-i18n="courses.badge3">Structured Learning</span>
-          </div>
-        </div>
-
-        <div class="premium-card">
-          <p class="card-label" data-i18n="courses.sideLabel">Premium Preview</p>
-          <h3 data-i18n="courses.sideTitle">Closed educational space</h3>
-          <p data-i18n="courses.sideText">
-            Only registered users with paid access will later be able to enter
-            this premium area and study exclusive materials.
-          </p>
-          <div class="locked-box" data-i18n="courses.locked">Members Only</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI CHAT -->
-    <section class="section-block" id="ai-chat">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="ai.eyebrow">AI Assistant</p>
-          <h2 data-i18n="ai.title">Ask the dental learning assistant</h2>
-          <p class="section-description" data-i18n="ai.description">
-            Ask about articles, dentistry topics, educational directions, and the
-            future premium course area.
-          </p>
-        </div>
-
-        <div class="chat-shell">
-          <div class="chat-header">
-            <div>
-              <strong data-i18n="ai.chatTitle">AI Dental Assistant</strong>
-              <p data-i18n="ai.chatSubtitle">Online learning support</p>
-            </div>
-            <span class="chat-status" data-i18n="ai.status">Active</span>
-          </div>
-
-          <div class="chat-messages" id="chatMessages">
-            <div class="chat-message bot" data-i18n="ai.welcome">
-              Hello! I can help you navigate articles, learning topics, and future dental education content.
-            </div>
-          </div>
-
-          <form class="chat-input-row" id="chatForm">
-            <input
-              id="chatInput"
-              type="text"
-              data-i18n-placeholder="ai.placeholder"
-              placeholder="Ask something about dentistry, articles, or courses..."
-            />
-            <button type="submit" class="btn btn-primary" data-i18n="ai.send">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- LANGUAGES -->
     <section class="section-block">
       <div class="container language-panel">
         <div>
-          <p class="eyebrow" data-i18n="languages.eyebrow">Multilingual Platform</p>
-          <h2 data-i18n="languages.title">Accessible in four languages</h2>
+          <p class="eyebrow" data-i18n="home.languagesEyebrow">Multilingual Access</p>
+          <h2 data-i18n="home.languagesTitle">Available in four languages</h2>
         </div>
 
         <div class="language-tags">
@@ -320,18 +136,16 @@
       <div>
         <h3>LearningPathJourney</h3>
         <p data-i18n="footer.description">
-          A modern dental education platform with articles, news, AI support,
-          personal journey, and premium private courses.
+          A modern dental education platform with articles, news, personal journey, and premium private courses.
         </p>
       </div>
 
       <div>
         <h4 data-i18n="footer.navigation">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="#journey" data-i18n="nav.journey">Journey</a></li>
-          <li><a href="#articles" data-i18n="nav.articles">Articles</a></li>
-          <li><a href="#news" data-i18n="nav.news">News</a></li>
-          <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.connect">Connect</a></li>
         </ul>
       </div>
 
