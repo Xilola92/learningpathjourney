@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Learning Path Journey</title>
-
+  <title>Connect | Learning Path Journey</title>
   <meta
     name="description"
-    content="Contact Learning Path Journey – collaboration, questions, and future educational opportunities."
+    content="Connect with Learning Path Journey for questions, collaboration, articles, dental education, and private courses."
   />
-
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
   <header class="site-header">
     <div class="container nav">
@@ -20,93 +17,149 @@
 
       <nav class="menu">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
         <a href="journey.html">Journey</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Connect</a>
       </nav>
+
+      <div class="nav-actions">
+        <select class="language-switcher" aria-label="Select language">
+          <option value="de">DE</option>
+          <option value="ru">RU</option>
+          <option value="en" selected>EN</option>
+          <option value="uz">UZ</option>
+        </select>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1 class="page-title">Let’s connect and build something meaningful</h1>
+        <p class="eyebrow">Connect</p>
+        <h1 class="page-title">Let’s connect for learning, ideas, and collaboration</h1>
         <p class="page-description">
-          If you have questions, ideas, or would like to collaborate, feel free
-          to reach out. This platform is growing, and meaningful connections are
-          always welcome.
+          This space is for communication, educational collaboration, future private
+          courses, article ideas, and meaningful professional contact in dentistry
+          and dental assisting.
         </p>
       </div>
     </section>
 
-    <!-- CONTACT FORM -->
     <section class="contact-section">
       <div class="container contact-grid">
-
-        <!-- LEFT INFO -->
         <div class="content-card">
-          <p class="eyebrow">Contact Info</p>
+          <p class="eyebrow">Get in Touch</p>
           <h2>Open for communication</h2>
-
           <p>
-            You can reach out regarding:
+            You can connect regarding educational content, article topics, private
+            learning, professional questions, and future collaboration.
           </p>
 
-          <ul class="contact-list">
-            <li>• Educational collaboration</li>
-            <li>• Questions about dentistry & assisting</li>
-            <li>• Future private courses</li>
-            <li>• Professional connections</li>
-          </ul>
+          <div class="contact-points">
+            <div class="contact-point">
+              <span class="contact-label">Focus</span>
+              <p>Dentistry, assisting, articles, news, premium learning</p>
+            </div>
 
-          <p class="contact-note">
-            Response time may vary, but every message is valued.
-          </p>
+            <div class="contact-point">
+              <span class="contact-label">Languages</span>
+              <p>Deutsch, Русский, English, O‘zbek</p>
+            </div>
+
+            <div class="contact-point">
+              <span class="contact-label">Availability</span>
+              <p>Messages and inquiries are welcome through this page</p>
+            </div>
+          </div>
         </div>
 
-        <!-- FORM -->
         <div class="content-card">
           <p class="eyebrow">Message</p>
           <h2>Send a message</h2>
 
           <form class="contact-form">
             <div class="form-group">
-              <label>Name</label>
-              <input type="text" placeholder="Your name" required />
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
             </div>
 
             <div class="form-group">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com" required />
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="your@email.com" />
             </div>
 
             <div class="form-group">
-              <label>Message</label>
-              <textarea rows="5" placeholder="Write your message..." required></textarea>
+              <label for="topic">Topic</label>
+              <input id="topic" type="text" placeholder="Articles, courses, collaboration..." />
             </div>
 
-            <button type="submit" class="btn btn-primary">
-              Send Message
-            </button>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
 
-          <!-- FALLBACK EMAIL -->
           <p class="contact-alt">
-            Or contact directly:
+            Direct email:
             <a href="mailto:your@email.com">your@email.com</a>
           </p>
         </div>
+      </div>
+    </section>
 
+    <section class="languages-section">
+      <div class="container languages-box">
+        <div>
+          <p class="eyebrow">Multilingual Communication</p>
+          <h2>Connect in four languages</h2>
+        </div>
+
+        <div class="language-tags">
+          <span>Deutsch</span>
+          <span>Русский</span>
+          <span>English</span>
+          <span>O‘zbek</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
+    <div class="container footer-grid">
+      <div>
+        <h3>LearningPathJourney</h3>
+        <p>
+          A modern dental education platform with personal journey, articles, news,
+          AI support, and private premium courses.
+        </p>
+      </div>
+
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Connect</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Languages</h4>
+        <ul class="footer-links">
+          <li><a href="#">DE</a></li>
+          <li><a href="#">RU</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#">UZ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
       <p>© 2026 Learning Path Journey. All rights reserved.</p>
-      <p>Designed with clarity, ambition, and growth in mind.</p>
     </div>
   </footer>
 
