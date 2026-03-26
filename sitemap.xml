@@ -3,23 +3,14 @@
 
   <url>
     <loc>https://xilola92.github.io/learningpathjourney/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://xilola92.github.io/learningpathjourney/about.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://xilola92.github.io/learningpathjourney/contact.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>
