@@ -475,11 +475,36 @@ document.addEventListener("DOMContentLoaded", () => {
         setLanguage(button.dataset.lang);
       });
     });
-  }
+  const translations = {
+  en: {
+    "nav.home": "Home",
+    ...
+    "article1.eyebrow": "Personal Story",
+    "article1.title": "My Journey in Dentistry: Part 1 — Uzbekistan",
+    ...
+  },
 
-  initializeLanguageButtons();
-  setLanguage(getStoredLanguage());
-});
+  de: {
+    "nav.home": "Startseite",
+    ...
+    "article1.eyebrow": "Persönliche Geschichte",
+    ...
+  },
+
+  ru: {
+    "nav.home": "Главная",
+    ...
+    "article1.eyebrow": "Личная история",
+    ...
+  },
+
+  uz: {
+    "nav.home": "Bosh sahifa",
+    ...
+    "article1.eyebrow": "Shaxsiy hikoya",
+    ...
+  }
+};
 
 "article1.eyebrow": "Personal Story",
 "article1.title": "My Journey in Dentistry: Part 1 — Uzbekistan",
