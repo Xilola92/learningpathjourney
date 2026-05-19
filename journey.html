@@ -2,53 +2,49 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJHZ4B1LCM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LJHZ4B1LCM');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJHZ4B1LCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LJHZ4B1LCM');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journey | Learning Path Journey</title>
-  <meta
-    name="description"
-    content="The personal and professional journey behind Learning Path Journey – dentistry, growth, education, and purpose."
-  />
+  <meta name="description" content="The personal and professional journey behind Learning Path Journey – dentistry, growth, education, and purpose." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
+    <div class="container header-inner">
       <a href="index.html" class="logo">LearningPathJourney</a>
-
-      <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="journey.html">Journey</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="index.html#courses" data-i18n="nav.courses">Private Courses</a>
+        <a href="contact.html" data-i18n="nav.connect">Connect</a>
       </nav>
-
-      <div class="nav-actions">
-        <select class="language-switcher" aria-label="Select language">
-          <option value="de">DE</option>
-          <option value="ru">RU</option>
-          <option value="en" selected>EN</option>
-          <option value="uz">UZ</option>
-        </select>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="de">DE</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="page-hero">
-      <div class="container">
+      <div class="container page-hero-inner">
         <p class="eyebrow">Personal & Professional Story</p>
-        <h1 class="page-title">A journey shaped by discipline, learning, and purpose</h1>
-        <p class="page-description">
+        <h1>A journey shaped by discipline, learning, and purpose</h1>
+        <p class="page-hero-text">
           This page shares the story behind the platform — the path into dentistry,
           the learning process, the experience, the challenges, and the deeper
           intention to grow through education and meaningful work.
@@ -56,27 +52,17 @@
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="content-section">
-      <div class="container content-grid">
-        <div class="section-text">
+    <section class="section-block">
+      <div class="container split-grid">
+        <div class="content-card large-card">
           <p class="eyebrow">Beginning</p>
           <h2>Where the journey starts</h2>
-          <p>
-            Every professional path begins with curiosity, effort, and a reason
-            to keep going. This journey is not only about dentistry as a field,
-            but also about personal strength, learning, and long-term growth.
-          </p>
-          <p>
-            The story of this platform starts with the desire to build something
-            meaningful from real experience — something that connects knowledge,
-            reflection, and education.
-          </p>
+          <p>Every professional path begins with curiosity, effort, and a reason to keep going. This journey is not only about dentistry as a field, but also about personal strength, learning, and long-term growth.</p>
+          <p>The story of this platform starts with the desire to build something meaningful from real experience — something that connects knowledge, reflection, and education.</p>
         </div>
-
-        <div class="feature-box">
-          <p class="mini-label">Journey Focus</p>
-          <ul>
+        <div class="content-card">
+          <p class="card-label">Journey Focus</p>
+          <ul class="feature-list">
             <li>Professional growth</li>
             <li>Real learning experience</li>
             <li>Discipline and resilience</li>
@@ -86,141 +72,80 @@
       </div>
     </section>
 
-    <!-- TIMELINE -->
-    <section class="timeline-section">
+    <section class="section-block">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Timeline</p>
           <h2>Main stages of the journey</h2>
         </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <span class="timeline-label">Step 01</span>
-              <h3>The first interest in dentistry</h3>
-              <p>
-                A growing interest in dental knowledge, practical work, and the
-                discipline of healthcare created the first foundation for this path.
-              </p>
-            </div>
+        <div class="card-grid three-cols">
+          <article class="info-card">
+            <div class="card-number">01</div>
+            <h3>The first interest in dentistry</h3>
+            <p>A growing interest in dental knowledge, practical work, and the discipline of healthcare created the first foundation for this path.</p>
           </article>
-
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <span class="timeline-label">Step 02</span>
-              <h3>Learning, studying, and real experience</h3>
-              <p>
-                Through study and hands-on exposure, the journey became more than
-                an idea — it became real experience shaped by effort and consistency.
-              </p>
-            </div>
+          <article class="info-card">
+            <div class="card-number">02</div>
+            <h3>Learning, studying, and real experience</h3>
+            <p>Through study and hands-on exposure, the journey became more than an idea — it became real experience shaped by effort and consistency.</p>
           </article>
-
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <span class="timeline-label">Step 03</span>
-              <h3>Challenges and inner growth</h3>
-              <p>
-                Every difficult stage brought not only obstacles, but also clarity,
-                maturity, and a stronger sense of direction.
-              </p>
-            </div>
+          <article class="info-card">
+            <div class="card-number">03</div>
+            <h3>Challenges and inner growth</h3>
+            <p>Every difficult stage brought not only obstacles, but also clarity, maturity, and a stronger sense of direction.</p>
           </article>
-
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <span class="timeline-label">Step 04</span>
-              <h3>Turning experience into value</h3>
-              <p>
-                This platform is part of that transformation — taking lived
-                experience and turning it into educational value for others.
-              </p>
-            </div>
+          <article class="info-card">
+            <div class="card-number">04</div>
+            <h3>Turning experience into value</h3>
+            <p>This platform is part of that transformation — taking lived experience and turning it into educational value for others.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- VALUES -->
-    <section class="content-section alt-section">
+    <section class="section-block">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Core Values</p>
           <h2>What defines this path</h2>
         </div>
-
-        <div class="cards-grid">
+        <div class="card-grid three-cols">
           <article class="info-card">
-            <div class="card-icon">01</div>
+            <div class="card-number">01</div>
             <h3>Discipline</h3>
-            <p>
-              Growth is built through consistency, seriousness, and the willingness
-              to keep learning step by step.
-            </p>
+            <p>Growth is built through consistency, seriousness, and the willingness to keep learning step by step.</p>
           </article>
-
           <article class="info-card">
-            <div class="card-icon">02</div>
+            <div class="card-number">02</div>
             <h3>Purpose</h3>
-            <p>
-              The journey is not only about skills, but also about meaning,
-              direction, and building something valuable.
-            </p>
+            <p>The journey is not only about skills, but also about meaning, direction, and building something valuable.</p>
           </article>
-
           <article class="info-card">
-            <div class="card-icon">03</div>
+            <div class="card-number">03</div>
             <h3>Education</h3>
-            <p>
-              Learning is at the center of this path — both receiving knowledge
-              and eventually sharing it.
-            </p>
+            <p>Learning is at the center of this path — both receiving knowledge and eventually sharing it.</p>
           </article>
-
           <article class="info-card">
-            <div class="card-icon">04</div>
+            <div class="card-number">04</div>
             <h3>Transformation</h3>
-            <p>
-              Real experience becomes stronger when it is reflected on, structured,
-              and transformed into growth.
-            </p>
+            <p>Real experience becomes stronger when it is reflected on, structured, and transformed into growth.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FUTURE -->
-    <section class="premium-section">
-      <div class="container premium-grid">
-        <div class="section-text">
+    <section class="section-block">
+      <div class="container wide-panel">
+        <div class="wide-panel-text">
           <p class="eyebrow">What Comes Next</p>
           <h2>From journey to educational platform</h2>
-          <p>
-            This journey does not end with personal progress. It expands into
-            articles, meaningful content, current dental topics, AI-based support,
-            and private premium learning experiences for others.
-          </p>
-          <div class="premium-points">
-            <span>Story</span>
-            <span>Knowledge</span>
-            <span>Education</span>
-            <span>Premium Courses</span>
-          </div>
+          <p>This journey does not end with personal progress. It expands into articles, meaningful content, current dental topics, and private premium learning experiences for others.</p>
         </div>
-
-        <div class="premium-card">
-          <p class="mini-label">Future Direction</p>
-          <h3>A platform with depth</h3>
-          <p>
-            The long-term idea is to connect personal experience with modern
-            educational design and build a space that feels serious, elegant,
-            and useful.
-          </p>
+        <div class="language-tags">
+          <span>Story</span>
+          <span>Knowledge</span>
+          <span>Education</span>
+          <span>Premium Courses</span>
         </div>
       </div>
     </section>
@@ -230,33 +155,24 @@
     <div class="container footer-grid">
       <div>
         <h3>LearningPathJourney</h3>
-        <p>
-          A modern educational dental platform with personal journey, articles,
-          news, AI support, and premium private learning.
-        </p>
+        <p data-i18n="footer.description">A modern dental education platform with articles, news, personal journey, and premium private courses.</p>
       </div>
-
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.navigation">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="journey.html">Journey</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="index.html#courses" data-i18n="nav.courses">Private Courses</a></li>
+          <li><a href="contact.html" data-i18n="nav.connect">Connect</a></li>
         </ul>
       </div>
-
       <div>
-        <h4>Languages</h4>
+        <h4 data-i18n="footer.languages">Languages</h4>
         <ul class="footer-links">
-          <li><a href="#">DE</a></li>
-          <li><a href="#">RU</a></li>
-          <li><a href="#">EN</a></li>
-          <li><a href="#">UZ</a></li>
+          <li>Deutsch</li><li>Русский</li><li>English</li><li>O'zbek</li>
         </ul>
       </div>
     </div>
-
     <div class="container footer-bottom">
       <p>© 2026 Learning Path Journey. All rights reserved.</p>
     </div>
