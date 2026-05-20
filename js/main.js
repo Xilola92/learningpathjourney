@@ -27,38 +27,53 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.sectionEyebrow": "What the platform includes",
       "home.sectionTitle": "A clean structure for learning and development",
       "home.feature1Title": "Personal Journey",
-      "home.feature1Text": "The story behind the platform, shaped by learning, experience, and growth.",
+      "home.feature1Text":
+        "The story behind the platform, shaped by learning, experience, and growth.",
       "home.feature2Title": "Articles & News",
-      "home.feature2Text": "Educational content, professional insights, and useful updates from the dental field.",
+      "home.feature2Text":
+        "Educational content, professional insights, and useful updates from the dental field.",
       "home.feature3Title": "Private Premium Courses",
-      "home.feature3Text": "A future closed learning area for deeper and more focused study.",
+      "home.feature3Text":
+        "A future closed learning area for deeper and more focused study.",
       "home.languagesEyebrow": "Multilingual Access",
       "home.languagesTitle": "Available in four languages",
+
+      // ✅ Previously missing keys — index.html about section
       "home.aboutLabel": "About the Platform",
       "home.aboutTitle": "More than a website — a structured learning space",
-      "home.aboutText1": "This platform is designed to combine education, personal growth, meaningful content, and a refined digital experience.",
-      "home.aboutText2": "It is being built for dentistry, dental assisting, educational articles, practical updates, and future premium study.",
+      "home.aboutText1":
+        "This platform is designed to combine education, personal growth, meaningful content, and a refined digital experience.",
+      "home.aboutText2":
+        "It is being built for dentistry, dental assisting, educational articles, practical updates, and future premium study.",
       "home.aboutLink": "Read more about the platform →",
+
+      // ✅ Previously missing keys — index.html content list
       "home.contentLabel": "Main Content Areas",
       "home.content1": "Personal path in dentistry",
       "home.content2": "Educational dental articles",
       "home.content3": "Useful professional updates",
       "home.content4": "Private premium learning",
       "home.content5": "Multilingual access",
+
+      // ✅ Previously missing keys — index.html courses section
       "home.coursesEyebrow": "Private Courses",
       "home.coursesTitle": "A future premium area for deeper and more focused learning",
-      "home.coursesText": "The platform will later include closed premium courses with structured lessons, selected materials, and more serious educational guidance in dentistry and dental assisting.",
+      "home.coursesText":
+        "The platform will later include closed premium courses with structured lessons, selected materials, and more serious educational guidance in dentistry and dental assisting.",
       "home.coursesTag1": "Premium Access",
       "home.coursesTag2": "Structured Lessons",
       "home.coursesTag3": "Focused Study",
 
       "about.eyebrow": "About the Platform",
       "about.title": "A modern dental education platform built with clarity, purpose, and growth",
-      "about.description": "Learning Path Journey is a multilingual digital space dedicated to dentistry, dental assisting, educational articles, useful updates, and future private premium learning.",
+      "about.description":
+        "Learning Path Journey is a multilingual digital space dedicated to dentistry, dental assisting, educational articles, useful updates, and future private premium learning.",
       "about.missionLabel": "Mission",
       "about.missionTitle": "Why this platform exists",
-      "about.missionText1": "This platform is created to combine education, professional development, and meaningful content in one elegant and structured space.",
-      "about.missionText2": "It is not only a website, but the beginning of a stronger educational direction in dentistry and dental assisting.",
+      "about.missionText1":
+        "This platform is created to combine education, professional development, and meaningful content in one elegant and structured space.",
+      "about.missionText2":
+        "It is not only a website, but the beginning of a stronger educational direction in dentistry and dental assisting.",
       "about.focusLabel": "Core Focus",
       "about.focus1": "Dentistry",
       "about.focus2": "Dental assisting",
@@ -69,27 +84,35 @@ document.addEventListener("DOMContentLoaded", () => {
       "about.valuesEyebrow": "Values",
       "about.valuesTitle": "What defines the platform",
       "about.card1Title": "Clarity",
-      "about.card1Text": "Knowledge should be understandable, structured, and accessible.",
+      "about.card1Text":
+        "Knowledge should be understandable, structured, and accessible.",
       "about.card2Title": "Growth",
-      "about.card2Text": "Learning is a process of continuous personal and professional development.",
+      "about.card2Text":
+        "Learning is a process of continuous personal and professional development.",
       "about.card3Title": "Depth",
-      "about.card3Text": "The goal is not only to inform, but to create real educational value.",
+      "about.card3Text":
+        "The goal is not only to inform, but to create real educational value.",
       "about.visionEyebrow": "Vision",
       "about.visionTitle": "From a personal path to a trusted educational brand",
-      "about.visionText": "The long-term vision is to build a refined and reliable dental education platform with articles, guided learning, premium courses, and meaningful multilingual access.",
+      "about.visionText":
+        "The long-term vision is to build a refined and reliable dental education platform with articles, guided learning, premium courses, and meaningful multilingual access.",
 
       "contact.eyebrow": "Connect",
       "contact.title": "Let's connect for learning, ideas, and meaningful collaboration",
-      "contact.description": "This space is created for communication, educational collaboration, article ideas, professional networking, and future private course inquiries in dentistry and dental assisting.",
+      "contact.description":
+        "This space is created for communication, educational collaboration, article ideas, professional networking, and future private course inquiries in dentistry and dental assisting.",
       "contact.infoLabel": "Contact Information",
       "contact.infoTitle": "Open for communication",
-      "contact.infoText": "You can get in touch regarding educational content, dentistry, dental assisting, future private learning, article ideas, and professional collaboration.",
+      "contact.infoText":
+        "You can get in touch regarding educational content, dentistry, dental assisting, future private learning, article ideas, and professional collaboration.",
       "contact.focusLabel": "Focus",
-      "contact.focusText": "Dentistry, dental assisting, articles, news, premium learning",
+      "contact.focusText":
+        "Dentistry, dental assisting, articles, news, premium learning",
       "contact.languagesLabel": "Languages",
       "contact.languagesText": "German, Russian, English, Uzbek",
       "contact.emailLabel": "Email",
-      "contact.note": "For direct contact, you can also send an email manually. Form integration can be connected later for automatic delivery.",
+      "contact.note":
+        "For direct contact, you can also send an email manually. Form integration can be connected later for automatic delivery.",
       "contact.formLabel": "Send a Message",
       "contact.formTitle": "Write to us",
       "contact.nameLabel": "Name",
@@ -108,49 +131,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "article1.eyebrow": "Personal Story",
       "article1.title": "My Journey in Dentistry: Part 1 — Uzbekistan",
-      "article1.subtitle": "The beginning of my path in medicine and dentistry, my first work experience, difficulties, mentors, and the journey that later led me toward Germany.",
-      "article1.p1": "My journey in dentistry began in a rather difficult way. I loved medicine, and in 2011 I graduated in Tashkent, Uzbekistan, from the Borovsky Medical College, one of the strongest and most respected medical colleges there.",
-      "article1.p2": "After graduation, I could not find a job. That period was not easy. I was even ready to become a volunteer at Maternity Hospital No. 12, the same place where I was born.",
-      "article1.p3": "I worked there as a volunteer for about one or two months. Later, I was invited to the clinic Shifo Nur Ko'z, which at that time was considered one of the best large private clinics.",
-      "article1.p4": "I mainly worked in the physiotherapy department there. But there were difficulties. I often experienced bullying and mobbing from the senior nurse. At that time, I was very young and did not fully understand what it was. For a long time, I was not even officially employed.",
-      "article1.p5": "Then, in 2014, I came to the dental clinic Apollonia. There I saw real dentistry with my own eyes for the first time. Natalia taught me a little, and although I worked there for free for one month during a very difficult period of my life, I am still grateful for that experience. Later, I was dismissed.",
-      "article1.p6": "Also in 2014, when I was already 22 years old, I was accepted into Ideal Dent laboratory. Here I would like to thank the founder, Alimov Fazliddin. At first, I worked as an assistant, and later I also learned dental technical work.",
-      "article1.p7": "That place became very meaningful for me not only professionally but also personally. Because of one important decision connected with that period of my life, I later reached a much higher international level. But because of personal difficulties, I left that place.",
-      "article1.p8": "In 2017, I continued working in dentistry, but that period was also difficult. I left my job, and for about a month it was very hard to find another one, especially because of my stutter. Then I began to think more strategically about my personal and professional development.",
-      "article1.p9": "I created an Instagram page called dental_assistant.uz, where I started sharing what I knew. Later, in 2018, I came to Vitali Dent, where I worked for about one year, until the clinic closed for renovation. At that time, I had already started becoming interested in Germany.",
-      "article1.p10": "In 2018, I came to Sirius Dent. There I met my beloved mentors, Dr. Elena Kim Dmitrievna and Iza Sungarova. Working side by side with them gave me strong experience. I also met one of my closest friends there, Elena Shanshieva. Even today, we all stay in touch like a family, and I am sincerely grateful to that team.",
-      "article1.p11": "Then the pandemic began, and everything stopped. In 2021, after quarantine, I went to Saudi Arabia. I was invited there by Dr. Sardor Mirakhmedov Sultanovich, the founder of My Dental and Dental Academy, and also one of my mentors. We even worked at night sometimes. It was a very intense and interesting experience. There I gained practical exposure to tooth extractions, infiltration anesthesia, restorations, and many other things. I am grateful to him and the team for that experience as well.",
-      "article1.p12": "In 2023, I worked in endodontics under the microscope with Oybek Tulkunovich, and that became my last workplace in Uzbekistan. I also completed a course in dental photography, and I am grateful to Max Nur for that knowledge. In this way, step by step, I built my experience before the next chapter of my life.",
+      "article1.subtitle":
+        "The beginning of my path in medicine and dentistry, my first work experience, difficulties, mentors, and the journey that later led me toward Germany.",
+      "article1.p1":
+        "My journey in dentistry began in a rather difficult way. I loved medicine, and in 2011 I graduated in Tashkent, Uzbekistan, from the Borovsky Medical College, one of the strongest and most respected medical colleges there.",
+      "article1.p2":
+        "After graduation, I could not find a job. That period was not easy. I was even ready to become a volunteer at Maternity Hospital No. 12, the same place where I was born.",
+      "article1.p3":
+        "I worked there as a volunteer for about one or two months. Later, I was invited to the clinic Shifo Nur Ko'z, which at that time was considered one of the best large private clinics.",
+      "article1.p4":
+        "I mainly worked in the physiotherapy department there. But there were difficulties. I often experienced bullying and mobbing from the senior nurse. At that time, I was very young and did not fully understand what it was. For a long time, I was not even officially employed.",
+      "article1.p5":
+        "Then, in 2014, I came to the dental clinic Apollonia. There I saw real dentistry with my own eyes for the first time. Natalia taught me a little, and although I worked there for free for one month during a very difficult period of my life, I am still grateful for that experience. Later, I was dismissed.",
+      "article1.p6":
+        "Also in 2014, when I was already 22 years old, I was accepted into Ideal Dent laboratory. Here I would like to thank the founder, Alimov Fazliddin. At first, I worked as an assistant, and later I also learned dental technical work.",
+      "article1.p7":
+        "That place became very meaningful for me not only professionally but also personally. Because of one important decision connected with that period of my life, I later reached a much higher international level. But because of personal difficulties, I left that place.",
+      "article1.p8":
+        "In 2017, I continued working in dentistry, but that period was also difficult. I left my job, and for about a month it was very hard to find another one, especially because of my stutter. Then I began to think more strategically about my personal and professional development.",
+      "article1.p9":
+        "I created an Instagram page called dental_assistant.uz, where I started sharing what I knew. Later, in 2018, I came to Vitali Dent, where I worked for about one year, until the clinic closed for renovation. At that time, I had already started becoming interested in Germany.",
+      "article1.p10":
+        "In 2018, I came to Sirius Dent. There I met my beloved mentors, Dr. Elena Kim Dmitrievna and Iza Sungarova. Working side by side with them gave me strong experience. I also met one of my closest friends there, Elena Shanshieva. Even today, we all stay in touch like a family, and I am sincerely grateful to that team.",
+      "article1.p11":
+        "Then the pandemic began, and everything stopped. In 2021, after quarantine, I went to Saudi Arabia. I was invited there by Dr. Sardor Mirakhmedov Sultanovich, the founder of My Dental and Dental Academy, and also one of my mentors. We even worked at night sometimes. It was a very intense and interesting experience. There I gained practical exposure to tooth extractions, infiltration anesthesia, restorations, and many other things. I am grateful to him and the team for that experience as well.",
+      "article1.p12":
+        "In 2023, I worked in endodontics under the microscope with Oybek Tulkunovich, and that became my last workplace in Uzbekistan. I also completed a course in dental photography, and I am grateful to Max Nur for that knowledge. In this way, step by step, I built my experience before the next chapter of my life.",
 
-      "article2.title": "My Journey in Dentistry: Part 2 — Germany",
-      "article2.p1": "I arrived in Germany on January 11, 2024 through the Ausbildung program to gain an international level of education and continue my professional development.",
-      "article2.p2": "For privacy reasons, I will not mention the names of the clinics and will refer to them using letters.",
-      "article2.p3": "My first employer — let's call her \"A\" — signed a contract with me. At that time, I had no accommodation, and I was given a room in her home where she lived with her mother.",
-      "article2.p4": "I came with good intentions and hope for a new beginning. However, the very next day I faced something that deeply hurt me.",
-      "article2.p5": "Her mother told me: \"It's good that you came. There is no future for you in Uzbekistan.\" I was shocked. I perceived this as discrimination, but I tried not to react.",
-      "article2.p6": "As a Muslim, I politely asked if I could pray at home. They allowed it, but later my prayer carpet was thrown away when I was not there.",
-      "article2.p7": "There were other difficult moments. I was given food with pork and told it was \"halal\". When I spoke to my parents, they listened and asked what I was talking about.",
-      "article2.p8": "I felt that my personal boundaries were not respected.",
-      "article2.p9": "At work, I often stayed alone after hours to clean the clinic, even on Sundays, which was against the rules.",
-      "article2.p10": "When I asked about a mini-job, I was told it was not allowed on my visa, although I actually had permission to work up to 10 hours per week.",
-      "article2.p11": "Eventually, I realized I could not stay and decided to leave.",
-      "article2.p12": "I first arranged a mini-job and temporary housing, then moved to clinic \"B\" through a recommendation.",
-      "article2.p13": "The atmosphere there was unfriendly and disrespectful, so I left after one month and moved to clinic \"C\".",
-      "article2.p14": "At first, conditions were better, but due to my experience I was expected to do everything at once, sometimes working up to 12 hours.",
-      "article2.p15": "There was a head assistant whose behavior was very difficult. She did not allow me to work calmly and often exaggerated situations.",
-      "article2.p16": "The manager also treated me unfairly. When my shift ended, I was told I had to clean alone, even though it was a shared responsibility.",
-      "article2.p17": "Everyone left, and I stayed alone in the clinic.",
-      "article2.p18": "This situation led me to severe depression, including suicidal thoughts and antidepressant treatment.",
-      "article2.p19": "I reported everything to ZÄK. The employer found out and dismissed me illegally — verbally and during my sick leave.",
-      "article2.p20": "Later, I worked in KFO, but I was dismissed because I had no orthodontic experience.",
-      "article2.p21": "In another situation, when I was sick for one day, the employer tried to find out my diagnosis, which is not allowed.",
-      "article2.p22": "Then I joined clinic \"C\", but quickly found a better opportunity at clinic \"D\" and signed another contract.",
-      "article2.p23": "Currently, I work at clinic \"C\" and will soon move to clinic \"D\".",
-      "article2.p24": "At the same time, I am going through the diploma recognition (Anerkennung) process.",
-      "article2.p25": "This is not the end of my story. There is more ahead — recognition, development, and new steps.",
-      "article2.p26": "To be continued in the next blog posts.",
+            "article2.title": "My Journey in Dentistry: Part 2 — Germany",
+      "article2.p1": "I arrived in Germany on January 11, 2024 through the Ausbildung program — a vocational training system — to gain an international level of education. For privacy reasons I will not write the names of the clinics; instead I will use letters in quotation marks.",
+      "article2.p2": "My first employer “A” drew up a contract with me. Since I had no accommodation, she gave me a room in her home, where she lived together with her mother. I came with good intentions.",
+      "article2.p3": "The very next day her mother said to me: “Oh, how wonderful that you came. Back in Uzbekistan you have no future.” I was shocked — this was already discrimination, and it is a taboo. I tried not to react.",
+      "article2.p4": "Later I asked whether I could pray at home, as I am a Muslim. She allowed it. But when I was not there, she simply threw away my prayer carpet.",
+      "article2.p5": "She also gave me food that contained pork, but told me everything was halal. When I was speaking with my parents on the phone, she came in, listened, and asked what I was talking about and why.",
+      "article2.p6": "After work only I stayed behind to clean the clinic — even on Sundays, which was against the law. When I asked about a part-time mini-job, she looked at me with wide eyes and said that my visa did not allow it. In reality I was permitted to work up to 10 hours per week.",
+      "article2.p7": "I decided to leave this clinic. First I arranged a mini-job contract and found temporary accommodation. Then, through a classmate’s recommendation, I signed an Ausbildung contract at clinic “B”.",
+      "article2.p8": "The team there was somehow strange — unfriendly and disrespectful toward each other. After one month I left on my own initiative and moved to clinic “C”.",
+      "article2.p9": "The conditions there were much better in many ways. However, because of my experience, everything was piled onto me at once. I had to work up to 12 hours a day.",
+      "article2.p10": "The head dental assistant — according to the manager she was autistic — behaved in a very unusual way. She did not let me work calmly and constantly exaggerated everything.",
+      "article2.p11": "The manager treated me with mobbing. At the end of the working day she would come and say: “Hey you — why haven’t you cleaned the clinic?” I replied: “Why should I do it alone if it is our shared responsibility?” She answered: “You are right, but you should work more.” In the end everyone left, locked up the clinic, and I was left alone inside.",
+      "article2.p12": "The head nurse also always decided on her own when lunchtime was, depending on her mood.",
+      "article2.p13": "Eventually all of this led me to severe depression — to the point of suicidal thoughts and antidepressant treatment.",
+      "article2.p14": "I reported everything to the ZÄK. The employer found out and dismissed me illegally — verbally and while I was on sick leave.",
+      "article2.p15": "At a KFO practice I was also dismissed, because I had no experience in orthodontics. There too, when I was ill for one day, the employer called the clinic directly to find out my diagnosis — which is forbidden by law.",
+      "article2.p16": "I then moved to clinic “C” and signed a contract immediately. The very next day I found an even better opportunity and signed a contract with clinic “D” as well.",
+      "article2.p17": "At the moment I am still working at clinic “C” and will soon move to clinic “D”. I am also being supported through the diploma recognition (Anerkennung) process. The story continues — follow the next blog posts for updates.",
 
-      "footer.description": "A modern dental education platform with articles, news, personal journey, and premium private courses.",
+      "footer.description":
+        "A modern dental education platform with articles, news, personal journey, and premium private courses.",
       "footer.navigation": "Navigation",
       "footer.languages": "Languages"
     },
@@ -164,7 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "home.eyebrow": "Zahnmedizin • Bildung • Artikel • Premium-Lernen",
       "home.title": "Eine moderne Plattform für zahnmedizinische Bildung, Artikel, Neuigkeiten und private Kurse",
-      "home.description": "Learning Path Journey ist eine moderne mehrsprachige Plattform für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges Premium-Lernen.",
+      "home.description":
+        "Learning Path Journey ist eine moderne mehrsprachige Plattform für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges Premium-Lernen.",
       "home.primaryBtn": "Plattform entdecken",
       "home.secondaryBtn": "Kontakt aufnehmen",
       "home.badge1": "4 Sprachen",
@@ -172,7 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.badge3": "Private Kurse",
       "home.cardLabel": "Plattform-Fokus",
       "home.cardTitle": "Entwickelt für Wachstum, Klarheit und sinnvolles Lernen",
-      "home.cardText": "Ein moderner digitaler Raum für den persönlichen Weg, Bildungsinhalte, berufliche Themen und einen zukünftigen privaten Premium-Bereich in der Zahnmedizin.",
+      "home.cardText":
+        "Ein moderner digitaler Raum für den persönlichen Weg, Bildungsinhalte, berufliche Themen und einen zukünftigen privaten Premium-Bereich in der Zahnmedizin.",
       "home.tag1": "Weg",
       "home.tag2": "Artikel",
       "home.tag3": "Neuigkeiten",
@@ -180,17 +210,23 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.sectionEyebrow": "Was die Plattform umfasst",
       "home.sectionTitle": "Eine klare Struktur für Lernen und Entwicklung",
       "home.feature1Title": "Persönlicher Weg",
-      "home.feature1Text": "Die Geschichte hinter der Plattform, geprägt von Lernen, Erfahrung und Wachstum.",
+      "home.feature1Text":
+        "Die Geschichte hinter der Plattform, geprägt von Lernen, Erfahrung und Wachstum.",
       "home.feature2Title": "Artikel & Neuigkeiten",
-      "home.feature2Text": "Bildungsinhalte, professionelle Einblicke und nützliche Updates aus dem dentalen Bereich.",
+      "home.feature2Text":
+        "Bildungsinhalte, professionelle Einblicke und nützliche Updates aus dem dentalen Bereich.",
       "home.feature3Title": "Private Premium-Kurse",
-      "home.feature3Text": "Ein zukünftiger geschlossener Lernbereich für tieferes und fokussierteres Studium.",
+      "home.feature3Text":
+        "Ein zukünftiger geschlossener Lernbereich für tieferes und fokussierteres Studium.",
       "home.languagesEyebrow": "Mehrsprachiger Zugang",
       "home.languagesTitle": "In vier Sprachen verfügbar",
+
       "home.aboutLabel": "Über die Plattform",
       "home.aboutTitle": "Mehr als eine Website — ein strukturierter Lernraum",
-      "home.aboutText1": "Diese Plattform ist darauf ausgelegt, Bildung, persönliches Wachstum, bedeutungsvolle Inhalte und ein modernes digitales Erlebnis zu verbinden.",
-      "home.aboutText2": "Sie wird für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, praktische Updates und zukünftiges Premium-Studium aufgebaut.",
+      "home.aboutText1":
+        "Diese Plattform ist darauf ausgelegt, Bildung, persönliches Wachstum, bedeutungsvolle Inhalte und ein modernes digitales Erlebnis zu verbinden.",
+      "home.aboutText2":
+        "Sie wird für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, praktische Updates und zukünftiges Premium-Studium aufgebaut.",
       "home.aboutLink": "Mehr über die Plattform →",
       "home.contentLabel": "Hauptinhaltsbereiche",
       "home.content1": "Persönlicher Weg in der Zahnmedizin",
@@ -200,18 +236,22 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.content5": "Mehrsprachiger Zugang",
       "home.coursesEyebrow": "Private Kurse",
       "home.coursesTitle": "Ein zukünftiger Premium-Bereich für tieferes und fokussierteres Lernen",
-      "home.coursesText": "Die Plattform wird später geschlossene Premium-Kurse mit strukturierten Lektionen, ausgewählten Materialien und seriöser Bildungsbegleitung in Zahnmedizin und Assistenz umfassen.",
+      "home.coursesText":
+        "Die Plattform wird später geschlossene Premium-Kurse mit strukturierten Lektionen, ausgewählten Materialien und seriöser Bildungsbegleitung in Zahnmedizin und Assistenz umfassen.",
       "home.coursesTag1": "Premium-Zugang",
       "home.coursesTag2": "Strukturierte Lektionen",
       "home.coursesTag3": "Fokussiertes Studium",
 
       "about.eyebrow": "Über die Plattform",
       "about.title": "Eine moderne Bildungsplattform für Zahnmedizin, aufgebaut mit Klarheit, Sinn und Wachstum",
-      "about.description": "Learning Path Journey ist ein mehrsprachiger digitaler Raum für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges privates Premium-Lernen.",
+      "about.description":
+        "Learning Path Journey ist ein mehrsprachiger digitaler Raum für Zahnmedizin, zahnmedizinische Assistenz, Bildungsartikel, nützliche Updates und zukünftiges privates Premium-Lernen.",
       "about.missionLabel": "Mission",
       "about.missionTitle": "Warum diese Plattform existiert",
-      "about.missionText1": "Diese Plattform wurde geschaffen, um Bildung, berufliche Entwicklung und bedeutungsvolle Inhalte in einem eleganten und strukturierten Raum zu vereinen.",
-      "about.missionText2": "Sie ist nicht nur eine Website, sondern der Beginn einer stärkeren Bildungsrichtung in der Zahnmedizin und zahnmedizinischen Assistenz.",
+      "about.missionText1":
+        "Diese Plattform wurde geschaffen, um Bildung, berufliche Entwicklung und bedeutungsvolle Inhalte in einem eleganten und strukturierten Raum zu vereinen.",
+      "about.missionText2":
+        "Sie ist nicht nur eine Website, sondern der Beginn einer stärkeren Bildungsrichtung in der Zahnmedizin und zahnmedizinischen Assistenz.",
       "about.focusLabel": "Kernfokus",
       "about.focus1": "Zahnmedizin",
       "about.focus2": "Zahnmedizinische Assistenz",
@@ -222,27 +262,35 @@ document.addEventListener("DOMContentLoaded", () => {
       "about.valuesEyebrow": "Werte",
       "about.valuesTitle": "Was die Plattform definiert",
       "about.card1Title": "Klarheit",
-      "about.card1Text": "Wissen sollte verständlich, strukturiert und zugänglich sein.",
+      "about.card1Text":
+        "Wissen sollte verständlich, strukturiert und zugänglich sein.",
       "about.card2Title": "Wachstum",
-      "about.card2Text": "Lernen ist ein Prozess der kontinuierlichen persönlichen und beruflichen Entwicklung.",
+      "about.card2Text":
+        "Lernen ist ein Prozess der kontinuierlichen persönlichen und beruflichen Entwicklung.",
       "about.card3Title": "Tiefe",
-      "about.card3Text": "Das Ziel ist nicht nur zu informieren, sondern echten Bildungswert zu schaffen.",
+      "about.card3Text":
+        "Das Ziel ist nicht nur zu informieren, sondern echten Bildungswert zu schaffen.",
       "about.visionEyebrow": "Vision",
       "about.visionTitle": "Von einem persönlichen Weg zu einer vertrauenswürdigen Bildungsmarke",
-      "about.visionText": "Die langfristige Vision ist der Aufbau einer hochwertigen und verlässlichen Bildungsplattform für Zahnmedizin mit Artikeln, geführtem Lernen, Premium-Kursen und sinnvoller mehrsprachiger Zugänglichkeit.",
+      "about.visionText":
+        "Die langfristige Vision ist der Aufbau einer hochwertigen und verlässlichen Bildungsplattform für Zahnmedizin mit Artikeln, geführtem Lernen, Premium-Kursen und sinnvoller mehrsprachiger Zugänglichkeit.",
 
       "contact.eyebrow": "Kontakt",
       "contact.title": "Lassen Sie uns für Lernen, Ideen und sinnvolle Zusammenarbeit in Kontakt treten",
-      "contact.description": "Dieser Bereich ist für Kommunikation, Bildungszusammenarbeit, Artikelideen, berufliches Networking und zukünftige Anfragen zu privaten Kursen in Zahnmedizin und Assistenz gedacht.",
+      "contact.description":
+        "Dieser Bereich ist für Kommunikation, Bildungszusammenarbeit, Artikelideen, berufliches Networking und zukünftige Anfragen zu privaten Kursen in Zahnmedizin und Assistenz gedacht.",
       "contact.infoLabel": "Kontaktinformationen",
       "contact.infoTitle": "Offen für Kommunikation",
-      "contact.infoText": "Sie können uns zu Bildungsinhalten, Zahnmedizin, zahnmedizinischer Assistenz, zukünftigem privatem Lernen, Artikelideen und beruflicher Zusammenarbeit kontaktieren.",
+      "contact.infoText":
+        "Sie können uns zu Bildungsinhalten, Zahnmedizin, zahnmedizinischer Assistenz, zukünftigem privatem Lernen, Artikelideen und beruflicher Zusammenarbeit kontaktieren.",
       "contact.focusLabel": "Fokus",
-      "contact.focusText": "Zahnmedizin, zahnmedizinische Assistenz, Artikel, Neuigkeiten, Premium-Lernen",
+      "contact.focusText":
+        "Zahnmedizin, zahnmedizinische Assistenz, Artikel, Neuigkeiten, Premium-Lernen",
       "contact.languagesLabel": "Sprachen",
       "contact.languagesText": "Deutsch, Russisch, Englisch, Usbekisch",
       "contact.emailLabel": "E-Mail",
-      "contact.note": "Für direkten Kontakt können Sie auch manuell eine E-Mail senden. Eine Formularintegration kann später für die automatische Zustellung verbunden werden.",
+      "contact.note":
+        "Für direkten Kontakt können Sie auch manuell eine E-Mail senden. Eine Formularintegration kann später für die automatische Zustellung verbunden werden.",
       "contact.formLabel": "Nachricht senden",
       "contact.formTitle": "Schreiben Sie uns",
       "contact.nameLabel": "Name",
@@ -261,49 +309,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "article1.eyebrow": "Persönliche Geschichte",
       "article1.title": "Mein Weg in der Zahnmedizin: Teil 1 — Usbekistan",
-      "article1.subtitle": "Der Beginn meines Weges in Medizin und Zahnmedizin, meine ersten Arbeitserfahrungen, Schwierigkeiten, Mentoren und der Weg, der mich später nach Deutschland führte.",
-      "article1.p1": "Mein Weg in der Zahnmedizin begann nicht einfach. Ich liebte die Medizin und schloss 2011 in Taschkent, Usbekistan, das Borovsky Medical College ab, eines der stärksten und angesehensten medizinischen Colleges.",
-      "article1.p2": "Nach meinem Abschluss konnte ich zunächst keine Arbeit finden. Diese Zeit war nicht einfach. Ich war sogar bereit, als Freiwillige im Entbindungsheim Nr. 12 zu arbeiten — genau dort, wo ich selbst geboren wurde.",
-      "article1.p3": "Dort arbeitete ich etwa ein bis zwei Monate als Freiwillige. Später wurde ich in die Klinik Shifo Nur Ko'z eingeladen, die damals als eine der besten großen Privatkliniken galt.",
-      "article1.p4": "Dort arbeitete ich hauptsächlich in der Physiotherapie-Abteilung. Aber es gab auch Schwierigkeiten. Ich war oft mit Bullying und Mobbing durch die leitende Krankenschwester konfrontiert. Damals war ich sehr jung und verstand nicht vollständig, was geschah. Lange Zeit wurde ich nicht einmal offiziell angestellt.",
-      "article1.p5": "Dann kam ich 2014 in die Zahnklinik Apollonia. Dort sah ich zum ersten Mal echte Zahnmedizin mit eigenen Augen. Natalia brachte mir einiges bei. Ich arbeitete dort einen Monat lang kostenlos, obwohl diese Zeit in meinem Leben sehr schwer war. Später wurde ich entlassen.",
-      "article1.p6": "Ebenfalls 2014, als ich bereits 22 Jahre alt war, wurde ich im Labor Ideal Dent aufgenommen. Hier möchte ich dem Gründer Alimov Fazliddin danken. Zuerst arbeitete ich als Assistentin, später lernte ich auch zahntechnische Arbeit.",
-      "article1.p7": "Dieser Ort wurde für mich nicht nur beruflich, sondern auch persönlich sehr wichtig. Wegen einer wichtigen Entscheidung, die mit dieser Lebensphase verbunden war, erreichte ich später ein viel höheres internationales Niveau. Doch wegen persönlicher Probleme musste ich diesen Ort verlassen.",
-      "article1.p8": "2017 arbeitete ich weiter in der Zahnmedizin, aber auch diese Zeit war schwierig. Ich kündigte, und etwa einen Monat lang war es sehr schwer, eine neue Stelle zu finden, besonders wegen meines Stotterns. Dann begann ich strategischer über meine persönliche und berufliche Entwicklung nachzudenken.",
-      "article1.p9": "Ich eröffnete eine Instagram-Seite mit dem Namen dental_assistant.uz und begann dort das zu veröffentlichen, was ich wusste. Später, im Jahr 2018, kam ich zu Vitali Dent, wo ich etwa ein Jahr arbeitete, bis die Klinik wegen Renovierung geschlossen wurde. In dieser Zeit begann ich mich bereits für Deutschland zu interessieren.",
-      "article1.p10": "2018 kam ich zu Sirius Dent. Dort lernte ich meine geliebten Mentoren kennen — Dr. Elena Kim Dmitrievna und Iza Sungarova. Die Arbeit Seite an Seite mit ihnen gab mir starke Erfahrung. Dort fand ich auch eine meiner engsten Freundinnen — Elena Shanshieva. Bis heute bleiben wir wie eine Familie in Kontakt, und ich bin diesem Team von Herzen dankbar.",
-      "article1.p11": "Dann begann die Pandemie, und alles kam zum Stillstand. Im Jahr 2021, nach der Quarantäne, ging ich nach Saudi-Arabien. Ich wurde von Dr. Sardor Mirakhmedov Sultanovich eingeladen — dem Gründer von My Dental und Dental Academy und zugleich einem meiner Mentoren. Wir arbeiteten manchmal sogar nachts. Es war eine sehr intensive und interessante Erfahrung. Dort sammelte ich praktische Erfahrung mit Zahnextraktionen, Infiltrationsanästhesie, Restaurationen und vielem mehr. Dafür bin ich ihm und dem Team ebenfalls dankbar.",
-      "article1.p12": "Im Jahr 2023 arbeitete ich in der Endodontie unter dem Mikroskop mit Oybek Tulkunovich, und das wurde mein letzter Arbeitsplatz in Usbekistan. Außerdem absolvierte ich einen Kurs in Dentalfotografie, und ich bin Max Nur für dieses Wissen dankbar. So baute ich Schritt für Schritt meine Erfahrung vor dem nächsten Kapitel meines Lebens auf.",
+      "article1.subtitle":
+        "Der Beginn meines Weges in Medizin und Zahnmedizin, meine ersten Arbeitserfahrungen, Schwierigkeiten, Mentoren und der Weg, der mich später nach Deutschland führte.",
+      "article1.p1":
+        "Mein Weg in der Zahnmedizin begann nicht einfach. Ich liebte die Medizin und schloss 2011 in Taschkent, Usbekistan, das Borovsky Medical College ab, eines der stärksten und angesehensten medizinischen Colleges.",
+      "article1.p2":
+        "Nach meinem Abschluss konnte ich zunächst keine Arbeit finden. Diese Zeit war nicht einfach. Ich war sogar bereit, als Freiwillige im Entbindungsheim Nr. 12 zu arbeiten — genau dort, wo ich selbst geboren wurde.",
+      "article1.p3":
+        "Dort arbeitete ich etwa ein bis zwei Monate als Freiwillige. Später wurde ich in die Klinik Shifo Nur Ko'z eingeladen, die damals als eine der besten großen Privatkliniken galt.",
+      "article1.p4":
+        "Dort arbeitete ich hauptsächlich in der Physiotherapie-Abteilung. Aber es gab auch Schwierigkeiten. Ich war oft mit Bullying und Mobbing durch die leitende Krankenschwester konfrontiert. Damals war ich sehr jung und verstand nicht vollständig, was geschah. Lange Zeit wurde ich nicht einmal offiziell angestellt.",
+      "article1.p5":
+        "Dann kam ich 2014 in die Zahnklinik Apollonia. Dort sah ich zum ersten Mal echte Zahnmedizin mit eigenen Augen. Natalia brachte mir einiges bei. Ich arbeitete dort einen Monat lang kostenlos, obwohl diese Zeit in meinem Leben sehr schwer war. Später wurde ich entlassen.",
+      "article1.p6":
+        "Ebenfalls 2014, als ich bereits 22 Jahre alt war, wurde ich im Labor Ideal Dent aufgenommen. Hier möchte ich dem Gründer Alimov Fazliddin danken. Zuerst arbeitete ich als Assistentin, später lernte ich auch zahntechnische Arbeit.",
+      "article1.p7":
+        "Dieser Ort wurde für mich nicht nur beruflich, sondern auch persönlich sehr wichtig. Wegen einer wichtigen Entscheidung, die mit dieser Lebensphase verbunden war, erreichte ich später ein viel höheres internationales Niveau. Doch wegen persönlicher Probleme musste ich diesen Ort verlassen.",
+      "article1.p8":
+        "2017 arbeitete ich weiter in der Zahnmedizin, aber auch diese Zeit war schwierig. Ich kündigte, und etwa einen Monat lang war es sehr schwer, eine neue Stelle zu finden, besonders wegen meines Stotterns. Dann begann ich strategischer über meine persönliche und berufliche Entwicklung nachzudenken.",
+      "article1.p9":
+        "Ich eröffnete eine Instagram-Seite mit dem Namen dental_assistant.uz und begann dort das zu veröffentlichen, was ich wusste. Später, im Jahr 2018, kam ich zu Vitali Dent, wo ich etwa ein Jahr arbeitete, bis die Klinik wegen Renovierung geschlossen wurde. In dieser Zeit begann ich mich bereits für Deutschland zu interessieren.",
+      "article1.p10":
+        "2018 kam ich zu Sirius Dent. Dort lernte ich meine geliebten Mentoren kennen — Dr. Elena Kim Dmitrievna und Iza Sungarova. Die Arbeit Seite an Seite mit ihnen gab mir starke Erfahrung. Dort fand ich auch eine meiner engsten Freundinnen — Elena Shanshieva. Bis heute bleiben wir wie eine Familie in Kontakt, und ich bin diesem Team von Herzen dankbar.",
+      "article1.p11":
+        "Dann begann die Pandemie, und alles kam zum Stillstand. Im Jahr 2021, nach der Quarantäne, ging ich nach Saudi-Arabien. Ich wurde von Dr. Sardor Mirakhmedov Sultanovich eingeladen — dem Gründer von My Dental und Dental Academy und zugleich einem meiner Mentoren. Wir arbeiteten manchmal sogar nachts. Es war eine sehr intensive und interessante Erfahrung. Dort sammelte ich praktische Erfahrung mit Zahnextraktionen, Infiltrationsanästhesie, Restaurationen und vielem mehr. Dafür bin ich ihm und dem Team ebenfalls dankbar.",
+      "article1.p12":
+        "Im Jahr 2023 arbeitete ich in der Endodontie unter dem Mikroskop mit Oybek Tulkunovich, und das wurde mein letzter Arbeitsplatz in Usbekistan. Außerdem absolvierte ich einen Kurs in Dentalfotografie, und ich bin Max Nur für dieses Wissen dankbar. So baute ich Schritt für Schritt meine Erfahrung vor dem nächsten Kapitel meines Lebens auf.",
 
-      "article2.title": "Mein Weg in der Zahnmedizin: Teil 2 — Deutschland",
-      "article2.p1": "Ich kam am 11. Januar 2024 im Rahmen der Ausbildung nach Deutschland, um ein internationales Bildungsniveau zu erreichen und mich beruflich weiterzuentwickeln.",
-      "article2.p2": "Aus Gründen der Privatsphäre werde ich die Namen der Kliniken nicht nennen und stattdessen Buchstaben verwenden.",
-      "article2.p3": "Mein erster Arbeitgeber — nennen wir ihn „A" — hat mit mir einen Vertrag abgeschlossen und mir ein Zimmer in seinem Haus gegeben.",
-      "article2.p4": "Ich kam mit guten Absichten und Hoffnung. Doch schon am nächsten Tag erlebte ich etwas sehr Verletzendes.",
-      "article2.p5": "Die Mutter sagte: „Gut, dass du gekommen bist. In Usbekistan habt ihr keine Zukunft." Das war für mich ein Schock.",
-      "article2.p6": "Als Muslimin fragte ich höflich, ob ich beten darf. Es wurde erlaubt, aber später wurde mein Gebetsteppich weggeworfen.",
-      "article2.p7": "Mir wurde Essen mit Schweinefleisch gegeben und gesagt, es sei halal.",
-      "article2.p8": "Ich fühlte, dass meine Grenzen nicht respektiert wurden.",
-      "article2.p9": "Nach der Arbeit musste ich oft alleine die Praxis reinigen, sogar sonntags.",
-      "article2.p10": "Mir wurde gesagt, dass ich keinen Minijob machen darf, obwohl ich bis zu 10 Stunden pro Woche arbeiten durfte.",
-      "article2.p11": "Schließlich entschied ich mich zu gehen.",
-      "article2.p12": "Ich wechselte zunächst in einen Minijob und später in die Klinik „B".",
-      "article2.p13": "Dort war das Team unfreundlich, deshalb ging ich nach einem Monat.",
-      "article2.p14": "In der nächsten Klinik musste ich bis zu 12 Stunden arbeiten.",
-      "article2.p15": "Die Hauptassistentin machte mir die Arbeit sehr schwer.",
-      "article2.p16": "Auch das Management behandelte mich unfair.",
-      "article2.p17": "Am Ende blieb ich oft allein in der Praxis.",
-      "article2.p18": "Das führte zu einer schweren Depression.",
-      "article2.p19": "Ich meldete alles bei der ZÄK und wurde daraufhin illegal entlassen.",
-      "article2.p20": "Später arbeitete ich in der KFO, wurde aber entlassen.",
-      "article2.p21": "Ein Arbeitgeber versuchte sogar meine Diagnose zu erfahren — was verboten ist.",
-      "article2.p22": "Dann arbeitete ich in Klinik „C" und fand kurz danach eine bessere Stelle in „D".",
-      "article2.p23": "Derzeit arbeite ich noch in „C", werde aber zu „D" wechseln.",
-      "article2.p24": "Parallel läuft mein Anerkennungsprozess.",
-      "article2.p25": "Meine Geschichte ist noch nicht zu Ende.",
-      "article2.p26": "Fortsetzung folgt in den nächsten Blogbeiträgen.",
+            "article2.title": "Mein Weg in der Zahnmedizin: Teil 2 — Deutschland",
+      "article2.p1": "Ich kam am 11. Januar 2024 im Rahmen der Ausbildung nach Deutschland, um ein internationales Bildungsniveau zu erreichen. Aus Datenschutzgründen werde ich die Namen der Kliniken nicht nennen — stattdessen verwende ich Buchstaben in Anführungszeichen.",
+      "article2.p2": "Mein erster Arbeitgeber „A“ schloss mit mir einen Vertrag ab. Da ich keine Unterkunft hatte, gab sie mir ein Zimmer in ihrem Haus, in dem sie mit ihrer Mutter lebte. Ich kam mit guten Absichten.",
+      "article2.p3": "Schon am nächsten Tag sagte ihre Mutter zu mir: „Oh, wie schön, dass du gekommen bist. Bei euch in Usbekistan gibt es keine Zukunft.“ Ich war schockiert — das war bereits Diskriminierung und ein absolutes Tabu. Ich versuchte, nicht darauf einzugehen.",
+      "article2.p4": "Später fragte ich, ob ich zu Hause beten dürfe, da ich Muslimin bin. Sie erlaubte es. Doch als ich nicht da war, warf sie meinen Gebetsteppich einfach weg.",
+      "article2.p5": "Sie gab mir auch Essen, das Schweinefleisch enthielt, sagte aber, es sei halal. Als ich mit meinen Eltern telefonierte, kam sie herein, hörte zu und fragte, worüber ich spreche und warum.",
+      "article2.p6": "Nach der Arbeit blieb nur ich zurück, um die Klinik zu putzen — sogar sonntags, was gegen das Gesetz verstößt. Als ich nach einem Minijob fragte, schaute sie mich mit großen Augen an und sagte, mein Visum erlaube das nicht. Tatsächlich hatte ich die Genehmigung, bis zu 10 Stunden pro Woche zu arbeiten.",
+      "article2.p7": "Ich entschied mich, diese Klinik zu verlassen. Zunächst schloss ich einen Minijob-Vertrag ab und fand eine vorübergehende Unterkunft. Dann unterschrieb ich auf Empfehlung einer Mitschülerin einen Ausbildungsvertrag bei Klinik „B“.",
+      "article2.p8": "Das Team dort war irgendwie seltsam — unfreundlich und respektlos untereinander. Nach einem Monat kündigte ich selbst und wechselte zu Klinik „C“.",
+      "article2.p9": "Die Bedingungen dort waren in vieler Hinsicht viel besser. Doch aufgrund meiner Erfahrung wurde mir alles auf einmal aufgebürdet. Ich musste bis zu 12 Stunden am Tag arbeiten.",
+      "article2.p10": "Die Hauptzahnarzthelferin dort — laut der Chefin war sie Autistin — verhielt sich sehr eigenartig. Sie ließ mich nicht ruhig arbeiten und übertrieb ständig alles.",
+      "article2.p11": "Die Managerin behandelte mich mit Mobbing. Am Ende des Arbeitstages kam sie und sagte: „Hey du — warum hast du die Klinik nicht geputzt?“ Ich antwortete: „Warum soll ich das alleine machen, wenn es unsere gemeinsame Aufgabe ist?“ Sie antwortete: „Du hast recht, aber du solltest mehr arbeiten.“ Am Ende gingen alle, schlossen die Klinik ab, und ich blieb allein darin.",
+      "article2.p12": "Die Oberschwester entschied auch immer selbst, wann die Mittagspause war — je nach ihrer Stimmung.",
+      "article2.p13": "All das führte schließlich zu einer schweren Depression — bis hin zu Suizidgedanken und einer Behandlung mit Antidepressiva.",
+      "article2.p14": "Ich meldete alles der ZÄK. Der Arbeitgeber erfuhr davon und entließ mich illegal — mündlich und während meiner Krankschreibung.",
+      "article2.p15": "In einer KFO-Praxis wurde ich ebenfalls entlassen, weil ich keine Erfahrung in der Kieferorthopädie hatte. Auch dort rief der Arbeitgeber, als ich einen Tag krank war, direkt in der Praxis an, um meine Diagnose zu erfragen — was gesetzlich verboten ist.",
+      "article2.p16": "Ich wechselte dann zu Klinik „C“ und unterschrieb sofort einen Vertrag. Schon am nächsten Tag fand ich eine noch bessere Möglichkeit und schloss auch mit Klinik „D“ einen Vertrag.",
+      "article2.p17": "Derzeit arbeite ich noch in Klinik „C“ und werde bald zu Klinik „D“ wechseln. Außerdem erhalte ich Unterstützung beim Anerkennungsverfahren für meinen Abschluss. Die Geschichte geht weiter — verfolgt die nächsten Blogbeiträge.",
 
-      "footer.description": "Eine moderne Bildungsplattform für Zahnmedizin mit Artikeln, Neuigkeiten, persönlichem Weg und privaten Premium-Kursen.",
+      "footer.description":
+        "Eine moderne Bildungsplattform für Zahnmedizin mit Artikeln, Neuigkeiten, persönlichem Weg und privaten Premium-Kursen.",
       "footer.navigation": "Navigation",
       "footer.languages": "Sprachen"
     },
@@ -317,7 +370,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "home.eyebrow": "Стоматология • Образование • Статьи • Премиум-обучение",
       "home.title": "Современная платформа для стоматологического образования, статей, новостей и приватных курсов",
-      "home.description": "Learning Path Journey — это современная многоязычная платформа, посвящённая стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему премиум-обучению.",
+      "home.description":
+        "Learning Path Journey — это современная многоязычная платформа, посвящённая стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему премиум-обучению.",
       "home.primaryBtn": "Открыть платформу",
       "home.secondaryBtn": "Связаться",
       "home.badge1": "4 языка",
@@ -325,7 +379,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.badge3": "Приватные курсы",
       "home.cardLabel": "Фокус платформы",
       "home.cardTitle": "Создано для роста, ясности и осмысленного обучения",
-      "home.cardText": "Современное цифровое пространство для личного пути, образовательного контента, профессиональных тем и будущей приватной премиум-зоны в стоматологии.",
+      "home.cardText":
+        "Современное цифровое пространство для личного пути, образовательного контента, профессиональных тем и будущей приватной премиум-зоны в стоматологии.",
       "home.tag1": "Путь",
       "home.tag2": "Статьи",
       "home.tag3": "Новости",
@@ -333,17 +388,23 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.sectionEyebrow": "Что включает платформа",
       "home.sectionTitle": "Чистая структура для обучения и развития",
       "home.feature1Title": "Личный путь",
-      "home.feature1Text": "История платформы, сформированная обучением, опытом и ростом.",
+      "home.feature1Text":
+        "История платформы, сформированная обучением, опытом и ростом.",
       "home.feature2Title": "Статьи и новости",
-      "home.feature2Text": "Образовательный контент, профессиональные наблюдения и полезные обновления из мира стоматологии.",
+      "home.feature2Text":
+        "Образовательный контент, профессиональные наблюдения и полезные обновления из мира стоматологии.",
       "home.feature3Title": "Приватные премиум-курсы",
-      "home.feature3Text": "Будущая закрытая зона обучения для более глубокого и сфокусированного изучения.",
+      "home.feature3Text":
+        "Будущая закрытая зона обучения для более глубокого и сфокусированного изучения.",
       "home.languagesEyebrow": "Многоязычный доступ",
       "home.languagesTitle": "Доступно на четырёх языках",
+
       "home.aboutLabel": "О платформе",
       "home.aboutTitle": "Больше чем сайт — структурированное пространство для обучения",
-      "home.aboutText1": "Платформа создана, чтобы объединить образование, личный рост, содержательный контент и современный цифровой опыт.",
-      "home.aboutText2": "Она строится для стоматологии, стоматологического ассистирования, обучающих статей, практических обновлений и будущего премиум-обучения.",
+      "home.aboutText1":
+        "Платформа создана, чтобы объединить образование, личный рост, содержательный контент и современный цифровой опыт.",
+      "home.aboutText2":
+        "Она строится для стоматологии, стоматологического ассистирования, обучающих статей, практических обновлений и будущего премиум-обучения.",
       "home.aboutLink": "Подробнее о платформе →",
       "home.contentLabel": "Основные разделы",
       "home.content1": "Личный путь в стоматологии",
@@ -353,18 +414,22 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.content5": "Многоязычный доступ",
       "home.coursesEyebrow": "Приватные курсы",
       "home.coursesTitle": "Будущая премиум-зона для более глубокого и сфокусированного обучения",
-      "home.coursesText": "Платформа будет включать закрытые премиум-курсы со структурированными уроками, отобранными материалами и серьёзным образовательным сопровождением в стоматологии и ассистировании.",
+      "home.coursesText":
+        "Платформа будет включать закрытые премиум-курсы со структурированными уроками, отобранными материалами и серьёзным образовательным сопровождением в стоматологии и ассистировании.",
       "home.coursesTag1": "Премиум-доступ",
       "home.coursesTag2": "Структурированные уроки",
       "home.coursesTag3": "Сфокусированное обучение",
 
       "about.eyebrow": "О платформе",
       "about.title": "Современная образовательная платформа по стоматологии, созданная с ясностью, смыслом и ростом",
-      "about.description": "Learning Path Journey — это многоязычное цифровое пространство, посвящённое стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему приватному премиум-обучению.",
+      "about.description":
+        "Learning Path Journey — это многоязычное цифровое пространство, посвящённое стоматологии, стоматологическому ассистированию, обучающим статьям, полезным обновлениям и будущему приватному премиум-обучению.",
       "about.missionLabel": "Миссия",
       "about.missionTitle": "Почему эта платформа существует",
-      "about.missionText1": "Эта платформа создана, чтобы объединить образование, профессиональное развитие и содержательный контент в одном элегантном и структурированном пространстве.",
-      "about.missionText2": "Это не просто сайт, а начало более сильного образовательного направления в стоматологии и стоматологическом ассистировании.",
+      "about.missionText1":
+        "Эта платформа создана, чтобы объединить образование, профессиональное развитие и содержательный контент в одном элегантном и структурированном пространстве.",
+      "about.missionText2":
+        "Это не просто сайт, а начало более сильного образовательного направления в стоматологии и стоматологическом ассистировании.",
       "about.focusLabel": "Основной фокус",
       "about.focus1": "Стоматология",
       "about.focus2": "Стоматологическое ассистирование",
@@ -375,27 +440,35 @@ document.addEventListener("DOMContentLoaded", () => {
       "about.valuesEyebrow": "Ценности",
       "about.valuesTitle": "Что определяет платформу",
       "about.card1Title": "Ясность",
-      "about.card1Text": "Знания должны быть понятными, структурированными и доступными.",
+      "about.card1Text":
+        "Знания должны быть понятными, структурированными и доступными.",
       "about.card2Title": "Рост",
-      "about.card2Text": "Обучение — это процесс постоянного личного и профессионального развития.",
+      "about.card2Text":
+        "Обучение — это процесс постоянного личного и профессионального развития.",
       "about.card3Title": "Глубина",
-      "about.card3Text": "Цель не только информировать, но и создавать реальную образовательную ценность.",
+      "about.card3Text":
+        "Цель не только информировать, но и создавать реальную образовательную ценность.",
       "about.visionEyebrow": "Видение",
       "about.visionTitle": "От личного пути к надёжному образовательному бренду",
-      "about.visionText": "Долгосрочное видение — создать качественную и надёжную образовательную платформу по стоматологии со статьями, направляемым обучением, премиум-курсами и полноценным многоязычным доступом.",
+      "about.visionText":
+        "Долгосрочное видение — создать качественную и надёжную образовательную платформу по стоматологии со статьями, направляемым обучением, премиум-курсами и полноценным многоязычным доступом.",
 
       "contact.eyebrow": "Связь",
       "contact.title": "Давайте свяжемся для обучения, идей и осмысленного сотрудничества",
-      "contact.description": "Это пространство создано для общения, образовательного сотрудничества, идей для статей, профессионального нетворкинга и будущих запросов по приватным курсам в стоматологии и ассистировании.",
+      "contact.description":
+        "Это пространство создано для общения, образовательного сотрудничества, идей для статей, профессионального нетворкинга и будущих запросов по приватным курсам в стоматологии и ассистировании.",
       "contact.infoLabel": "Контактная информация",
       "contact.infoTitle": "Открыто для общения",
-      "contact.infoText": "Вы можете связаться по вопросам образовательного контента, стоматологии, стоматологического ассистирования, будущего приватного обучения, идей для статей и профессионального сотрудничества.",
+      "contact.infoText":
+        "Вы можете связаться по вопросам образовательного контента, стоматологии, стоматологического ассистирования, будущего приватного обучения, идей для статей и профессионального сотрудничества.",
       "contact.focusLabel": "Фокус",
-      "contact.focusText": "Стоматология, стоматологическое ассистирование, статьи, новости, премиум-обучение",
+      "contact.focusText":
+        "Стоматология, стоматологическое ассистирование, статьи, новости, премиум-обучение",
       "contact.languagesLabel": "Языки",
       "contact.languagesText": "Немецкий, русский, английский, узбекский",
       "contact.emailLabel": "Почта",
-      "contact.note": "Для прямой связи вы также можете отправить письмо вручную. Интеграцию формы можно подключить позже для автоматической доставки.",
+      "contact.note":
+        "Для прямой связи вы также можете отправить письмо вручную. Интеграцию формы можно подключить позже для автоматической доставки.",
       "contact.formLabel": "Отправить сообщение",
       "contact.formTitle": "Напишите нам",
       "contact.nameLabel": "Имя",
@@ -414,49 +487,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "article1.eyebrow": "Личная история",
       "article1.title": "Мой путь в стоматологии: часть 1 — Узбекистан",
-      "article1.subtitle": "Начало моего пути в медицине и стоматологии, первый опыт работы, трудности, наставники и дорога, которая позже привела меня к Германии.",
-      "article1.p1": "Мой путь в стоматологии начался довольно непросто. Я любила медицину, и в 2011 году окончила в Ташкенте, в Узбекистане, медицинский колледж Боровского — один из самых сильных и уважаемых медицинских колледжей.",
-      "article1.p2": "После окончания я не смогла найти работу. Это было непростое время. Я даже была готова стать волонтёром в родильном доме №12 — именно там, где сама когда-то родилась.",
-      "article1.p3": "Там я была волонтёром около одного-двух месяцев. Позже меня пригласили в клинику «Shifo Nur Ko'z», которая в то время считалась одной из лучших крупных частных клиник.",
-      "article1.p4": "В основном я работала там в отделении физиотерапии. Но были и трудности. Я часто сталкивалась с буллингом и моббингом со стороны старшей медсестры. Тогда я была очень молодой и не до конца понимала, что это такое. Долгое время меня даже официально не оформляли на работу.",
-      "article1.p5": "Потом, в 2014 году, я пришла в стоматологическую клинику «Апполония». Именно там я впервые увидела настоящую стоматологию своими глазами. Наталья многому меня научила. Я работала там бесплатно один месяц, несмотря на то что в тот период моя жизнь была очень тяжёлой. Позже меня уволили.",
-      "article1.p6": "Также в 2014 году, когда мне уже было 22 года, меня приняли в лабораторию «Ideal Dent». Здесь я хочу выразить благодарность основателю — Алимову Фазлиддину. Сначала я ассистировала, а затем начала осваивать и зуботехническую работу.",
-      "article1.p7": "Это место стало для меня очень важным не только профессионально, но и лично. Благодаря одному важному решению, связанному с тем этапом моей жизни, позже я вышла на гораздо более высокий, почти мировой уровень. Но из-за личных проблем мне пришлось уйти оттуда.",
-      "article1.p8": "В 2017 году я продолжала работать в стоматологии, но и тот период был трудным. Я уволилась, и около месяца мне было очень сложно найти новую работу, особенно из-за заикания. Тогда я начала думать более стратегически о своём личном и профессиональном развитии.",
-      "article1.p9": "Я создала страницу в Instagram под названием dental_assistant.uz, где начала публиковать то, что знала. Позже, в 2018 году, я пришла в Vitali Dent, где проработала около года, пока клиника не закрылась на ремонт. Именно в то время у меня уже начал появляться интерес к Германии.",
-      "article1.p10": "В 2018 году я пришла в Sirius Dent. Там я встретила своих любимых наставников — доктора Елену Ким Дмитриевну и Изу Сунгарову. Работа бок о бок с ними дала мне сильный опыт. Там же я обрела одну из своих самых близких подруг — Елену Шаншиеву. До сих пор мы все остаёмся на связи как семья, и я искренне благодарна этой команде.",
-      "article1.p11": "Потом началась пандемия, и всё остановилось. В 2021 году, после карантина, я уехала в Саудовскую Аравию. Меня пригласил доктор Сардор Мирахмедов Султанович — основатель My Dental и Dental Academy, а также мой наставник. Мы иногда работали даже ночами. Это был очень интенсивный и интересный опыт. Там я получила практический опыт в удалении зубов, инфильтрационной анестезии, реставрациях и многом другом. Я также благодарна ему и всей команде за этот этап.",
-      "article1.p12": "В 2023 году я работала в эндодонтии под микроскопом с Ойбеком Тулкуновичем, и это стало моим последним местом работы в Узбекистане. Я также прошла курс по дентальной фотографии и благодарна Максу Нуру за эти знания. Так шаг за шагом я собрала свой опыт перед следующим этапом жизни.",
+      "article1.subtitle":
+        "Начало моего пути в медицине и стоматологии, первый опыт работы, трудности, наставники и дорога, которая позже привела меня к Германии.",
+      "article1.p1":
+        "Мой путь в стоматологии начался довольно непросто. Я любила медицину, и в 2011 году окончила в Ташкенте, в Узбекистане, медицинский колледж Боровского — один из самых сильных и уважаемых медицинских колледжей.",
+      "article1.p2":
+        "После окончания я не смогла найти работу. Это было непростое время. Я даже была готова стать волонтёром в родильном доме №12 — именно там, где сама когда-то родилась.",
+      "article1.p3":
+        "Там я была волонтёром около одного-двух месяцев. Позже меня пригласили в клинику «Shifo Nur Ko'z», которая в то время считалась одной из лучших крупных частных клиник.",
+      "article1.p4":
+        "В основном я работала там в отделении физиотерапии. Но были и трудности. Я часто сталкивалась с буллингом и моббингом со стороны старшей медсестры. Тогда я была очень молодой и не до конца понимала, что это такое. Долгое время меня даже официально не оформляли на работу.",
+      "article1.p5":
+        "Потом, в 2014 году, я пришла в стоматологическую клинику «Апполония». Именно там я впервые увидела настоящую стоматологию своими глазами. Наталья многому меня научила. Я работала там бесплатно один месяц, несмотря на то что в тот период моя жизнь была очень тяжёлой. Позже меня уволили.",
+      "article1.p6":
+        "Также в 2014 году, когда мне уже было 22 года, меня приняли в лабораторию «Ideal Dent». Здесь я хочу выразить благодарность основателю — Алимову Фазлиддину. Сначала я ассистировала, а затем начала осваивать и зуботехническую работу.",
+      "article1.p7":
+        "Это место стало для меня очень важным не только профессионально, но и лично. Благодаря одному важному решению, связанному с тем этапом моей жизни, позже я вышла на гораздо более высокий, почти мировой уровень. Но из-за личных проблем мне пришлось уйти оттуда.",
+      "article1.p8":
+        "В 2017 году я продолжала работать в стоматологии, но и тот период был трудным. Я уволилась, и около месяца мне было очень сложно найти новую работу, особенно из-за заикания. Тогда я начала думать более стратегически о своём личном и профессиональном развитии.",
+      "article1.p9":
+        "Я создала страницу в Instagram под названием dental_assistant.uz, где начала публиковать то, что знала. Позже, в 2018 году, я пришла в Vitali Dent, где проработала около года, пока клиника не закрылась на ремонт. Именно в то время у меня уже начал появляться интерес к Германии.",
+      "article1.p10":
+        "В 2018 году я пришла в Sirius Dent. Там я встретила своих любимых наставников — доктора Елену Ким Дмитриевну и Изу Сунгарову. Работа бок о бок с ними дала мне сильный опыт. Там же я обрела одну из своих самых близких подруг — Елену Шаншиеву. До сих пор мы все остаёмся на связи как семья, и я искренне благодарна этой команде.",
+      "article1.p11":
+        "Потом началась пандемия, и всё остановилось. В 2021 году, после карантина, я уехала в Саудовскую Аравию. Меня пригласил доктор Сардор Мирахмедов Султанович — основатель My Dental и Dental Academy, а также мой наставник. Мы иногда работали даже ночами. Это был очень интенсивный и интересный опыт. Там я получила практический опыт в удалении зубов, инфильтрационной анестезии, реставрациях и многом другом. Я также благодарна ему и всей команде за этот этап.",
+      "article1.p12":
+        "В 2023 году я работала в эндодонтии под микроскопом с Ойбеком Тулкуновичем, и это стало моим последним местом работы в Узбекистане. Я также прошла курс по дентальной фотографии и благодарна Максу Нуру за эти знания. Так шаг за шагом я собрала свой опыт перед следующим этапом жизни.",
 
-      "article2.title": "Мой путь в стоматологии: часть 2 — Германия",
-      "article2.p1": "Я приехала в Германию 11 января 2024 года по программе Ausbildung, чтобы получить международный уровень образования.",
-      "article2.p2": "Названия клиник я не указываю из соображений приватности.",
-      "article2.p3": "Первый работодатель «А» предоставил мне жильё.",
-      "article2.p4": "Я приехала с надеждой, но уже на следующий день столкнулась с дискриминацией.",
-      "article2.p5": "Мне сказали, что в Узбекистане нет будущего.",
-      "article2.p6": "Мой коврик для намаза выбросили.",
-      "article2.p7": "Мне давали еду со свининой.",
-      "article2.p8": "Мои границы не уважались.",
-      "article2.p9": "Я работала сверх нормы.",
-      "article2.p10": "Мне запрещали подработку.",
-      "article2.p11": "Я решила уйти.",
-      "article2.p12": "Перешла в клинику «Б».",
-      "article2.p13": "Там был плохой коллектив.",
-      "article2.p14": "Работа доходила до 12 часов.",
-      "article2.p15": "Главная ассистентка мешала работать.",
-      "article2.p16": "Менеджер оказывал давление.",
-      "article2.p17": "Я оставалась одна в клинике.",
-      "article2.p18": "Это привело к депрессии.",
-      "article2.p19": "Меня незаконно уволили.",
-      "article2.p20": "В KFO меня тоже уволили.",
-      "article2.p21": "Работодатель пытался узнать диагноз.",
-      "article2.p22": "Я перешла в «С», потом в «Д».",
-      "article2.p23": "Сейчас работаю и развиваюсь.",
-      "article2.p24": "Идёт признание диплома.",
-      "article2.p25": "История продолжается.",
-      "article2.p26": "Продолжение в следующих блогах.",
+            "article2.title": "Мой путь в стоматологии: часть 2 — Германия",
+      "article2.p1": "Я приехала в Германию 11 января 2024 года по программе Ausbildung — это обучение с практикой — чтобы получить международный уровень образования. Из соображений приватности названия клиник писать не буду — вместо этого буду использовать буквы в кавычках.",
+      "article2.p2": "Мой первый работодатель «А» заключил со мной контракт. У меня не было жилья, и она дала мне комнату в своём доме, где жила вместе с мамой. Я пришла с добрыми намерениями.",
+      "article2.p3": "Уже на следующий день её мама сказала мне: «Ой, как хорошо, что ты приехала. Там у вас в Узбекистане нет будущего.» Я была в шоке — это уже дискриминация, и это табу. Я, конечно, старалась не реагировать.",
+      "article2.p4": "Позже я попросила разрешения молиться дома, так как я мусульманка. Она разрешила. Но когда меня не было дома, она просто выбросила мой коврик для молитвы.",
+      "article2.p5": "Она также давала мне еду, в которой было свиное мясо, но говорила, что всё халяль. Когда я разговаривала по телефону с родителями, она подходила, слушала и спрашивала: о чём я говорю и зачем.",
+      "article2.p6": "После работы только я оставалась убирать клинику — даже по воскресеньям, что было против закона. Когда я попросила о подработке, она посмотрела на меня широко открытыми глазами и сказала, что на моей визе написано: мини-джоб нельзя. Хотя на самом деле мне было разрешено работать до 10 часов в неделю.",
+      "article2.p7": "Я решила уйти из этой клиники. Сначала заключила контракт на мини-джоб и нашла временное жильё. Затем по рекомендации одноклассницы подписала контракт на Ausbildung в клинике «Б».",
+      "article2.p8": "Коллектив там был какой-то странный — недружный и неуважительный друг к другу. Через месяц я сама уволилась и перешла в клинику «В».",
+      "article2.p9": "Там условия были намного лучше во многих отношениях. Однако из-за моего опыта на меня вешали абсолютно всё и одновременно. Я должна была работать по 12 часов в день.",
+      "article2.p10": "Главный стоматологический ассистент там — по словам шефа, она была аутистом — вела себя очень странно. Она не давала мне спокойно работать и постоянно всё преувеличивала.",
+      "article2.p11": "Менеджер занималась в отношении меня моббингом. В конце рабочего дня она подходила и говорила: «Эй ты — почему ты не убрала клинику?» Я отвечала: «А почему я должна делать это одна, если это наша общая работа?» Она в ответ: «Ты права, но ты должна работать больше.» В итоге все ушли, закрыли клинику, а я одна осталась внутри.",
+      "article2.p12": "Главная медсестра также всегда сама решала, когда будет обед — в зависимости от своего настроения.",
+      "article2.p13": "В конце концов всё это привело меня к тяжёлой депрессии — вплоть до суицидальных мыслей и лечения антидепрессантами.",
+      "article2.p14": "Я сообщила обо всём в ZÄK. Шеф узнал об этом и уволил меня незаконно — устно и во время больничного.",
+      "article2.p15": "В клинике KFO меня тоже уволили — из-за отсутствия опыта в ортодонтии. Там тоже, когда я заболела на один день, работодатель позвонил в клинику, чтобы узнать мой диагноз — хотя это запрещено законом.",
+      "article2.p16": "Затем я перешла в клинику «С» и сразу же заключила контракт. Уже на следующий день нашла место получше и подписала контракт с клиникой «Д».",
+      "article2.p17": "В данный момент я работаю в клинике «С» и скоро перейду в «Д». Параллельно мне помогают с процессом признания диплома (Anerkennung). История продолжается — следите за следующими блогами.",
 
-      "footer.description": "Современная образовательная стоматологическая платформа со статьями, новостями, личным путём и приватными премиум-курсами.",
+      "footer.description":
+        "Современная образовательная стоматологическая платформа со статьями, новостями, личным путём и приватными премиум-курсами.",
       "footer.navigation": "Навигация",
       "footer.languages": "Языки"
     },
@@ -470,7 +548,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "home.eyebrow": "Stomatologiya • Ta'lim • Maqolalar • Premium o'qish",
       "home.title": "Stomatologik ta'lim, maqolalar, yangiliklar va yopiq kurslar uchun zamonaviy platforma",
-      "home.description": "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, foydali yangilanishlar va kelajakdagi premium o'qishga bag'ishlangan zamonaviy ko'p tilli platforma.",
+      "home.description":
+        "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, foydali yangilanishlar va kelajakdagi premium o'qishga bag'ishlangan zamonaviy ko'p tilli platforma.",
       "home.primaryBtn": "Platformani ko'rish",
       "home.secondaryBtn": "Bog'lanish",
       "home.badge1": "4 til",
@@ -478,7 +557,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.badge3": "Yopiq kurslar",
       "home.cardLabel": "Platforma yo'nalishi",
       "home.cardTitle": "Rivojlanish, aniqlik va mazmunli o'rganish uchun yaratilgan",
-      "home.cardText": "Shaxsiy yo'l, ta'limiy kontent, professional mavzular va stomatologiyadagi kelajakdagi yopiq premium hudud uchun zamonaviy raqamli makon.",
+      "home.cardText":
+        "Shaxsiy yo'l, ta'limiy kontent, professional mavzular va stomatologiyadagi kelajakdagi yopiq premium hudud uchun zamonaviy raqamli makon.",
       "home.tag1": "Yo'l",
       "home.tag2": "Maqolalar",
       "home.tag3": "Yangiliklar",
@@ -486,17 +566,23 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.sectionEyebrow": "Platforma nimalarni o'z ichiga oladi",
       "home.sectionTitle": "O'rganish va rivojlanish uchun toza tuzilma",
       "home.feature1Title": "Shaxsiy yo'l",
-      "home.feature1Text": "Platforma ortidagi hikoya, o'qish, tajriba va rivojlanish bilan shakllangan.",
+      "home.feature1Text":
+        "Platforma ortidagi hikoya, o'qish, tajriba va rivojlanish bilan shakllangan.",
       "home.feature2Title": "Maqolalar va yangiliklar",
-      "home.feature2Text": "Stomatologiya sohasidan ta'limiy kontent, professional qarashlar va foydali yangilanishlar.",
+      "home.feature2Text":
+        "Stomatologiya sohasidan ta'limiy kontent, professional qarashlar va foydali yangilanishlar.",
       "home.feature3Title": "Yopiq premium kurslar",
-      "home.feature3Text": "Chuqurroq va aniqroq o'qish uchun kelajakdagi yopiq ta'lim hududi.",
+      "home.feature3Text":
+        "Chuqurroq va aniqroq o'qish uchun kelajakdagi yopiq ta'lim hududi.",
       "home.languagesEyebrow": "Ko'p tilli kirish",
       "home.languagesTitle": "To'rtta tilda mavjud",
+
       "home.aboutLabel": "Platforma haqida",
       "home.aboutTitle": "Veb-saytdan ko'proq — tuzilgan o'quv maydoni",
-      "home.aboutText1": "Bu platforma ta'lim, shaxsiy o'sish, mazmunli kontent va zamonaviy raqamli tajribani birlashtirish uchun yaratilgan.",
-      "home.aboutText2": "U stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, amaliy yangilanishlar va kelajakdagi premium o'qish uchun qurilmoqda.",
+      "home.aboutText1":
+        "Bu platforma ta'lim, shaxsiy o'sish, mazmunli kontent va zamonaviy raqamli tajribani birlashtirish uchun yaratilgan.",
+      "home.aboutText2":
+        "U stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, amaliy yangilanishlar va kelajakdagi premium o'qish uchun qurilmoqda.",
       "home.aboutLink": "Platforma haqida ko'proq →",
       "home.contentLabel": "Asosiy kontent bo'limlari",
       "home.content1": "Stomatologiyadagi shaxsiy yo'l",
@@ -506,18 +592,22 @@ document.addEventListener("DOMContentLoaded", () => {
       "home.content5": "Ko'p tilli kirish",
       "home.coursesEyebrow": "Yopiq kurslar",
       "home.coursesTitle": "Chuqurroq va aniqroq o'qish uchun kelajakdagi premium hudud",
-      "home.coursesText": "Platforma keyinchalik tuzilgan darslar, tanlangan materiallar va stomatologiya va assistentlikda jiddiy ta'limiy yo'nalish bilan yopiq premium kurslarni o'z ichiga oladi.",
+      "home.coursesText":
+        "Platforma keyinchalik tuzilgan darslar, tanlangan materiallar va stomatologiya va assistentlikda jiddiy ta'limiy yo'nalish bilan yopiq premium kurslarni o'z ichiga oladi.",
       "home.coursesTag1": "Premium kirish",
       "home.coursesTag2": "Tuzilgan darslar",
       "home.coursesTag3": "Aniq o'qish",
 
       "about.eyebrow": "Platforma haqida",
       "about.title": "Aniqlik, maqsad va rivojlanish bilan yaratilgan zamonaviy stomatologik ta'lim platformasi",
-      "about.description": "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, foydali yangilanishlar va kelajakdagi yopiq premium o'qishga bag'ishlangan ko'p tilli raqamli makon.",
+      "about.description":
+        "Learning Path Journey — bu stomatologiya, stomatologik assistentlik, ta'limiy maqolalar, foydali yangilanishlar va kelajakdagi yopiq premium o'qishga bag'ishlangan ko'p tilli raqamli makon.",
       "about.missionLabel": "Missiya",
       "about.missionTitle": "Nega bu platforma mavjud",
-      "about.missionText1": "Ushbu platforma ta'lim, professional rivojlanish va mazmunli kontentni bitta nafis va tuzilgan makonda birlashtirish uchun yaratilgan.",
-      "about.missionText2": "Bu faqat veb-sayt emas, balki stomatologiya va stomatologik assistentlikdagi kuchliroq ta'lim yo'nalishining boshlanishidir.",
+      "about.missionText1":
+        "Ushbu platforma ta'lim, professional rivojlanish va mazmunli kontentni bitta nafis va tuzilgan makonda birlashtirish uchun yaratilgan.",
+      "about.missionText2":
+        "Bu faqat veb-sayt emas, balki stomatologiya va stomatologik assistentlikdagi kuchliroq ta'lim yo'nalishining boshlanishidir.",
       "about.focusLabel": "Asosiy yo'nalish",
       "about.focus1": "Stomatologiya",
       "about.focus2": "Stomatologik assistentlik",
@@ -528,27 +618,35 @@ document.addEventListener("DOMContentLoaded", () => {
       "about.valuesEyebrow": "Qadriyatlar",
       "about.valuesTitle": "Platformani nima belgilaydi",
       "about.card1Title": "Aniqlik",
-      "about.card1Text": "Bilim tushunarli, tuzilgan va qulay bo'lishi kerak.",
+      "about.card1Text":
+        "Bilim tushunarli, tuzilgan va qulay bo'lishi kerak.",
       "about.card2Title": "Rivojlanish",
-      "about.card2Text": "O'rganish — bu doimiy shaxsiy va professional rivojlanish jarayoni.",
+      "about.card2Text":
+        "O'rganish — bu doimiy shaxsiy va professional rivojlanish jarayoni.",
       "about.card3Title": "Chuqurlik",
-      "about.card3Text": "Maqsad faqat ma'lumot berish emas, balki haqiqiy ta'limiy qiymat yaratishdir.",
+      "about.card3Text":
+        "Maqsad faqat ma'lumot berish emas, balki haqiqiy ta'limiy qiymat yaratishdir.",
       "about.visionEyebrow": "Qarash",
       "about.visionTitle": "Shaxsiy yo'ldan ishonchli ta'lim brendigacha",
-      "about.visionText": "Uzoq muddatli qarash — maqolalar, yo'naltirilgan o'qish, premium kurslar va mazmunli ko'p tilli kirishga ega sifatli hamda ishonchli stomatologik ta'lim platformasini yaratishdir.",
+      "about.visionText":
+        "Uzoq muddatli qarash — maqolalar, yo'naltirilgan o'qish, premium kurslar va mazmunli ko'p tilli kirishga ega sifatli hamda ishonchli stomatologik ta'lim platformasini yaratishdir.",
 
       "contact.eyebrow": "Bog'lanish",
       "contact.title": "O'rganish, g'oyalar va mazmunli hamkorlik uchun bog'lanamiz",
-      "contact.description": "Bu makon aloqa, ta'limiy hamkorlik, maqola g'oyalari, professional networking va stomatologiya hamda assistentlik bo'yicha kelajakdagi yopiq kurslar so'rovlari uchun yaratilgan.",
+      "contact.description":
+        "Bu makon aloqa, ta'limiy hamkorlik, maqola g'oyalari, professional networking va stomatologiya hamda assistentlik bo'yicha kelajakdagi yopiq kurslar so'rovlari uchun yaratilgan.",
       "contact.infoLabel": "Aloqa ma'lumotlari",
       "contact.infoTitle": "Muloqot uchun ochiq",
-      "contact.infoText": "Siz ta'limiy kontent, stomatologiya, stomatologik assistentlik, kelajakdagi yopiq o'qish, maqola g'oyalari va professional hamkorlik bo'yicha bog'lanishingiz mumkin.",
+      "contact.infoText":
+        "Siz ta'limiy kontent, stomatologiya, stomatologik assistentlik, kelajakdagi yopiq o'qish, maqola g'oyalari va professional hamkorlik bo'yicha bog'lanishingiz mumkin.",
       "contact.focusLabel": "Yo'nalish",
-      "contact.focusText": "Stomatologiya, stomatologik assistentlik, maqolalar, yangiliklar, premium o'qish",
+      "contact.focusText":
+        "Stomatologiya, stomatologik assistentlik, maqolalar, yangiliklar, premium o'qish",
       "contact.languagesLabel": "Tillar",
       "contact.languagesText": "Nemis, rus, ingliz, o'zbek",
       "contact.emailLabel": "Email",
-      "contact.note": "To'g'ridan-to'g'ri bog'lanish uchun emailni qo'lda ham yuborishingiz mumkin. Formani avtomatik yetkazish uchun keyinroq ulash mumkin.",
+      "contact.note":
+        "To'g'ridan-to'g'ri bog'lanish uchun emailni qo'lda ham yuborishingiz mumkin. Formani avtomatik yetkazish uchun keyinroq ulash mumkin.",
       "contact.formLabel": "Xabar yuborish",
       "contact.formTitle": "Bizga yozing",
       "contact.nameLabel": "Ism",
@@ -567,49 +665,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "article1.eyebrow": "Shaxsiy hikoya",
       "article1.title": "Mening stomatologiyadagi yo'lim: 1-qism — O'zbekiston",
-      "article1.subtitle": "Tibbiyot va stomatologiyadagi yo'limning boshlanishi, ilk ish tajribam, qiyinchiliklar, ustozlar va meni keyinchalik Germaniyaga olib borgan yo'l.",
-      "article1.p1": "Mening stomatologiyadagi yo'lim oson boshlanmadi. Men tibbiyotni sevganman va 2011 yilda Toshkentdagi Borovskiy tibbiyot kollejini tamomladim. Bu O'zbekistondagi eng kuchli va hurmatli tibbiyot kollejlaridan biri edi.",
-      "article1.p2": "O'qishni tugatganimdan keyin ish topa olmadim. Bu davr oson bo'lmadi. Men hatto o'zim tug'ilgan 12-son tug'ruqxonada volontyor bo'lishga ham tayyor edim.",
-      "article1.p3": "U yerda taxminan bir-ikki oy volontyor bo'lib ishladim. Keyin meni Shifo Nur Ko'z klinikasiga taklif qilishdi. O'sha paytda bu eng yaxshi yirik xususiy klinikalardan biri hisoblanardi.",
-      "article1.p4": "Men u yerda asosan fizioterapiya bo'limida ishladim. Ammo qiyinchiliklar ham bo'ldi. Katta hamshiradan ko'p marta bullying va mobbing ko'rdim. O'sha paytda juda yosh edim va buning asl mohiyatini to'liq tushunmasdim. Uzoq vaqtgacha meni hatto rasmiy ishga ham olishmadi.",
-      "article1.p5": "Keyin 2014 yilda men Apollonia stomatologik klinikasiga keldim. Aynan o'sha yerda men haqiqiy stomatologiyani o'z ko'zim bilan ko'rdim. Natalya menga ko'p narsani o'rgatdi. O'sha paytda hayotim juda og'ir bo'lishiga qaramay, men u yerda bir oy bepul ishladim. Keyin meni ishdan bo'shatishdi.",
-      "article1.p6": "Shuningdek, 2014 yilda, 22 yoshimda, meni Ideal Dent laboratoriyasiga qabul qilishdi. Bu yerda asoschi Alimov Fazliddinga minnatdorchilik bildiraman. Avval assistent bo'lib ishladim, keyin esa tish texnikasi yo'nalishini ham o'rgandim.",
-      "article1.p7": "Bu joy men uchun nafaqat professional, balki shaxsiy jihatdan ham juda muhim bo'ldi. Aynan o'sha davr bilan bog'liq bir muhim qaror sababli keyinchalik men ancha yuqori, hatto xalqaro darajaga chiqdim. Ammo shaxsiy muammolar sababli u yerdan ketishga to'g'ri keldi.",
-      "article1.p8": "2017 yilda men stomatologiyada ishlashni davom ettirdim, lekin bu davr ham qiyin bo'ldi. Ishdan ketdim va taxminan bir oy davomida yangi ish topish juda mushkul bo'ldi, ayniqsa duduqlanishim sababli. Shundan keyin men o'zimning shaxsiy va professional rivojlanishim haqida strategikroq o'ylay boshladim.",
-      "article1.p9": "Men dental_assistant.uz nomli Instagram sahifasini ochdim va bilgan narsalarimni ulasha boshladim. Keyin 2018 yilda Vitali Dent klinikasiga keldim va u yerda bir yilcha ishladim. Keyin klinika ta'mir sababli yopildi. Aynan o'sha paytda menda Germaniyaga qiziqish paydo bo'la boshlagan edi.",
-      "article1.p10": "2018 yilda men Sirius Dentga keldim. U yerda men sevimli ustozlarim — doktor Elena Kim Dmitrievna va Iza Sungarova bilan tanishdim. Ular bilan yonma-yon ishlash menga juda kuchli tajriba berdi. O'sha yerda eng yaqin dugonalarimdan biri — Elena Shanshieva bilan ham tanishdim. Bugungacha biz hammamiz oila kabi aloqadamiz va men bu jamoaga chin yurakdan minnatdorman.",
-      "article1.p11": "Keyin pandemiya boshlandi va hammasi to'xtab qoldi. 2021 yilda, karantindan keyin, men Saudiya Arabistoniga ketdim. U yerga meni doktor Sardor Mirahmedov Sultanovich taklif qildi — u My Dental va Dental Academy asoschisi hamda mening ustozlarimdan biri edi. Ba'zan tunlari ham ishlardik. Bu juda qiziqarli va intensiv tajriba bo'ldi. U yerda tish sug'urish, infiltratsion anesteziya, restavratsiya va boshqa ko'plab amaliy tajribalarni oldim. Bu tajriba uchun unga va jamoaga ham minnatdorman.",
-      "article1.p12": "2023 yilda men Oybek Tulkunovich bilan mikroskop ostida endodontiyada ishladim va bu O'zbekistondagi oxirgi ish joyim bo'ldi. Shuningdek, dantal fotografiya bo'yicha kurs ham oldim va bu bilim uchun Max Nurdan minnatdorman. Shu tarzda, keyingi hayot bosqichim oldidan tajribamni qadam-baqadam yig'dim.",
+      "article1.subtitle":
+        "Tibbiyot va stomatologiyadagi yo'limning boshlanishi, ilk ish tajribam, qiyinchiliklar, ustozlar va meni keyinchalik Germaniyaga olib borgan yo'l.",
+      "article1.p1":
+        "Mening stomatologiyadagi yo'lim oson boshlanmadi. Men tibbiyotni sevganman va 2011 yilda Toshkentdagi Borovskiy tibbiyot kollejini tamomladim. Bu O'zbekistondagi eng kuchli va hurmatli tibbiyot kollejlaridan biri edi.",
+      "article1.p2":
+        "O'qishni tugatganimdan keyin ish topa olmadim. Bu davr oson bo'lmadi. Men hatto o'zim tug'ilgan 12-son tug'ruqxonada volontyor bo'lishga ham tayyor edim.",
+      "article1.p3":
+        "U yerda taxminan bir-ikki oy volontyor bo'lib ishladim. Keyin meni Shifo Nur Ko'z klinikasiga taklif qilishdi. O'sha paytda bu eng yaxshi yirik xususiy klinikalardan biri hisoblanardi.",
+      "article1.p4":
+        "Men u yerda asosan fizioterapiya bo'limida ishladim. Ammo qiyinchiliklar ham bo'ldi. Katta hamshiradan ko'p marta bullying va mobbing ko'rdim. O'sha paytda juda yosh edim va buning asl mohiyatini to'liq tushunmasdim. Uzoq vaqtgacha meni hatto rasmiy ishga ham olishmadi.",
+      "article1.p5":
+        "Keyin 2014 yilda men Apollonia stomatologik klinikasiga keldim. Aynan o'sha yerda men haqiqiy stomatologiyani o'z ko'zim bilan ko'rdim. Natalya menga ko'p narsani o'rgatdi. O'sha paytda hayotim juda og'ir bo'lishiga qaramay, men u yerda bir oy bepul ishladim. Keyin meni ishdan bo'shatishdi.",
+      "article1.p6":
+        "Shuningdek, 2014 yilda, 22 yoshimda, meni Ideal Dent laboratoriyasiga qabul qilishdi. Bu yerda asoschi Alimov Fazliddinga minnatdorchilik bildiraman. Avval assistent bo'lib ishladim, keyin esa tish texnikasi yo'nalishini ham o'rgandim.",
+      "article1.p7":
+        "Bu joy men uchun nafaqat professional, balki shaxsiy jihatdan ham juda muhim bo'ldi. Aynan o'sha davr bilan bog'liq bir muhim qaror sababli keyinchalik men ancha yuqori, hatto xalqaro darajaga chiqdim. Ammo shaxsiy muammolar sababli u yerdan ketishga to'g'ri keldi.",
+      "article1.p8":
+        "2017 yilda men stomatologiyada ishlashni davom ettirdim, lekin bu davr ham qiyin bo'ldi. Ishdan ketdim va taxminan bir oy davomida yangi ish topish juda mushkul bo'ldi, ayniqsa duduqlanishim sababli. Shundan keyin men o'zimning shaxsiy va professional rivojlanishim haqida strategikroq o'ylay boshladim.",
+      "article1.p9":
+        "Men dental_assistant.uz nomli Instagram sahifasini ochdim va bilgan narsalarimni ulasha boshladim. Keyin 2018 yilda Vitali Dent klinikasiga keldim va u yerda bir yilcha ishladim. Keyin klinika ta'mir sababli yopildi. Aynan o'sha paytda menda Germaniyaga qiziqish paydo bo'la boshlagan edi.",
+      "article1.p10":
+        "2018 yilda men Sirius Dentga keldim. U yerda men sevimli ustozlarim — doktor Elena Kim Dmitrievna va Iza Sungarova bilan tanishdim. Ular bilan yonma-yon ishlash menga juda kuchli tajriba berdi. O'sha yerda eng yaqin dugonalarimdan biri — Elena Shanshieva bilan ham tanishdim. Bugungacha biz hammamiz oila kabi aloqadamiz va men bu jamoaga chin yurakdan minnatdorman.",
+      "article1.p11":
+        "Keyin pandemiya boshlandi va hammasi to'xtab qoldi. 2021 yilda, karantindan keyin, men Saudiya Arabistoniga ketdim. U yerga meni doktor Sardor Mirahmedov Sultanovich taklif qildi — u My Dental va Dental Academy asoschisi hamda mening ustozlarimdan biri edi. Ba'zan tunlari ham ishlardik. Bu juda qiziqarli va intensiv tajriba bo'ldi. U yerda tish sug'urish, infiltratsion anesteziya, restavratsiya va boshqa ko'plab amaliy tajribalarni oldim. Bu tajriba uchun unga va jamoaga ham minnatdorman.",
+      "article1.p12":
+        "2023 yilda men Oybek Tulkunovich bilan mikroskop ostida endodontiyada ishladim va bu O'zbekistondagi oxirgi ish joyim bo'ldi. Shuningdek, dantal fotografiya bo'yicha kurs ham oldim va bu bilim uchun Max Nurdan minnatdorman. Shu tarzda, keyingi hayot bosqichim oldidan tajribamni qadam-baqadam yig'dim.",
 
-      "article2.title": "Stomatologiyadagi yo'lim: 2-qism — Germaniya",
-      "article2.p1": "Men 2024 yil 11 yanvarda Germaniyaga Ausbildung orqali keldim.",
-      "article2.p2": "Klinikalar nomini aytmayman.",
-      "article2.p3": "Birinchi ish joyim menga uy berdi.",
-      "article2.p4": "Lekin diskriminatsiyaga duch keldim.",
-      "article2.p5": "Menga \"sizlarda kelajak yo'q\" deyildi.",
-      "article2.p6": "Namoz gilamim tashlab yuborildi.",
-      "article2.p7": "Menga halol deb cho'chqa go'shti berildi.",
-      "article2.p8": "Shaxsiy chegaralarim hurmat qilinmadi.",
-      "article2.p9": "Ko'p ishlashga majbur bo'ldim.",
-      "article2.p10": "Qo'shimcha ishga ruxsat berilmadi.",
-      "article2.p11": "Ishdan ketdim.",
-      "article2.p12": "Keyin boshqa klinikaga o'tdim.",
-      "article2.p13": "Jamoa yomon edi.",
-      "article2.p14": "Kuniga 12 soat ishladim.",
-      "article2.p15": "Bosh assistent qiyin edi.",
-      "article2.p16": "Menejer bosim qildi.",
-      "article2.p17": "Yolg'iz qoldim.",
-      "article2.p18": "Depressiyaga tushdim.",
-      "article2.p19": "Noqonuniy ishdan bo'shatildim.",
-      "article2.p20": "KFOda ham ishdan ketdim.",
-      "article2.p21": "Diagnosimni bilishga urinishdi.",
-      "article2.p22": "Keyin boshqa ish topdim.",
-      "article2.p23": "Hozir ishlayapman.",
-      "article2.p24": "Diplom tan olinmoqda.",
-      "article2.p25": "Hikoya davom etadi.",
-      "article2.p26": "Keyingi bloglarda davom etadi.",
+            "article2.title": "Stomatologiyadagi yo'lim: 2-qism — Germaniya",
+      "article2.p1": "Men 2024 yil 11 yanvarda Ausbildung dasturi orqali Germaniyaga keldim — bu amaliyotli ta'lim dasturi — xalqaro darajadagi ta'lim olish maqsadida. Maxfiylik sababli klinikalar nomini yozmayman — buning o'rniga qo'shtirnoqdagi harflardan foydalanaman.",
+      "article2.p2": "Mening birinchi ish beruvchim «A» men bilan shartnoma tuzdi. Menda turar joy yo'q edi, shuning uchun u menga o'z uyidan bir xona berdi. U onasi bilan birga yashar edi. Men yaxshi niyat bilan keldim.",
+      "article2.p3": "Ertasiga uning onasi menga dedi: «Voy, qanchalik yaxshi keldingiz. U yoqda O'zbekistonda sizlarda kelajak yo'q.» Men hayratda qoldim — bu allaqachon kamsitish, bu tabu. Albatta bunga e'tibor bermaslikka harakat qildim.",
+      "article2.p4": "Keyinroq uyda namoz o'qishim mumkinmi deb so'radim, chunki men musulmonman. U ruxsat berdi. Ammo men yo'q vaqtimda u mening namoz gilamimni shunchaki tashlab yubordi.",
+      "article2.p5": "U menga cho'chqa go'shti bo'lgan taom ham berdi, lekin hammasi halol dedi. Men ota-onam bilan telefonda gaplashganimda u kelib tingladi va men nima haqida va nima uchun gaplashayotganimni so'radi.",
+      "article2.p6": "Ishdan keyin faqat men klinikani tozalash uchun qolardim — hatto yakshanba kunlari ham, bu esa qonunga zid edi. Men qo'shimcha ish haqida so'raganimda, u ko'zlari katta bo'lib qaradi va mening vizamda mini-job qilish mumkin emasligi yozilgan dedi. Aslida esa menga haftasiga 10 soatgacha ishlashga ruxsat berilgan edi.",
+      "article2.p7": "Men bu klinikadan ketishga qaror qildim. Avval mini-job shartnomasi tuzdim va vaqtinchalik turar joy topdim. Keyin sinfdoshimning tavsiyasi bilan «B» klinikasida Ausbildung shartnomasini imzoladim.",
+      "article2.p8": "U yerdagi jamoa qandaydir g'alati edi — do'stona emas va bir-biriga hurmat ko'rsatmas edi. Bir oydan keyin men o'zim ishdan ketdim va «V» klinikasiga o'tdim.",
+      "article2.p9": "U yerda sharoit ko'p jihatdan ancha yaxshiroq edi. Ammo menda tajriba bo'lgani uchun menga bir vaqtning o'zida hamma narsani yuklashdi. Men kuniga 12 soat ishlashim kerak edi.",
+      "article2.p10": "U yerdagi bosh stomatolog assistenti — rahbarning so'zlariga ko'ra, u autist edi — juda g'alati munosabatda edi. U menga tinch ishlashga imkon bermadi va doimo hamma narsani bo'rttirib ko'rsatardi.",
+      "article2.p11": "Menejer esa men bilan mobbing qilardi. Ish kuni oxirida u kelib derdi: «Hey sen — nega klinikani tozalamading?» Men: «Nima uchun men yolg'iz qilishim kerak, bu bizning umumiy ishimiz-ku?» derdim. U javob berardi: «To'g'ri aytasiz, lekin siz ko'proq ishlashingiz kerak.» Oxir-oqibat hammasi ketdi, klinikani qulflab ketishdi, men esa ichida yolg'iz qoldim.",
+      "article2.p12": "Bosh hamshira ham har doim o'z kayfiyatiga qarab tushlik vaqtini o'zi belgilar edi.",
+      "article2.p13": "Bularning barchasi oxir-oqibat meni og'ir depressiyaga olib keldi — o'z joniga qasd qilish fikrlarigacha va antidepressant bilan davolanishgacha.",
+      "article2.p14": "Men hamma narsani ZÄK ga xabar qildim. Rahbar bu haqda bilib qoldi va meni noqonuniy ravishda — og'zaki va kasallik varaqasida yotganimda — ishdan bo'shatdi.",
+      "article2.p15": "KFO klinikasida ham meni ishdan bo'shatishdi — ortodontiya sohasida tajribam yo'qligi sababli. U yerda ham bir kun kasal bo'lganimda, ish beruvchi diagnozimni bilish uchun klinikaga qo'ng'iroq qildi — bu esa qonun bilan taqiqlangan.",
+      "article2.p16": "Keyin «S» klinikasiga o'tdim va darhol shartnoma tuzdim. Ertasiga yanada yaxshiroq joy topdim va «D» klinikasi bilan ham shartnoma imzoladim.",
+      "article2.p17": "Hozirgi vaqtda men «S» klinikasida ishlamoqdaman va tez orada «D» ga o'taman. Shuningdek, diplom tan olinishi (Anerkennung) jarayonida ham yordam olmoqdaman. Hikoya davom etadi — keyingi blog postlarni kuzatib boring.",
 
-      "footer.description": "Maqolalar, yangiliklar, shaxsiy yo'l va yopiq premium kurslarga ega zamonaviy stomatologik ta'lim platformasi.",
+      "footer.description":
+        "Maqolalar, yangiliklar, shaxsiy yo'l va yopiq premium kurslarga ega zamonaviy stomatologik ta'lim platformasi.",
       "footer.navigation": "Navigatsiya",
       "footer.languages": "Tillar"
     }
@@ -625,6 +728,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyTranslations(lang) {
     const dictionary = translations[lang] || translations.en;
 
+    // ✅ Исправлено: key in dictionary вместо if (dictionary[key])
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
       if (key in dictionary) {
