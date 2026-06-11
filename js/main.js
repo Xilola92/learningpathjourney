@@ -695,7 +695,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "article2.title": "Stomatologiyadagi yo'lim: 2-qism — Germaniya",
       "article2.p1": "Men 2024 yil 11 yanvarda Ausbildung dasturi orqali Germaniyaga keldim — bu amaliyotli ta'lim dasturi — xalqaro darajadagi ta'lim olish maqsadida. Maxfiylik sababli klinikalar nomini yozmayman — buning o'rniga qo'shtirnoqdagi harflardan foydalanaman.",
       "article2.p2": "Mening birinchi ish beruvchim «A» men bilan shartnoma tuzdi. Menda turar joy yo'q edi, shuning uchun u menga o'z uyidan bir xona berdi. U onasi bilan birga yashar edi. Men yaxshi niyat bilan keldim.",
-      "article2.p3": "Ertasiga uning onasi menga dedi: «Voy, qanchalik yaxshi keldingiz. U yoqda O'zbekistonda sizlarda kelajak yo'q.» Men hayratda qoldim — bu allaqachon kamsitish, bu tabu. Albatta bunga e'tibor bermaslikka harakat qildim.",
+      "article2.p3": "Ertasiga uning onasi menga dedi: «Voy, zaxshi xam kelibsan. U yoqda sizlarda O'zbekistonda sizlarda kelajak yo'q.» deb qoldi. Men esa hayratda qoldim — bu allaqachon kamsitish, yani tabu. Albatta bunga e'tibor bermaslikka harakat qildim.",
       "article2.p4": "Keyinroq uyda namoz o'qishim mumkinmi deb so'radim, chunki men musulmonman. U ruxsat berdi. Ammo men yo'q vaqtimda u mening namoz gilamimni shunchaki tashlab yubordi.",
       "article2.p5": "U menga cho'chqa go'shti bo'lgan taom ham berdi, lekin hammasi halol dedi. Men ota-onam bilan telefonda gaplashganimda u kelib tingladi va men nima haqida va nima uchun gaplashayotganimni so'radi.",
       "article2.p6": "Ishdan keyin faqat men klinikani tozalash uchun qolardim — hatto yakshanba kunlari ham, bu esa qonunga zid edi. Men qo'shimcha ish haqida so'raganimda, u ko'zlari katta bo'lib qaradi va mening vizamda mini-job qilish mumkin emasligi yozilgan dedi. Aslida esa menga haftasiga 10 soatgacha ishlashga ruxsat berilgan edi.",
@@ -706,10 +706,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "article2.p11": "Menejer esa men bilan mobbing qilardi. Ish kuni oxirida u kelib derdi: «Hey sen — nega klinikani tozalamading?» Men: «Nima uchun men yolg'iz qilishim kerak, bu bizning umumiy ishimiz-ku?» derdim. U javob berardi: «To'g'ri aytasiz, lekin siz ko'proq ishlashingiz kerak.» Oxir-oqibat hammasi ketdi, klinikani qulflab ketishdi, men esa ichida yolg'iz qoldim.",
       "article2.p12": "Bosh hamshira ham har doim o'z kayfiyatiga qarab tushlik vaqtini o'zi belgilar edi.",
       "article2.p13": "Bularning barchasi oxir-oqibat meni og'ir depressiyaga olib keldi — o'z joniga qasd qilish fikrlarigacha va antidepressant bilan davolanishgacha.",
-      "article2.p14": "Men hamma narsani ZÄK ga xabar qildim. Rahbar bu haqda bilib qoldi va meni noqonuniy ravishda — og'zaki va kasallik varaqasida yotganimda — ishdan bo'shatdi.",
-      "article2.p15": "KFO klinikasida ham meni ishdan bo'shatishdi — ortodontiya sohasida tajribam yo'qligi sababli. U yerda ham bir kun kasal bo'lganimda, ish beruvchi diagnozimni bilish uchun klinikaga qo'ng'iroq qildi — bu esa qonun bilan taqiqlangan.",
+      "article2.p14": "Men hamma narsani Stomatogik palata ga xabar qildim. Rahbar bu haqda bilib qoldi va meni noqonuniy ravishda — og'zaki va kasallik varaqasida yotganimda — ishdan bo'shatdi.",
+      "article2.p15": "Ortodontiya klinikasida ham meni ishdan bo'shatishdi — ortodontiya sohasida tajribam yo'qligi sababli. U yerda ham bir kun kasal bo'lganimda, ish beruvchi diagnozimni bilish uchun klinikaga qo'ng'iroq qildi — bu esa qonun bilan taqiqlangan.",
       "article2.p16": "Keyin «S» klinikasiga o'tdim va darhol shartnoma tuzdim. Ertasiga yanada yaxshiroq joy topdim va «D» klinikasi bilan ham shartnoma imzoladim.",
-      "article2.p17": "Hozirgi vaqtda men «S» klinikasida ishlamoqdaman va tez orada «D» ga o'taman. Shuningdek, diplom tan olinishi (Anerkennung) jarayonida ham yordam olmoqdaman. Hikoya davom etadi — keyingi blog postlarni kuzatib boring.",
+      "article2.p17": "Hozirgi vaqtda men «S» klinikasida ishlamoqdaman va tez orada «D» ga o'tdim va men bu yerda juda ma`mnunman",
 
       "footer.description":
         "Maqolalar, yangiliklar, shaxsiy yo'l va yopiq premium kurslarga ega zamonaviy stomatologik ta'lim platformasi.",
