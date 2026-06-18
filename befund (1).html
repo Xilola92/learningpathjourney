@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="befund.pageTitle">Befund und Dokumentation | Learning Path Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .article-hero { padding: 88px 0 48px; }
+    .article-hero h1 { font-size: clamp(36px, 5vw, 62px); line-height: 1.1; letter-spacing: -1px; margin-bottom: 18px; }
+    .article-hero-sub { font-size: 17px; color: #b8bdd0; max-width: 720px; margin-bottom: 22px; }
+    .article-hero-meta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .meta-badge { display: inline-flex; align-items: center; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: #e5e8f1; font-size: 13px; }
+
+    .toc-card { padding: 28px 32px; margin-bottom: 36px; }
+    .toc-card ol { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 4px; counter-reset: toc; margin-top: 14px; }
+    .toc-card ol li { counter-increment: toc; }
+    .toc-card ol li a { display: flex; align-items: baseline; gap: 8px; font-size: 13.5px; color: #a28dff; transition: color 0.2s; }
+    .toc-card ol li a::before { content: counter(toc, decimal-leading-zero); font-size: 11px; font-weight: 700; color: rgba(162,141,255,0.35); flex-shrink: 0; }
+    .toc-card ol li a:hover { color: #fff; }
+
+    .sec { margin-bottom: 40px; scroll-margin-top: 100px; }
+    .sec-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .sec-num { width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0; display: grid; place-items: center; font-size: 12px; font-weight: 800; color: #fff; background: linear-gradient(135deg, #7c5cff 0%, #5d8dff 100%); }
+    .sec-title { font-size: 22px; font-weight: 700; }
+    .sec-body { font-size: 15.5px; color: #b8bdd0; line-height: 1.8; margin-bottom: 14px; }
+
+    .box { border-radius: 16px; padding: 16px 20px; margin: 14px 0; font-size: 14px; line-height: 1.7; border-left: 3px solid; }
+    .box strong { font-weight: 700; }
+    .box.tip { background: rgba(124,92,255,0.08); border-color: #7c5cff; color: #d4ccff; }
+    .box.info { background: rgba(54,182,255,0.08); border-color: #36b6ff; color: #bde8ff; }
+    .box.warn { background: rgba(255,185,50,0.08); border-color: #ffb932; color: #ffdfa0; }
+    .box.danger { background: rgba(255,80,80,0.08); border-color: #ff5050; color: #ffbcbc; }
+
+    .subcat { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #8f96aa; margin: 20px 0 8px; }
+
+    .tw { overflow-x: auto; margin: 12px 0; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    thead tr { background: rgba(124,92,255,0.1); }
+    thead th { padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: #a28dff; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(255,255,255,0.03); }
+    tbody td { padding: 9px 14px; color: #c2c7d8; vertical-align: middle; }
+    tbody td:first-child { font-family: monospace; font-size: 13px; font-weight: 700; color: #a28dff; white-space: nowrap; }
+    .td-plain { font-family: "Inter","Segoe UI",Arial,sans-serif !important; font-weight: 500 !important; color: #c2c7d8 !important; }
+
+    /* SVG figure wrapper */
+    .figure { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px; padding: 22px; margin: 18px 0; }
+    .figure svg { width: 100%; height: auto; display: block; }
+    .figure-cap { font-size: 12.5px; color: #8f96aa; text-align: center; margin-top: 12px; }
+
+    .psi { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0; }
+    .psi-item { flex: 1; min-width: 72px; border-radius: 14px; padding: 12px 10px; text-align: center; border: 1px solid; }
+    .psi-val { font-size: 22px; font-weight: 800; display: block; margin-bottom: 4px; }
+    .psi-desc { font-size: 10px; line-height: 1.4; }
+    .p0 { background: rgba(80,200,80,0.08); border-color: rgba(80,200,80,0.25); } .p0 .psi-val, .p0 .psi-desc { color: #7edd7e; }
+    .p1 { background: rgba(124,92,255,0.08); border-color: rgba(124,92,255,0.25); } .p1 .psi-val, .p1 .psi-desc { color: #a28dff; }
+    .p2 { background: rgba(255,185,50,0.08); border-color: rgba(255,185,50,0.25); } .p2 .psi-val, .p2 .psi-desc { color: #ffb932; }
+    .p3 { background: rgba(255,140,0,0.08); border-color: rgba(255,140,0,0.25); } .p3 .psi-val, .p3 .psi-desc { color: #ffa040; }
+    .p4 { background: rgba(255,80,80,0.08); border-color: rgba(255,80,80,0.25); } .p4 .psi-val, .p4 .psi-desc { color: #ff7070; }
+
+    .med { border-radius: 18px; overflow: hidden; margin: 14px 0; border: 1px solid rgba(255,255,255,0.07); }
+    .med-row { display: grid; grid-template-columns: 180px 1fr; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .med-row:last-child { border-bottom: none; }
+    .med-name { padding: 12px 16px; font-size: 13px; font-weight: 700; color: #ff9090; background: rgba(255,80,80,0.07); border-right: 1px solid rgba(255,255,255,0.05); }
+    .med-why { padding: 12px 16px; font-size: 13.5px; color: #c2c7d8; }
+
+    .xray { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px,1fr)); gap: 10px; margin: 14px 0; }
+    .xr-card { background: rgba(17,18,27,0.9); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 14px; transition: border-color 0.2s; }
+    .xr-card:hover { border-color: rgba(124,92,255,0.3); }
+    .xr-abbr { font-size: 11px; font-weight: 700; color: #36b6ff; background: rgba(54,182,255,0.1); border-radius: 6px; padding: 2px 8px; display: inline-block; margin-bottom: 7px; }
+    .xr-title { font-size: 13px; font-weight: 700; color: #d4e8ff; margin-bottom: 5px; }
+    .xr-desc { font-size: 12.5px; color: #8f96aa; line-height: 1.5; }
+
+    .progs { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px,1fr)); gap: 10px; margin: 14px 0; }
+    .prog { background: rgba(17,18,27,0.9); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 14px; text-align: center; transition: border-color 0.2s; }
+    .prog:hover { border-color: rgba(124,92,255,0.3); }
+    .prog-name { font-size: 15px; font-weight: 800; background: linear-gradient(135deg,#7c5cff,#36b6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+    .prog-desc { font-size: 12px; color: #8f96aa; line-height: 1.5; }
+
+    .legal { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px,1fr)); gap: 10px; margin: 14px 0; }
+    .leg-card { background: rgba(17,18,27,0.9); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 14px; transition: border-color 0.2s; }
+    .leg-card:hover { border-color: rgba(255,185,50,0.3); }
+    .leg-title { font-size: 13px; font-weight: 700; color: #ffb932; margin-bottom: 6px; }
+    .leg-desc { font-size: 13px; color: #b8bdd0; line-height: 1.5; }
+
+    .errors { margin: 10px 0; }
+    .err-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); align-items: flex-start; }
+    .err-item:last-child { border-bottom: none; }
+    .err-icon { width: 24px; height: 24px; border-radius: 50%; background: rgba(255,80,80,0.12); border: 1px solid rgba(255,80,80,0.3); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #ff7070; flex-shrink: 0; margin-top: 1px; }
+    .err-text { font-size: 14px; color: #b8bdd0; line-height: 1.65; }
+    .err-text strong { color: #e5e8f1; }
+
+    .gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap: 8px; margin: 12px 0; }
+    .gl-item { background: rgba(17,18,27,0.9); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 10px 14px; transition: border-color 0.2s; }
+    .gl-item:hover { border-color: rgba(124,92,255,0.3); }
+    .gl-de { font-size: 13px; font-weight: 700; color: #a28dff; margin-bottom: 2px; }
+    .gl-tr { font-size: 13px; color: #8f96aa; }
+
+    .example { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 16px 18px; margin: 12px 0; font-family: monospace; font-size: 13.5px; color: #c2c7d8; line-height: 2; }
+    .ex-label { font-family: "Inter","Segoe UI",sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #8f96aa; margin-bottom: 8px; display: block; }
+
+    .back-top { position: fixed; bottom: 1.75rem; right: 1.75rem; width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg,#7c5cff,#5d8dff); color: #fff; border: none; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; text-decoration: none; box-shadow: 0 8px 20px rgba(92,108,255,0.32); }
+    .back-top.show { opacity: 1; }
+
+    @media (max-width: 640px) {
+      .med-row { grid-template-columns: 1fr; }
+      .med-name { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Learning Path Journey</a>
+      <nav class="main-nav">
+        <a href="index.html"   data-i18n="nav.home">Home</a>
+        <a href="about.html"   data-i18n="nav.about">About</a>
+        <a href="journey.html" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" data-i18n="nav.connect">Connect</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container">
+    <span class="eyebrow" data-i18n="befund.eyebrow">ZFA Ausbildung · Year 3</span>
+    <h1 data-i18n="befund.title">Befund und Dokumentation</h1>
+    <p class="article-hero-sub" data-i18n="befund.subtitle">Complete study guide for ZFA trainees — from the FDI tooth numbering system to German legal documentation requirements.</p>
+    <div class="article-hero-meta">
+      <span class="meta-badge" data-i18n="befund.metaLevel">Level: Foundation + Advanced</span>
+      <span class="meta-badge" data-i18n="befund.metaTime">Reading time: 20 min</span>
+      <span class="meta-badge" data-i18n="befund.metaBadge">ZFA · Germany</span>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="container">
+
+  <div class="hero-card toc-card">
+    <span class="card-label" data-i18n="befund.tocTitle">Contents</span>
+    <ol>
+      <li><a href="#s1" data-i18n="befund.toc1">What is a Befund?</a></li>
+      <li><a href="#s2" data-i18n="befund.toc2">FDI Numbering System</a></li>
+      <li><a href="#s3" data-i18n="befund.toc3">Zahnbefund — Symbols</a></li>
+      <li><a href="#s4" data-i18n="befund.toc4">Parodontalbefund</a></li>
+      <li><a href="#s5" data-i18n="befund.toc5">Oral Mucosa Examination</a></li>
+      <li><a href="#s6" data-i18n="befund.toc6">X-Ray Documentation</a></li>
+      <li><a href="#s7" data-i18n="befund.toc7">Medical History</a></li>
+      <li><a href="#s8" data-i18n="befund.toc8">Software Programs</a></li>
+      <li><a href="#s9" data-i18n="befund.toc9">Treatment Plan</a></li>
+      <li><a href="#s10" data-i18n="befund.toc10">Patient Consent</a></li>
+      <li><a href="#s11" data-i18n="befund.toc11">Treatment Documentation</a></li>
+      <li><a href="#s12" data-i18n="befund.toc12">Legal Requirements</a></li>
+      <li><a href="#s13" data-i18n="befund.toc13">Common Mistakes</a></li>
+      <li><a href="#s14" data-i18n="befund.toc14">Glossary</a></li>
+    </ol>
+  </div>
+
+  <!-- S1 -->
+  <div class="article-card sec" id="s1">
+    <div class="sec-header"><div class="sec-num">01</div><h2 class="sec-title" data-i18n="befund.s1Title">What is a Befund?</h2></div>
+    <p class="sec-body" data-i18n="befund.s1p1">A Befund is the result of a clinical examination. The dentist systematically examines the oral cavity and records everything observed. The assistant's job is to accurately document this data as dictated.</p>
+    <p class="sec-body" data-i18n="befund.s1p2">A Befund is taken at every first visit and regularly updated. Without a current Befund, no treatment plan can be created.</p>
+    <div class="box tip">
+      <strong data-i18n="befund.s1tipTitle">Three types of examination:</strong><br><br>
+      <strong>Zahnbefund</strong> — <span data-i18n="befund.s1tip1">status of each individual tooth, recorded in the tooth chart.</span><br>
+      <strong>Parodontalbefund</strong> — <span data-i18n="befund.s1tip2">condition of the gums, periodontium and surrounding bone.</span><br>
+      <strong>Mundschleimhautbefund</strong> — <span data-i18n="befund.s1tip3">examination of the oral mucosa, tongue and lips.</span>
+    </div>
+  </div>
+
+  <!-- S2 -->
+  <div class="article-card sec" id="s2">
+    <div class="sec-header"><div class="sec-num">02</div><h2 class="sec-title" data-i18n="befund.s2Title">FDI Tooth Numbering System</h2></div>
+    <p class="sec-body" data-i18n="befund.s2p1">Germany uses the FDI system. Each tooth has a two-digit number. First digit = quadrant, second = position from midline outward.</p>
+
+    <!-- FDI tooth-map SVG -->
+    <div class="figure">
+      <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+        <defs>
+          <linearGradient id="gQ1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#5d8dff"/></linearGradient>
+          <linearGradient id="gQ2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5d8dff"/><stop offset="1" stop-color="#36b6ff"/></linearGradient>
+          <linearGradient id="gQ3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#36b6ff"/><stop offset="1" stop-color="#5d8dff"/></linearGradient>
+          <linearGradient id="gQ4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a28dff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+        </defs>
+        <!-- center cross -->
+        <line x1="320" y1="30" x2="320" y2="330" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <line x1="40" y1="180" x2="600" y2="180" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <!-- quadrant labels -->
+        <text x="180" y="22" fill="#a28dff" font-size="13" font-weight="700" text-anchor="middle">Q1 · 11–18</text>
+        <text x="460" y="22" fill="#36b6ff" font-size="13" font-weight="700" text-anchor="middle">Q2 · 21–28</text>
+        <text x="180" y="352" fill="#a28dff" font-size="13" font-weight="700" text-anchor="middle">Q4 · 41–48</text>
+        <text x="460" y="352" fill="#36b6ff" font-size="13" font-weight="700" text-anchor="middle">Q3 · 31–38</text>
+        <!-- Q1 teeth (upper right): 18..11 left to center -->
+        <g>
+          <rect x="40"  y="55" width="30" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="55"  y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">18</text>
+          <rect x="75"  y="55" width="30" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="90"  y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">17</text>
+          <rect x="110" y="55" width="30" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="125" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">16</text>
+          <rect x="145" y="55" width="28" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="159" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">15</text>
+          <rect x="178" y="55" width="28" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="192" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">14</text>
+          <rect x="211" y="55" width="26" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="224" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">13</text>
+          <rect x="242" y="55" width="26" height="44" rx="9" fill="url(#gQ1)" opacity="0.85"/><text x="255" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">12</text>
+          <rect x="273" y="55" width="26" height="44" rx="9" fill="url(#gQ1)"/><text x="286" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">11</text>
+        </g>
+        <!-- Q2 teeth (upper left): 21..28 center to right -->
+        <g>
+          <rect x="341" y="55" width="26" height="44" rx="9" fill="url(#gQ2)"/><text x="354" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">21</text>
+          <rect x="372" y="55" width="26" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="385" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">22</text>
+          <rect x="403" y="55" width="26" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="416" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">23</text>
+          <rect x="434" y="55" width="28" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="448" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">24</text>
+          <rect x="467" y="55" width="28" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="481" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">25</text>
+          <rect x="500" y="55" width="30" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="515" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">26</text>
+          <rect x="535" y="55" width="30" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="550" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">27</text>
+          <rect x="570" y="55" width="30" height="44" rx="9" fill="url(#gQ2)" opacity="0.85"/><text x="585" y="82" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">28</text>
+        </g>
+        <!-- Q4 teeth (lower right): 48..41 -->
+        <g>
+          <rect x="40"  y="261" width="30" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="55"  y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">48</text>
+          <rect x="75"  y="261" width="30" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="90"  y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">47</text>
+          <rect x="110" y="261" width="30" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="125" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">46</text>
+          <rect x="145" y="261" width="28" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="159" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">45</text>
+          <rect x="178" y="261" width="28" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="192" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">44</text>
+          <rect x="211" y="261" width="26" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="224" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">43</text>
+          <rect x="242" y="261" width="26" height="44" rx="9" fill="url(#gQ4)" opacity="0.85"/><text x="255" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">42</text>
+          <rect x="273" y="261" width="26" height="44" rx="9" fill="url(#gQ4)"/><text x="286" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">41</text>
+        </g>
+        <!-- Q3 teeth (lower left): 31..38 -->
+        <g>
+          <rect x="341" y="261" width="26" height="44" rx="9" fill="url(#gQ3)"/><text x="354" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">31</text>
+          <rect x="372" y="261" width="26" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="385" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">32</text>
+          <rect x="403" y="261" width="26" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="416" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">33</text>
+          <rect x="434" y="261" width="28" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="448" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">34</text>
+          <rect x="467" y="261" width="28" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="481" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">35</text>
+          <rect x="500" y="261" width="30" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="515" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">36</text>
+          <rect x="535" y="261" width="30" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="550" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">37</text>
+          <rect x="570" y="261" width="30" height="44" rx="9" fill="url(#gQ3)" opacity="0.85"/><text x="585" y="288" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">38</text>
+        </g>
+        <text x="320" y="175" fill="#8f96aa" font-size="10" text-anchor="middle" data-i18n="befund.svgMidline">midline</text>
+      </svg>
+      <div class="figure-cap" data-i18n="befund.fdiCaption">FDI tooth map — view as if facing the patient. The first digit is the quadrant (1–4), the second is the tooth position.</div>
+    </div>
+
+    <div class="box info"><strong data-i18n="befund.milkTitle">Primary teeth:</strong><span data-i18n="befund.milkText"> Quadrants 5–8, numbers 51–85. Example: 64 = upper left second primary molar.</span></div>
+    <div class="box warn">
+      <strong data-i18n="befund.exTitle">Examples to remember:</strong><br>
+      <span data-i18n="befund.ex1">11 — upper right central incisor</span><br>
+      <span data-i18n="befund.ex2">36 — lower left first molar</span><br>
+      <span data-i18n="befund.ex3">48 — lower right wisdom tooth</span>
+    </div>
+  </div>
+
+  <!-- S3 -->
+  <div class="article-card sec" id="s3">
+    <div class="sec-header"><div class="sec-num">03</div><h2 class="sec-title" data-i18n="befund.s3Title">Zahnbefund — Complete Symbol Reference</h2></div>
+    <p class="sec-body" data-i18n="befund.s3intro">The assistant must know these symbols by heart. The dentist dictates fast — no time to think.</p>
+
+    <p class="subcat" data-i18n="befund.cat1">Tooth status</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thSym">Symbol</th><th data-i18n="befund.thDe">German</th><th data-i18n="befund.thMean">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>e</td><td>gesund</td><td data-i18n="befund.tde">Healthy tooth</td></tr>
+        <tr><td>x</td><td>fehlend</td><td data-i18n="befund.tdx">Missing tooth</td></tr>
+        <tr><td>xk</td><td>kariesbedingt fehlend</td><td data-i18n="befund.tdxk">Extracted due to caries</td></tr>
+        <tr><td>xp</td><td>parodontal fehlend</td><td data-i18n="befund.tdxp">Extracted due to periodontitis</td></tr>
+        <tr><td>n</td><td>nicht angelegt</td><td data-i18n="befund.tdn">Congenitally absent</td></tr>
+        <tr><td>W</td><td>Wurzel</td><td data-i18n="befund.tdw">Root only</td></tr>
+        <tr><td>↓</td><td>retiniert</td><td data-i18n="befund.tdret">Impacted tooth</td></tr>
+        <tr><td>→</td><td>verlagert</td><td data-i18n="befund.tdver">Displaced tooth</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="subcat" data-i18n="befund.cat2">Restorations and prosthetics</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thSym">Symbol</th><th data-i18n="befund.thDe">German</th><th data-i18n="befund.thMean">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>f</td><td>Füllung</td><td data-i18n="befund.tdf">Filling</td></tr>
+        <tr><td>fk</td><td>Kunststofffüllung</td><td data-i18n="befund.tdfk">Composite filling</td></tr>
+        <tr><td>fa</td><td>Amalgamfüllung</td><td data-i18n="befund.tdfa">Amalgam filling</td></tr>
+        <tr><td>K</td><td>Krone</td><td data-i18n="befund.tdK">Crown</td></tr>
+        <tr><td>TK</td><td>Teilkrone</td><td data-i18n="befund.tdTK">Partial crown</td></tr>
+        <tr><td>VK</td><td>Vollkeramikkrone</td><td data-i18n="befund.tdVK">All-ceramic crown</td></tr>
+        <tr><td>B</td><td>Brücke</td><td data-i18n="befund.tdB">Bridge</td></tr>
+        <tr><td>I</td><td>Implantat</td><td data-i18n="befund.tdI">Implant</td></tr>
+        <tr><td>V</td><td>Veneer</td><td data-i18n="befund.tdV">Veneer</td></tr>
+        <tr><td>Inl</td><td>Inlay</td><td data-i18n="befund.tdInl">Inlay</td></tr>
+        <tr><td>Onl</td><td>Onlay</td><td data-i18n="befund.tdOnl">Onlay</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="subcat" data-i18n="befund.cat3">Pathological conditions</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thSym">Symbol</th><th data-i18n="befund.thDe">German</th><th data-i18n="befund.thMean">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>k</td><td>Karies</td><td data-i18n="befund.tdk">Caries</td></tr>
+        <tr><td>k¹</td><td>Initialkaries</td><td data-i18n="befund.tdk1">Initial caries</td></tr>
+        <tr><td>k²</td><td>Dentinkaries</td><td data-i18n="befund.tdk2">Dentine caries</td></tr>
+        <tr><td>k³</td><td>Pulpanahe Karies</td><td data-i18n="befund.tdk3">Deep caries</td></tr>
+        <tr><td>k⁴</td><td>Pulpaeröffnung</td><td data-i18n="befund.tdk4">Pulp exposure</td></tr>
+        <tr><td>ws</td><td>Wurzelspitze</td><td data-i18n="befund.tdws">Periapical pathology</td></tr>
+        <tr><td>WB</td><td>Wurzelbehandlung</td><td data-i18n="befund.tdWB">Root canal treatment</td></tr>
+        <tr><td>WF</td><td>Wurzelfüllung</td><td data-i18n="befund.tdWF">Root filling</td></tr>
+        <tr><td>A</td><td>Abrasion</td><td data-i18n="befund.tdA">Abrasion</td></tr>
+        <tr><td>E</td><td>Erosion</td><td data-i18n="befund.tdE">Erosion</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="example">
+      <span class="ex-label" data-i18n="befund.exDictLabel">Example — dictation</span>
+      18 — x, 17 — K, 16 — K, 15 — f, 14 — e, 13 — e, 12 — VK, 11 — VK<br>
+      46 — WB, WF, K, 45 — k², 44 — e, 43 — e
+    </div>
+  </div>
+
+  <!-- S4 -->
+  <div class="article-card sec" id="s4">
+    <div class="sec-header"><div class="sec-num">04</div><h2 class="sec-title" data-i18n="befund.s4Title">Parodontalbefund</h2></div>
+    <p class="sec-body" data-i18n="befund.s4p1">The periodontal assessment records the condition of the supporting structures — gums, periodontal ligament and alveolar bone. Performed using a Parodontalsonde with millimetre markings.</p>
+
+    <!-- Pocket depth SVG -->
+    <div class="figure">
+      <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+        <defs>
+          <linearGradient id="toothG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef1ff"/><stop offset="1" stop-color="#c2c7e8"/></linearGradient>
+          <linearGradient id="gumG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e87b8b"/><stop offset="1" stop-color="#c2566a"/></linearGradient>
+          <linearGradient id="boneG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0e4c8"/><stop offset="1" stop-color="#cbb98e"/></linearGradient>
+        </defs>
+        <!-- bone -->
+        <rect x="60" y="190" width="440" height="90" fill="url(#boneG)" opacity="0.5" rx="6"/>
+        <!-- gum left + right -->
+        <path d="M120 150 Q160 120 200 150 L200 230 L120 230 Z" fill="url(#gumG)" opacity="0.85"/>
+        <path d="M360 150 Q400 120 440 150 L440 230 L360 230 Z" fill="url(#gumG)" opacity="0.85"/>
+        <!-- tooth -->
+        <path d="M210 60 Q280 45 350 60 L335 200 Q280 215 225 200 Z" fill="url(#toothG)"/>
+        <!-- root -->
+        <path d="M225 200 Q235 265 270 270 Q305 265 335 200 Z" fill="url(#toothG)" opacity="0.85"/>
+        <!-- probe -->
+        <rect x="196" y="95" width="6" height="105" rx="3" fill="#7c5cff"/>
+        <!-- probe markings -->
+        <line x1="186" y1="150" x2="212" y2="150" stroke="#fff" stroke-width="1.5"/>
+        <line x1="190" y1="165" x2="208" y2="165" stroke="#fff" stroke-width="1"/>
+        <line x1="190" y1="180" x2="208" y2="180" stroke="#fff" stroke-width="1"/>
+        <!-- depth bracket -->
+        <line x1="160" y1="150" x2="160" y2="200" stroke="#36b6ff" stroke-width="2"/>
+        <line x1="155" y1="150" x2="165" y2="150" stroke="#36b6ff" stroke-width="2"/>
+        <line x1="155" y1="200" x2="165" y2="200" stroke="#36b6ff" stroke-width="2"/>
+        <text x="148" y="178" fill="#36b6ff" font-size="13" font-weight="700" text-anchor="end" data-i18n="befund.svgPocket">pocket</text>
+        <!-- labels -->
+        <text x="490" y="120" fill="#eef1ff" font-size="12" text-anchor="end" data-i18n="befund.svgTooth">tooth</text>
+        <text x="490" y="175" fill="#e87b8b" font-size="12" text-anchor="end" data-i18n="befund.svgGum">gum</text>
+        <text x="490" y="240" fill="#cbb98e" font-size="12" text-anchor="end" data-i18n="befund.svgBone">bone</text>
+        <text x="206" y="88" fill="#a28dff" font-size="12" font-weight="700" data-i18n="befund.svgProbe">probe</text>
+      </svg>
+      <div class="figure-cap" data-i18n="befund.pocketCaption">Probing depth (Taschentiefe): the probe measures the distance from the gum margin to the bottom of the pocket, at 6 points per tooth.</div>
+    </div>
+
+    <div class="box tip">
+      <strong data-i18n="befund.s4tipTitle">What is measured:</strong><br><br>
+      <strong>Taschentiefe (TT)</strong> — <span data-i18n="befund.s4tip1">probing depth in millimetres, measured at 6 points per tooth.</span><br><br>
+      <strong>Attachmentverlust (AV)</strong> — <span data-i18n="befund.s4tip2">attachment loss — indicates the extent of bone destruction.</span><br><br>
+      <strong>BOP</strong> — <span data-i18n="befund.s4tip3">bleeding on probing — sign of inflammation, recorded as + or –.</span>
+    </div>
+    <p class="subcat" data-i18n="befund.normTitle">Normal probing depth values:</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thDepth">Depth</th><th data-i18n="befund.thStatus">Status</th><th data-i18n="befund.thAction">Action</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 3 mm</td><td data-i18n="befund.norm1">Normal</td><td data-i18n="befund.norm1a">Prevention</td></tr>
+        <tr><td>4 mm</td><td data-i18n="befund.norm2">Borderline</td><td data-i18n="befund.norm2a">Monitor</td></tr>
+        <tr><td>≥ 5 mm</td><td data-i18n="befund.norm3">Pathological pocket</td><td data-i18n="befund.norm3a">Treatment required</td></tr>
+      </tbody>
+    </table></div>
+    <p class="subcat" data-i18n="befund.psiTitle">PSI — Periodontal Screening Index:</p>
+    <div class="psi">
+      <div class="psi-item p0"><span class="psi-val">0</span><span class="psi-desc" data-i18n="befund.psi0">Healthy, no bleeding</span></div>
+      <div class="psi-item p1"><span class="psi-val">1</span><span class="psi-desc" data-i18n="befund.psi1">Bleeding on probing</span></div>
+      <div class="psi-item p2"><span class="psi-val">2</span><span class="psi-desc" data-i18n="befund.psi2">Calculus / overhanging margins</span></div>
+      <div class="psi-item p3"><span class="psi-val">3</span><span class="psi-desc" data-i18n="befund.psi3">Pocket 4–5 mm</span></div>
+      <div class="psi-item p4"><span class="psi-val">4</span><span class="psi-desc" data-i18n="befund.psi4">Pocket ≥ 6 mm</span></div>
+    </div>
+    <p class="sec-body" data-i18n="befund.furkText">Furcation involvement: F1 — probe enters up to 3 mm. F2 — more than 3 mm, not through. F3 — probe passes through.</p>
+  </div>
+
+  <!-- S5 -->
+  <div class="article-card sec" id="s5">
+    <div class="sec-header"><div class="sec-num">05</div><h2 class="sec-title" data-i18n="befund.s5Title">Oral Mucosa Examination</h2></div>
+    <p class="sec-body" data-i18n="befund.s5p1">The dentist examines not only the teeth but the entire oral cavity. The assistant records any mucosal changes.</p>
+    <div class="box info"><strong data-i18n="befund.s5whatTitle">What is examined:</strong><span data-i18n="befund.s5what"> lips and oral commissures, buccal mucosa, tongue (dorsal and ventral), floor of the mouth, palate (hard and soft), tonsils and pharynx.</span></div>
+    <p class="sec-body" data-i18n="befund.s5p2">Every pathological change is documented with a precise description: size, shape, colour, location. Special attention to suspicious lesions that may indicate malignancy.</p>
+  </div>
+
+  <!-- S6 -->
+  <div class="article-card sec" id="s6">
+    <div class="sec-header"><div class="sec-num">06</div><h2 class="sec-title" data-i18n="befund.s6Title">X-Ray Documentation</h2></div>
+    <p class="sec-body" data-i18n="befund.s6p1">Radiographs are mandatory documentation. Every exposure must be justified under the Strahlenschutzgesetz (Radiation Protection Act).</p>
+    <div class="xray">
+      <div class="xr-card"><div class="xr-abbr">Zahnfilm</div><div class="xr-title" data-i18n="befund.xr1title">Periapical X-ray</div><div class="xr-desc" data-i18n="befund.xr1desc">One or more teeth. Caries, root canals, treatment control.</div></div>
+      <div class="xr-card"><div class="xr-abbr">BWA</div><div class="xr-title" data-i18n="befund.xr2title">Bitewing X-ray</div><div class="xr-desc" data-i18n="befund.xr2desc">Proximal caries and bone level assessment.</div></div>
+      <div class="xr-card"><div class="xr-abbr">OPG</div><div class="xr-title" data-i18n="befund.xr3title">Panoramic X-ray</div><div class="xr-desc" data-i18n="befund.xr3desc">Full jaw. First visit, implants, wisdom teeth.</div></div>
+      <div class="xr-card"><div class="xr-abbr">DVT</div><div class="xr-title" data-i18n="befund.xr4title">CBCT (3D scan)</div><div class="xr-desc" data-i18n="befund.xr4desc">Volumetric scan. Implant planning, complex endodontics.</div></div>
+    </div>
+    <p class="subcat" data-i18n="befund.s6docTitle">Mandatory documentation per X-ray:</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thField">Field</th><th data-i18n="befund.thEx">Example</th></tr></thead>
+      <tbody>
+        <tr><td class="td-plain" data-i18n="befund.rxDate">Date</td><td>14.03.2025</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.rxType">Type</td><td>OPG</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.rxInd">Indication</td><td data-i18n="befund.rxIndEx">Routine check</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.rxZone">Region</td><td data-i18n="befund.rxZoneEx">Full jaw</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.rxDose">Radiation dose</td><td>0.025 mSv</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.rxSign">Dentist signature</td><td>Dr. Müller</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><strong data-i18n="befund.strahlTitle">Strahlenschutzkurs required!</strong><span data-i18n="befund.strahlText"> Assistants helping with X-rays must hold a radiation protection certificate. Without it — illegal practice.</span></div>
+  </div>
+
+  <!-- S7 -->
+  <div class="article-card sec" id="s7">
+    <div class="sec-header"><div class="sec-num">07</div><h2 class="sec-title" data-i18n="befund.s7Title">Medical History (Anamnese)</h2></div>
+    <p class="sec-body" data-i18n="befund.s7p1">The Anamnese is the collection of patient health information before treatment begins. Legally mandatory. Completed in writing by the patient and reviewed with the dentist.</p>
+    <p class="subcat" data-i18n="befund.medTitle">Medications important in dentistry:</p>
+    <div class="med">
+      <div class="med-row"><div class="med-name">Bisphosphonate</div><div class="med-why" data-i18n="befund.med1">Risk of jaw osteonecrosis during extractions — must inform the dentist!</div></div>
+      <div class="med-row"><div class="med-name">Blutverdünner</div><div class="med-why" data-i18n="befund.med2">Marcumar, Xarelto, Eliquis — increased bleeding risk during surgical procedures.</div></div>
+      <div class="med-row"><div class="med-name">Cortison</div><div class="med-why" data-i18n="befund.med3">Delayed wound healing, increased infection risk.</div></div>
+      <div class="med-row"><div class="med-name">Antibiotika</div><div class="med-why" data-i18n="befund.med4">Possible resistance, affects treatment selection.</div></div>
+    </div>
+    <div class="box danger"><strong data-i18n="befund.allergyTitle">Allergies — always confirm!</strong><br><span data-i18n="befund.allergyText">Latex (the assistant wears latex gloves!), local anaesthetics (lidocaine, articaine), metals (nickel, chromium), antibiotics (penicillin), pregnancy and breastfeeding.</span></div>
+    <div class="box info"><strong data-i18n="befund.sysTitle">Systemic conditions:</strong><span data-i18n="befund.sysText"> Hypertension (important before anaesthesia), diabetes (delayed healing), heart defects (may need antibiotic prophylaxis), previous heart attack or stroke.</span></div>
+  </div>
+
+  <!-- S8 -->
+  <div class="article-card sec" id="s8">
+    <div class="sec-header"><div class="sec-num">08</div><h2 class="sec-title" data-i18n="befund.s8Title">Documentation Software</h2></div>
+    <p class="sec-body" data-i18n="befund.s8p1">Most German practices use specialist software. The assistant must be able to work with these programs.</p>
+    <div class="progs">
+      <div class="prog"><div class="prog-name">Evident</div><div class="prog-desc" data-i18n="befund.prog1">Most widely used. Integrates with X-ray and scanner.</div></div>
+      <div class="prog"><div class="prog-name">Dampsoft</div><div class="prog-desc" data-i18n="befund.prog2">For smaller practices. Simple and reliable.</div></div>
+      <div class="prog"><div class="prog-name">CGM Z1</div><div class="prog-desc" data-i18n="befund.prog3">Popular in large practices and MVZ centres.</div></div>
+      <div class="prog"><div class="prog-name">Charly</div><div class="prog-desc" data-i18n="befund.prog4">Modern cloud-based system.</div></div>
+    </div>
+    <p class="subcat" data-i18n="befund.tasksTitle">Assistant tasks in the software:</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thTask">Task</th><th data-i18n="befund.thDetails">Details</th></tr></thead>
+      <tbody>
+        <tr><td class="td-plain" data-i18n="befund.task1">New patient</td><td data-i18n="befund.task1d">Create record, enter personal data</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.task2">Anamnese</td><td data-i18n="befund.task2d">Enter health information</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.task3">Befund</td><td data-i18n="befund.task3d">Record as dictated by dentist</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.task4">X-rays</td><td data-i18n="befund.task4d">Document with date and indication</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.task5">Billing</td><td data-i18n="befund.task5d">Generate invoices per BEMA and GOZ</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <!-- S9 -->
+  <div class="article-card sec" id="s9">
+    <div class="sec-header"><div class="sec-num">09</div><h2 class="sec-title" data-i18n="befund.s9Title">Treatment Plan</h2></div>
+    <p class="sec-body" data-i18n="befund.s9p1">After the examination, the dentist creates a Behandlungsplan — a detailed plan of all necessary treatment.</p>
+    <div class="box tip"><strong data-i18n="befund.s9incTitle">What the treatment plan includes:</strong><span data-i18n="befund.s9inc"> list of all required procedures, treatment sequence, estimated costs, signatures of dentist and patient.</span></div>
+    <div class="box danger"><strong data-i18n="befund.s9impTitle">Important!</strong><span data-i18n="befund.s9imp"> The patient must sign the treatment plan BEFORE any procedures begin. This is a legal requirement.</span></div>
+  </div>
+
+  <!-- S10 -->
+  <div class="article-card sec" id="s10">
+    <div class="sec-header"><div class="sec-num">10</div><h2 class="sec-title" data-i18n="befund.s10Title">Patient Consent</h2></div>
+    <p class="sec-body" data-i18n="befund.s10p1">Before any major procedure, the patient signs a written consent form — Aufklärung und Einwilligung.</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thProc">Procedure</th><th data-i18n="befund.thConsent">Consent</th></tr></thead>
+      <tbody>
+        <tr><td class="td-plain" data-i18n="befund.cons1">Tooth extraction</td><td data-i18n="befund.consReq">Written consent required</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.cons2">Implant placement</td><td data-i18n="befund.consReq">Written consent required</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.cons3">Oral surgery</td><td data-i18n="befund.consReq">Written consent required</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.cons4">X-ray</td><td data-i18n="befund.consReq">Written consent required</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.cons5">Anaesthesia</td><td data-i18n="befund.consReq">Written consent required</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><strong data-i18n="befund.timeTitle">Time to consider!</strong><span data-i18n="befund.timeText"> Consent must be obtained in advance. Never ask the patient to sign immediately before the procedure.</span></div>
+  </div>
+
+  <!-- S11 -->
+  <div class="article-card sec" id="s11">
+    <div class="sec-header"><div class="sec-num">11</div><h2 class="sec-title" data-i18n="befund.s11Title">Treatment Documentation</h2></div>
+    <p class="sec-body" data-i18n="befund.s11p1">A record of everything that happened at each appointment. Must be completed the same day.</p>
+    <div class="tw"><table>
+      <thead><tr><th data-i18n="befund.thField">Field</th><th data-i18n="befund.thEx">Example</th></tr></thead>
+      <tbody>
+        <tr><td class="td-plain" data-i18n="befund.doc1">Date and time</td><td>14.03.2025, 10:30</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc2">Patient complaint</td><td data-i18n="befund.doc2ex">Pain at tooth 46 when biting</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc3">Procedure</td><td data-i18n="befund.doc3ex">Caries excavation, composite restoration</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc4">Materials</td><td>Tetric EvoCeram A2, batch #2547</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc5">Anaesthesia</td><td>Ultracain D-S forte 1.7 ml</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc6">Complications</td><td data-i18n="befund.doc6ex">None</td></tr>
+        <tr><td class="td-plain" data-i18n="befund.doc7">Dentist signature</td><td>Dr. Schmidt</td></tr>
+      </tbody>
+    </table></div>
+    <div class="example">
+      <span class="ex-label" data-i18n="befund.docExLabel">Example entry</span>
+      14.03.2025 — Zahn 46. Lok. Anästhesie: Ultracain D-S forte 1,7 ml.<br>
+      Kariesexkavation. Kompositfüllung Optibond FL + Tetric EvoCeram A2.<br>
+      <span data-i18n="befund.docExEnd">Occlusion checked. Patient pain-free.</span>
+    </div>
+  </div>
+
+  <!-- S12 -->
+  <div class="article-card sec" id="s12">
+    <div class="sec-header"><div class="sec-num">12</div><h2 class="sec-title" data-i18n="befund.s12Title">Legal Requirements</h2></div>
+    <div class="legal">
+      <div class="leg-card"><div class="leg-title" data-i18n="befund.leg1title">Aufbewahrungspflicht</div><div class="leg-desc" data-i18n="befund.leg1desc">Records kept minimum 10 years. X-rays 10 years. Some documents longer.</div></div>
+      <div class="leg-card"><div class="leg-title" data-i18n="befund.leg2title">DSGVO</div><div class="leg-desc" data-i18n="befund.leg2desc">Patient data strictly confidential. Computers password-protected. No public discussion of patients.</div></div>
+      <div class="leg-card"><div class="leg-title" data-i18n="befund.leg3title">Schweigepflicht</div><div class="leg-desc" data-i18n="befund.leg3desc">Professional secrecy. §203 StGB. All staff are bound. Violation is a criminal offence.</div></div>
+      <div class="leg-card"><div class="leg-title" data-i18n="befund.leg4title">Consequences</div><div class="leg-desc" data-i18n="befund.leg4desc">Incomplete records count against the practice. Not documented = not done. Lawsuits, fines, licence revocation.</div></div>
+    </div>
+    <div class="box danger"><strong data-i18n="befund.goldenTitle">Golden rule:</strong><span data-i18n="befund.goldenText"> If it is not documented, it did not happen. The assistant's accuracy protects both the patient and the practice.</span></div>
+  </div>
+
+  <!-- S13 -->
+  <div class="article-card sec" id="s13">
+    <div class="sec-header"><div class="sec-num">13</div><h2 class="sec-title" data-i18n="befund.s13Title">Common Mistakes</h2></div>
+    <div class="errors">
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err1t">Inaccurate charting.</strong> <span data-i18n="befund.err1d">Confusing tooth numbers is a serious error. Always ask if you did not hear clearly.</span></div></div>
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err2t">Incomplete Anamnese.</strong> <span data-i18n="befund.err2d">The assistant must check the form is fully completed. A missed allergy can be life-threatening.</span></div></div>
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err3t">Missing patient signature.</strong> <span data-i18n="befund.err3d">A document without a signature has no legal validity.</span></div></div>
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err4t">Late documentation.</strong> <span data-i18n="befund.err4d">Entries must be made the same day, not days later.</span></div></div>
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err5t">Non-standard abbreviations.</strong> <span data-i18n="befund.err5d">Use only accepted symbols — no one should have to guess what you wrote.</span></div></div>
+      <div class="err-item"><div class="err-icon">✕</div><div class="err-text"><strong data-i18n="befund.err6t">Discussing patients.</strong> <span data-i18n="befund.err6d">Never discuss patients in corridors, outside, or on social media. Schweigepflicht always applies.</span></div></div>
+    </div>
+  </div>
+
+  <!-- S14 -->
+  <div class="article-card sec" id="s14" style="margin-bottom: 64px;">
+    <div class="sec-header"><div class="sec-num">14</div><h2 class="sec-title" data-i18n="befund.s14Title">Glossary</h2></div>
+    <p class="sec-body" data-i18n="befund.s14intro">Key German terms the assistant must know by heart:</p>
+    <div class="gloss">
+      <div class="gl-item"><div class="gl-de">Befund</div><div class="gl-tr" data-i18n="befund.g1">Clinical examination</div></div>
+      <div class="gl-item"><div class="gl-de">Dokumentation</div><div class="gl-tr" data-i18n="befund.g2">Documentation</div></div>
+      <div class="gl-item"><div class="gl-de">Zahnschema</div><div class="gl-tr" data-i18n="befund.g3">Tooth chart</div></div>
+      <div class="gl-item"><div class="gl-de">Anamnese</div><div class="gl-tr" data-i18n="befund.g4">Medical history</div></div>
+      <div class="gl-item"><div class="gl-de">Behandlungsplan</div><div class="gl-tr" data-i18n="befund.g5">Treatment plan</div></div>
+      <div class="gl-item"><div class="gl-de">Einverständniserklärung</div><div class="gl-tr" data-i18n="befund.g6">Patient consent</div></div>
+      <div class="gl-item"><div class="gl-de">Aufklärung</div><div class="gl-tr" data-i18n="befund.g7">Informed consent</div></div>
+      <div class="gl-item"><div class="gl-de">Taschentiefe</div><div class="gl-tr" data-i18n="befund.g8">Probing depth</div></div>
+      <div class="gl-item"><div class="gl-de">Attachmentverlust</div><div class="gl-tr" data-i18n="befund.g9">Attachment loss</div></div>
+      <div class="gl-item"><div class="gl-de">Blutung auf Sondierung</div><div class="gl-tr" data-i18n="befund.g10">Bleeding on probing</div></div>
+      <div class="gl-item"><div class="gl-de">Schweigepflicht</div><div class="gl-tr" data-i18n="befund.g11">Professional secrecy</div></div>
+      <div class="gl-item"><div class="gl-de">Aufbewahrungspflicht</div><div class="gl-tr" data-i18n="befund.g12">Record retention obligation</div></div>
+      <div class="gl-item"><div class="gl-de">Datenschutz</div><div class="gl-tr" data-i18n="befund.g13">Data protection</div></div>
+      <div class="gl-item"><div class="gl-de">Strahlenschutz</div><div class="gl-tr" data-i18n="befund.g14">Radiation protection</div></div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Learning Path Journey</h3>
+        <p data-i18n="footer.description">A modern dental education platform with articles, news, personal journey, and premium private courses.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.navigation">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"   data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html"   data-i18n="nav.about">About</a></li>
+          <li><a href="journey.html" data-i18n="nav.journey">Journey</a></li>
+          <li><a href="contact.html" data-i18n="nav.connect">Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.languages">Languages</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="setLanguage('de');return false;">Deutsch</a></li>
+          <li><a href="#" onclick="setLanguage('ru');return false;">Русский</a></li>
+          <li><a href="#" onclick="setLanguage('en');return false;">English</a></li>
+          <li><a href="#" onclick="setLanguage('uz');return false;">O'zbek</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Learning Path Journey. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="back-top" href="#" id="btt" aria-label="Back to top">↑</a>
+
+<script src="i18n.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('btt').classList.toggle('show', window.scrollY > 400);
+  });
+  document.getElementById('btt').addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
