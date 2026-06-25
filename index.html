@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJHZ4B1LCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LJHZ4B1LCM');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Path Journey</title>
+  <meta name="description" content="Modern multilingual dental education platform with articles, news, personal journey, and private premium courses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Hero ── */
+    .hero-section { padding: 100px 0 70px; position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero-content h1 { font-size: clamp(36px, 5vw, 62px); line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 20px; }
+    .hero-description { font-size: 16px; color: #b8bdd0; line-height: 1.8; margin-bottom: 28px; max-width: 480px; }
+    .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    .hero-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .hero-badges span { font-size: 12px; color: #8f96aa; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 999px; padding: 5px 12px; }
+
+    /* Hero SVG card */
+    .hero-visual { position: relative; }
+    .hero-svg-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 28px; backdrop-filter: blur(10px); }
+    .hero-svg-card svg { width: 100%; height: auto; display: block; }
+
+    /* ── Section titles ── */
+    .sec-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #a28dff; margin-bottom: 10px; }
+    .sec-title { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; letter-spacing: -0.8px; line-height: 1.15; margin-bottom: 14px; }
+    .sec-sub { font-size: 15px; color: #8f96aa; line-height: 1.7; max-width: 560px; }
+
+    /* ── Klinische Dokumentation ── */
+    .klinik-section { padding: 80px 0; }
+    .klinik-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 36px; }
+    .klinik-card { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; padding: 24px; transition: border-color 0.25s, transform 0.25s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+    .klinik-card:hover { border-color: rgba(124,92,255,0.4); transform: translateY(-3px); }
+    .klinik-card.coming { opacity: 0.5; cursor: default; pointer-events: none; }
+    .klinik-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+    .klinik-icon.purple { background: rgba(124,92,255,0.15); }
+    .klinik-icon.blue { background: rgba(54,182,255,0.15); }
+    .klinik-icon.green { background: rgba(80,200,120,0.15); }
+    .klinik-icon.orange { background: rgba(255,160,50,0.15); }
+    .klinik-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .klinik-card p { font-size: 13.5px; color: #8f96aa; line-height: 1.6; margin-bottom: 14px; }
+    .klinik-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+    .tag-available { background: rgba(124,92,255,0.12); color: #a28dff; }
+    .tag-soon { background: rgba(255,255,255,0.05); color: #555b6e; }
+
+    /* ── Story section ── */
+    .story-section { padding: 80px 0; }
+    .story-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 36px; }
+    .story-card { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; padding: 24px; transition: border-color 0.25s, transform 0.25s; }
+    .story-card:hover { border-color: rgba(54,182,255,0.35); transform: translateY(-3px); }
+    .story-num { font-size: 11px; font-weight: 800; letter-spacing: 2px; color: #36b6ff; margin-bottom: 12px; }
+    .story-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
+    .story-card p { font-size: 13.5px; color: #8f96aa; line-height: 1.6; margin-bottom: 16px; }
+    .text-link { font-size: 13px; font-weight: 600; color: #7c5cff; transition: color 0.2s; }
+    .text-link:hover { color: #a28dff; }
+
+    /* ── Languages banner ── */
+    .lang-banner { padding: 60px 0; }
+    .lang-banner-inner { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 24px; padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    .lang-flags { display: flex; gap: 12px; flex-wrap: wrap; }
+    .lang-flag { font-size: 14px; font-weight: 700; padding: 10px 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04); color: #e5e8f1; }
+
+    /* ── Stats ── */
+    .stats-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+    .stat-box { flex: 1; min-width: 120px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 18px 20px; text-align: center; }
+    .stat-val { font-size: 28px; font-weight: 800; background: linear-gradient(135deg,#7c5cff,#36b6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block; margin-bottom: 4px; }
+    .stat-label { font-size: 12px; color: #8f96aa; }
+
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .lang-banner-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">LearningPathJourney</a>
+    <nav class="main-nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="journey.html" data-i18n="nav.journey">Journey</a>
+      <a href="contact.html" data-i18n="nav.connect">Connect</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="home.eyebrow">Zahnmedizin · Bildung · Mehrsprachig</p>
+        <h1 data-i18n="home.title">Dein Lernweg in der Zahnmedizin</h1>
+        <p class="hero-description" data-i18n="home.description">
+          Eine moderne mehrsprachige Plattform für ZFA-Ausbildung, klinische Dokumentation und persönlichen Lernweg — auf Deutsch, Englisch, Russisch und Usbekisch.
+        </p>
+        <div class="hero-buttons">
+          <a href="befund.html" class="btn btn-primary" data-i18n="home.primaryBtn">Zum Lernmaterial</a>
+          <a href="about.html" class="btn btn-secondary" data-i18n="home.secondaryBtn">Über die Plattform</a>
+        </div>
+        <div class="hero-badges">
+          <span data-i18n="home.badge1">🌍 4 Sprachen</span>
+          <span data-i18n="home.badge2">🦷 ZFA Ausbildung</span>
+          <span data-i18n="home.badge3">📚 Klinisches Wissen</span>
+        </div>
+      </div>
+
+      <!-- Hero SVG — Zahn Illustration -->
+      <div class="hero-visual">
+        <div class="hero-svg-card">
+          <svg viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+            <defs>
+              <linearGradient id="hSchmelz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8eeff"/><stop offset="1" stop-color="#9099cc"/></linearGradient>
+              <linearGradient id="hDentin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5d98a"/><stop offset="1" stop-color="#c89a3a"/></linearGradient>
+              <linearGradient id="hPulpa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9090"/><stop offset="1" stop-color="#cc3333"/></linearGradient>
+              <linearGradient id="hZement" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#90d4a0"/><stop offset="1" stop-color="#3a7a50"/></linearGradient>
+              <radialGradient id="glowG" cx="50%" cy="30%"><stop offset="0" stop-color="rgba(124,92,255,0.18)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+            </defs>
+
+            <!-- Glow -->
+            <ellipse cx="170" cy="120" rx="130" ry="100" fill="url(#glowG)"/>
+
+            <!-- Knochen -->
+            <rect x="50" y="248" width="240" height="110" rx="8" fill="rgba(200,168,112,0.18)"/>
+
+            <!-- Gingiva -->
+            <path d="M80 250 Q170 225 260 250 L260 272 Q170 250 80 272 Z" fill="rgba(232,123,139,0.22)"/>
+
+            <!-- Zement -->
+            <path d="M105 248 Q90 308 118 355 Q170 372 222 355 Q250 308 235 248 Z" fill="url(#hZement)" opacity="0.65"/>
+
+            <!-- Dentin Wurzel -->
+            <path d="M118 248 Q106 304 128 348 Q170 362 212 348 Q234 304 222 248 Z" fill="url(#hDentin)" opacity="0.8"/>
+
+            <!-- Schmelz Krone -->
+            <path d="M105 248 Q88 178 105 118 Q135 50 170 34 Q205 50 235 118 Q252 178 235 248 Z" fill="url(#hSchmelz)" opacity="0.88"/>
+
+            <!-- Dentin Krone -->
+            <path d="M124 245 Q110 182 125 128 Q148 72 170 58 Q192 72 215 128 Q230 182 216 245 Z" fill="url(#hDentin)" opacity="0.82"/>
+
+            <!-- Pulpa -->
+            <path d="M152 242 Q142 190 148 148 Q158 100 170 88 Q182 100 192 148 Q198 190 188 242 Q180 330 170 348 Q160 330 152 242 Z" fill="url(#hPulpa)" opacity="0.88"/>
+
+            <!-- Höcker oben -->
+            <ellipse cx="140" cy="38" rx="22" ry="16" fill="url(#hSchmelz)" opacity="0.9"/>
+            <ellipse cx="200" cy="38" rx="22" ry="16" fill="url(#hSchmelz)" opacity="0.9"/>
+            <ellipse cx="170" cy="30" rx="18" ry="12" fill="url(#hSchmelz)"/>
+
+            <!-- Labels -->
+            <line x1="106" y1="100" x2="48" y2="88" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="44" y="84" fill="#c5ccee" font-size="11" font-weight="700" text-anchor="end">Schmelz</text>
+
+            <line x1="125" y1="155" x2="48" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="44" y="146" fill="#f5d98a" font-size="11" font-weight="700" text-anchor="end">Dentin</text>
+
+            <line x1="152" y1="180" x2="48" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="44" y="206" fill="#ff9090" font-size="11" font-weight="700" text-anchor="end">Pulpa</text>
+
+            <line x1="235" y1="100" x2="294" y2="88" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="298" y="84" fill="#fff" font-size="11" font-weight="700">Krone</text>
+
+            <line x1="238" y1="248" x2="294" y2="240" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="298" y="236" fill="#fff" font-size="11" font-weight="700">Hals</text>
+
+            <line x1="236" y1="300" x2="294" y2="295" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="298" y="291" fill="#fff" font-size="11" font-weight="700">Wurzel</text>
+
+            <line x1="106" y1="300" x2="48" y2="295" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <text x="44" y="291" fill="#90d4a0" font-size="11" font-weight="700" text-anchor="end">Zement</text>
+
+            <!-- Linie Zahnhals -->
+            <line x1="82" y1="252" x2="258" y2="252" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 3"/>
+          </svg>
+          <p style="font-size:11px;color:#555b6e;text-align:center;margin-top:12px;" data-i18n="home.svgCap">Aufbau des menschlichen Zahnes</p>
+        </div>
+
+        <!-- Stats unter SVG -->
+        <div class="stats-row">
+          <div class="stat-box"><span class="stat-val">4</span><span class="stat-label" data-i18n="home.stat1">Sprachen</span></div>
+          <div class="stat-box"><span class="stat-val">14</span><span class="stat-label" data-i18n="home.stat2">Befund-Themen</span></div>
+          <div class="stat-box"><span class="stat-val">3</span><span class="stat-label" data-i18n="home.stat3">Lernbereiche</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ KLINISCHE DOKUMENTATION ═══ -->
+  <section class="klinik-section">
+    <div class="container">
+      <p class="sec-eyebrow" data-i18n="home.klinikEyebrow">ZFA Lernmaterial</p>
+      <h2 class="sec-title" data-i18n="home.klinikTitle">Klinische Dokumentation & Anatomie</h2>
+      <p class="sec-sub" data-i18n="home.klinikSub">Strukturiertes Lernmaterial für ZFA-Auszubildende — mit SVG-Illustrationen, Tabellen und Glossaren auf 4 Sprachen.</p>
+
+      <div class="klinik-grid">
+
+        <a href="befund.html" class="klinik-card">
+          <div class="klinik-icon purple">📋</div>
+          <h3 data-i18n="home.k1title">Befund & Dokumentation</h3>
+          <p data-i18n="home.k1desc">FDI-System, Zahnbefund-Symbole, Parodontalbefund, Röntgen, rechtliche Anforderungen und Glossar.</p>
+          <span class="klinik-tag tag-available" data-i18n="home.tagAvailable">Verfügbar</span>
+        </a>
+
+        <a href="anatomie-zahn.html" class="klinik-card">
+          <div class="klinik-icon blue">🦷</div>
+          <h3 data-i18n="home.k2title">Zahnmorphologie</h3>
+          <p data-i18n="home.k2desc">Aufbau des Zahnes, Zahngewebe, Schneidezähne, Eckzähne, Prämolaren, Molaren und Milchzähne.</p>
+          <span class="klinik-tag tag-available" data-i18n="home.tagAvailable">Verfügbar</span>
+        </a>
+
+        <a href="anatomie-mund.html" class="klinik-card coming">
+          <div class="klinik-icon green">👄</div>
+          <h3 data-i18n="home.k3title">Mundhöhle & Weichgewebe</h3>
+          <p data-i18n="home.k3desc">Anatomie der Mundhöhle, Zunge, Speicheldrüsen, Schleimhaut und Gaumen.</p>
+          <span class="klinik-tag tag-soon" data-i18n="home.tagSoon">Demnächst</span>
+        </a>
+
+        <a href="anatomie-schaedel.html" class="klinik-card coming">
+          <div class="klinik-icon orange">💀</div>
+          <h3 data-i18n="home.k4title">Schädel & Kieferanatomie</h3>
+          <p data-i18n="home.k4desc">Schädelknochen, Kiefergelenk (TMJ), Kaumuskulatur und Nervenversorgung.</p>
+          <span class="klinik-tag tag-soon" data-i18n="home.tagSoon">Demnächst</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MY STORY ═══ -->
+  <section class="story-section">
+    <div class="container">
+      <p class="sec-eyebrow" data-i18n="home.storyEyebrow">Persönlicher Weg</p>
+      <h2 class="sec-title" data-i18n="home.storyTitle">Meine Geschichte in der Zahnmedizin</h2>
+      <p class="sec-sub" data-i18n="home.storySub">Von Usbekistan bis zur ZFA-Ausbildung in Deutschland — ein ehrlicher Einblick in meinen Lernweg.</p>
+
+      <div class="story-grid">
+        <div class="story-card">
+          <div class="story-num">PART 01</div>
+          <h3 data-i18n="home.story1title">Mein Weg in der Zahnmedizin — Usbekistan</h3>
+          <p data-i18n="home.story1desc">Der Beginn meines Weges in der Medizin, erste Erfahrungen, Herausforderungen, Mentoren und Wachstum.</p>
+          <a href="article-uzbekistan.html" class="text-link" data-i18n="home.readMore">Artikel lesen →</a>
+        </div>
+        <div class="story-card">
+          <div class="story-num">PART 02</div>
+          <h3 data-i18n="home.story2title">Mein Weg in der Zahnmedizin — Deutschland</h3>
+          <p data-i18n="home.story2desc">Ankunft in Deutschland durch Ausbildung, neue Herausforderungen, Kliniken und persönliches Wachstum.</p>
+          <a href="article2.html" class="text-link" data-i18n="home.readMore">Artikel lesen →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPRACHEN BANNER ═══ -->
+  <section class="lang-banner">
+    <div class="container">
+      <div class="lang-banner-inner">
+        <div>
+          <p class="sec-eyebrow" data-i18n="home.langEyebrow">Mehrsprachig</p>
+          <h2 style="font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-0.5px;" data-i18n="home.langTitle">In vier Sprachen verfügbar</h2>
+          <p style="font-size:14px;color:#8f96aa;margin-top:8px;" data-i18n="home.langSub">Alle Inhalte übersetzt für maximale Zugänglichkeit.</p>
+        </div>
+        <div class="lang-flags">
+          <span class="lang-flag">🇩🇪 Deutsch</span>
+          <span class="lang-flag">🇷🇺 Русский</span>
+          <span class="lang-flag">🇬🇧 English</span>
+          <span class="lang-flag">🇺🇿 O'zbek</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>LearningPathJourney</h3>
+      <p data-i18n="footer.description">Eine moderne mehrsprachige Plattform für ZFA-Ausbildung und zahnmedizinische Bildung.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.navigation">Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="journey.html" data-i18n="nav.journey">Journey</a></li>
+        <li><a href="contact.html" data-i18n="nav.connect">Connect</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.languages">Languages</h4>
+      <ul class="footer-links">
+        <li><a href="#" onclick="setLanguage('de');return false;">Deutsch</a></li>
+        <li><a href="#" onclick="setLanguage('ru');return false;">Русский</a></li>
+        <li><a href="#" onclick="setLanguage('en');return false;">English</a></li>
+        <li><a href="#" onclick="setLanguage('uz');return false;">O'zbek</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Learning Path Journey. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
